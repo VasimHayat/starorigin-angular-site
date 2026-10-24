@@ -1,0 +1,42 @@
+{
+  "slug": "jobs",
+  "seo": {
+    "title": "Jobs — banking technology, IT & HR roles",
+    "description": "Live openings from StarOrigin recruiters across banking technology, IT and HR. Filter instantly and apply in a few minutes."
+  },
+  "hero": {
+    "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Jobs", "url": "/jobs" }],
+    "title": "Find the role that",
+    "highlight": "fits your next move.",
+    "lead": "Live openings from our recruiters across banking technology, IT and HR — filter instantly and apply in a few minutes."
+  },
+  "blocks": [
+    {
+      "type": "cards",
+      "id": "how",
+      "tight": true,
+      "heading": {
+        "eyebrow": "How applying works",
+        "title": "Three steps,",
+        "highlight": "one recruiter.",
+        "lead": "No job-board black hole — a real person reads every application."
+      },
+      "columns": 3,
+      "items": [
+        { "icon": "upload", "eyebrow": "Step 01", "title": "Apply in minutes", "text": "Pick a role, share your details and upload your CV. No account needed." },
+        { "icon": "phone", "eyebrow": "Step 02", "title": "Recruiter call", "text": "If your profile fits, a recruiter calls to talk through the role, salary expectations and notice period." },
+        { "icon": "target", "eyebrow": "Step 03", "title": "Interview & offer", "text": "We prepare you for each client round, share feedback and support you through offer and joining." }
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Always hiring",
+    "title": "Not seeing the one?",
+    "highlight": "Let roles find you.",
+    "text": "Register your CV once and our recruiters will match you to new openings — including roles that never get advertised.",
+    "ctas": [
+      { "label": "Submit your CV", "url": "/submit-cv", "variant": "glow" },
+      { "label": "Career resources", "url": "/career-resources", "variant": "ghost" }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "submit-cv",
+  "seo": {
+    "title": "Submit your CV — register with StarOrigin",
+    "description": "Register your CV once in two short steps. When a role fits, a StarOrigin recruiter calls you to talk it through first."
+  },
+  "hero": {
+    "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Jobs", "url": "/jobs" }, { "label": "Submit your CV", "url": "/submit-cv" }],
+    "title": "Register once.",
+    "highlight": "Get matched for good.",
+    "lead": "Share your CV and preferences in two short steps. When a role fits, a StarOrigin recruiter calls you to talk it through."
+  },
+  "why": {
+    "badge": "Why register",
+    "title": "More than a job board",
+    "sub": "Join a database of 8,240+ candidates our recruiters search every time a new mandate lands.",
+    "items": [
+      "Matched to new roles — including ones that are never advertised",
+      "Confidential — your CV is never sent to an employer without your OK",
+      "A recruiter call before any submission, so you know the role, client and package",
+      "Opportunities across India, the UAE and the US"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "faq",
+      "id": "faq",
+      "tight": true,
+      "heading": { "eyebrow": "FAQ", "title": "Your CV, your data.", "align": "center" },
+      "items": [
+        { "question": "Who sees my CV?", "answer": "Only StarOrigin recruiters. We share your profile with a hiring company only after we've discussed the specific role with you and you've agreed." },
+        { "question": "How long do you keep my CV?", "answer": "We keep your details for as long as they're useful for matching you to roles, as set out in our <a href=\"/legal/candidate-data\">candidate data notice</a>. You can ask us to update or delete them at any time by emailing <a href=\"mailto:hello@starorigin.in\">hello@starorigin.in</a>." },
+        { "question": "Do I pay anything to register?", "answer": "No — registering your CV is free. <span class=\"sample\">sample</span>" },
+        { "question": "How soon will I hear back?", "answer": "We call when there's a role that genuinely fits your profile and preferences. If you've applied to a specific opening, you'll hear from the recruiter handling it. Meanwhile, you can <a href=\"/jobs\">browse live jobs</a>." },
+        { "question": "Can I update my preferences later?", "answer": "Yes. Submit the form again with your updated details, or email us and we'll update your profile." }
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Ready when you are",
+    "title": "Already have a role in mind?",
+    "highlight": "Apply directly.",
+    "text": "Browse live openings across banking technology, IT and HR, or sharpen your application with our career guides.",
+    "ctas": [
+      { "label": "Browse jobs", "url": "/jobs", "variant": "glow" },
+      { "label": "Career resources", "url": "/career-resources", "variant": "ghost" }
+    ]
+  }
+}

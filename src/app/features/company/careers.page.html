@@ -1,0 +1,124 @@
+@switch (vm.state().status) {
+  @case ('loading') { <app-page-skeleton /> }
+  @case ('error') { <app-page-error [notFound]="vm.notFound()" /> }
+  @case ('success') {
+    @if (vm.page(); as p) {
+      <app-page-hero [hero]="p.hero">
+        <p class="muted hero-note">
+          {{ p.heroNote.text }}
+          <a class="link" [routerLink]="p.heroNote.link.url">{{ p.heroNote.link.label }} <app-icon name="arrow" /></a>
+        </p>
+      </app-page-hero>
+
+      <app-block-renderer [blocks]="p.blocks" />
+
+      <!-- Culture -->
+      <section>
+        <div class="wrap split culture">
+          <div>
+            <app-section-heading [heading]="p.culture.heading" />
+            <a class="link" [routerLink]="p.culture.link.url">{{ p.culture.link.label }} <app-icon name="arrow" /></a>
+          </div>
+          <div class="glass card" appReveal>
+            <ul class="checks">
+              @for (c of p.culture.items; track c.title) {
+                <li><app-icon name="check" /><span><b>{{ c.title }}</b> <span class="muted">{{ c.text }}</span></span></li>
+              }
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Open roles -->
+      <section class="flush-top" id="roles">
+        <div class="wrap">
+          <app-section-heading [heading]="p.roles.heading" />
+          <div class="jobs-ui" appReveal>
+            <div class="job-list">
+              @for (r of p.roles.items; track r.id) {
+                <button type="button" class="job" (click)="pickRole(roleLabel(r))" [attr.aria-label]="'Apply for ' + roleLabel(r)">
+                  <span class="logo" aria-hidden="true">{{ r.logo }}</span>
+                  <span>
+                    <h3>{{ r.title }} <app-sample-tag [label]="r.sample" /></h3>
+                    <span class="sub">{{ r.team }} · {{ r.location }}</span>
+                  </span>
+                  <span class="tags"><span>{{ r.type }}</span><span>{{ r.experience }}</span></span>
+                  <span class="go" aria-hidden="true"><app-icon name="arrow-ur" /></span>
+                </button>
+              }
+            </div>
+            <div class="jobs-foot">
+              <p>{{ p.roles.footText }}</p>
+              <button type="button" class="btn btn-ghost btn-sm" (click)="pickRole(p.roles.generalLabel)">{{ p.roles.generalLabel }}</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <app-block-renderer [blocks]="p.blocksAfter" />
+
+      <!-- Apply -->
+      <section class="flush-top" id="apply" #apply>
+        <div class="narrow">
+          <app-section-heading [heading]="p.apply.heading" />
+          <div class="glass form-card">
+            @if (submitted()) {
+              <app-form-success [title]="p.apply.successTitle" [text]="p.apply.successText">
+                <button type="button" class="btn btn-ghost" (click)="submitted.set(false)">Send another application</button>
+                <a routerLink="/jobs" class="btn btn-glow">Browse client jobs <app-icon name="arrow" /></a>
+              </app-form-success>
+            } @else {
+              <form class="form" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+                <div class="form-row">
+                  <app-form-field label="Full name" for="cName" required [control]="form.controls.name" [messages]="{ required: 'Please enter your name.' }">
+                    <input pInputText id="cName" formControlName="name" autocomplete="name" />
+                  </app-form-field>
+                  <app-form-field label="Email" for="cEmail" required [control]="form.controls.email" [messages]="{ required: 'Please enter a valid email.' }">
+                    <input pInputText id="cEmail" type="email" formControlName="email" autocomplete="email" />
+                  </app-form-field>
+                </div>
+                <div class="form-row">
+                  <app-form-field label="Phone" for="cPhone" required [control]="form.controls.phone" [messages]="{ required: 'Please enter a valid phone number.', pattern: 'Please enter a valid phone number.' }">
+                    <input pInputText id="cPhone" type="tel" formControlName="phone" autocomplete="tel" />
+                  </app-form-field>
+                  <app-form-field label="Role" for="cRole" required [control]="form.controls.role" [messages]="{ required: 'Please choose a role.' }">
+                    <p-select
+                      inputId="cRole"
+                      formControlName="role"
+                      [options]="roleOptions()"
+                      optionLabel="label"
+                      optionValue="value"
+                      placeholder="Choose a role"
+                      appendTo="body"
+                      styleClass="w-full"
+                    />
+                  </app-form-field>
+                </div>
+                <app-form-field label="LinkedIn profile" for="cLi" hint="Optional, but it helps us review faster." [control]="form.controls.linkedinUrl" [messages]="{ pattern: 'Please enter a full URL, starting with https://' }">
+                  <input pInputText id="cLi" type="url" formControlName="linkedinUrl" placeholder="https://www.linkedin.com/in/…" />
+                </app-form-field>
+                <app-form-field label="Why StarOrigin?" for="cMsg" required [control]="form.controls.message" [messages]="{ required: 'Please add a short message.' }">
+                  <textarea pTextarea id="cMsg" rows="5" formControlName="message" placeholder="Tell us about your experience and what you'd like to do here."></textarea>
+                </app-form-field>
+                <app-form-field [control]="form.controls.consent" [messages]="{ required: 'Please accept to continue.' }">
+                  <div class="consent">
+                    <p-checkbox inputId="cConsent" formControlName="consent" [binary]="true" />
+                    <label for="cConsent">
+                      I agree that StarOrigin may store and process my details for recruitment purposes, as described in the
+                      <a routerLink="/legal/candidate-data">candidate data notice</a> and <a routerLink="/legal/privacy">privacy policy</a>.
+                    </label>
+                  </div>
+                </app-form-field>
+                <button type="submit" class="btn btn-glow btn-block" [disabled]="submitting()">
+                  @if (submitting()) { Sending… } @else { Submit application <app-icon name="arrow" /> }
+                </button>
+              </form>
+            }
+          </div>
+        </div>
+      </section>
+
+      @if (p.cta) { <app-cta-band [band]="p.cta" /> }
+    }
+  }
+}

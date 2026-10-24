@@ -1,0 +1,38 @@
+{
+  "slug": "insights",
+  "seo": {
+    "title": "Insights — hiring trends, career advice and employer guides",
+    "description": "Field notes from StarOrigin's recruiters across India, the UAE and the US: skills in demand, interview advice and how to choose the right hiring model."
+  },
+  "hero": {
+    "breadcrumbs": [
+      { "label": "Home", "url": "/" },
+      { "label": "Insights", "url": "/insights" }
+    ],
+    "title": "Hiring, decoded.",
+    "highlight": "Field notes from the desk.",
+    "lead": "What our recruiters see every week across India, the UAE and the US — skills in demand, how interviews really go, and how to choose the right hiring model."
+  },
+  "blocks": [],
+  "browse": {
+    "eyebrow": "All insights",
+    "title": "Browse by topic"
+  },
+  "newsletter": {
+    "eyebrow": "Newsletter",
+    "title": "One useful hiring email a month.",
+    "text": "Skills in demand, salary movements and interview advice from our desks in Nagpur, Hyderabad, Dubai and Dallas. No spam — unsubscribe any time.",
+    "interests": ["Hiring trends", "Career advice", "Employer guides", "All of the above"],
+    "success": "Thanks — you're subscribed to monthly hiring insights."
+  },
+  "cta": {
+    "eyebrow": "Put insight to work",
+    "title": "Ready to hire —",
+    "highlight": "or be hired?",
+    "text": "Tell us what you need and a specialist recruiter will get back to you within one business day.",
+    "ctas": [
+      { "label": "Hire talent", "url": "/hire", "variant": "glow", "icon": "arrow" },
+      { "label": "Browse jobs", "url": "/jobs", "variant": "ghost" }
+    ]
+  }
+}

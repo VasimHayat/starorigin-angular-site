@@ -1,0 +1,14 @@
+:host { display: block; }
+
+.badges { margin: -4px 0 18px; display: flex; gap: 8px; align-items: center; }
+.badges .new { margin: 0; }
+.page-hero .lead { margin-top: 20px; }
+
+.prose .first { margin-top: 0; }
+.timeline { margin-top: 28px; }
+/* The hiring process sits inside the narrow prose column: keep it to one column. */
+.timeline ::ng-deep .split { grid-template-columns: 1fr; gap: 0; }
+
+.aside { display: grid; gap: 16px; scroll-margin-top: 110px; }
+.share { padding: 22px; }
+.share .btn-row { margin-top: 14px; flex-wrap: wrap; }

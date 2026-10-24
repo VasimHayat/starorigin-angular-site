@@ -1,0 +1,50 @@
+{
+  "slug": "case-studies",
+  "seo": {
+    "title": "Case studies",
+    "description": "How StarOrigin engagements unfold — executive search, bulk hiring, RPO and banking-tech hiring outcomes across India, the UAE and the US."
+  },
+  "hero": {
+    "breadcrumbs": [
+      { "label": "Home", "url": "/" },
+      { "label": "Services", "url": "/services" },
+      { "label": "Case studies", "url": "/case-studies" }
+    ],
+    "title": "Results,",
+    "highlight": "not résumés.",
+    "lead": "How engagements unfold — the challenge, our approach and what changed. Client names stay confidential; the outcomes speak for themselves.",
+    "ctas": [
+      { "label": "Start your hire", "url": "/hire", "variant": "glow" },
+      { "label": "Browse cases", "url": "/case-studies#cases", "variant": "ghost" }
+    ],
+    "aside": {
+      "type": "stats",
+      "eyebrow": "At a glance",
+      "items": [
+        { "value": "6", "label": "Engagements shown" },
+        { "value": "4", "label": "Services" },
+        { "value": "5", "label": "Sectors" }
+      ],
+      "note": "All case studies on this page are illustrative placeholders pending approved client stories.",
+      "sample": "sample"
+    }
+  },
+  "casesHeading": { "eyebrow": "Case studies", "title": "Filter by", "highlight": "what you need." },
+  "testimonialsHeading": {
+    "eyebrow": "In their words",
+    "title": "What clients tell us.",
+    "lead": "Representative feedback.",
+    "sample": "Sample — replace with approved quotes"
+  },
+  "blocks": [],
+  "cta": {
+    "eyebrow": "Your outcome next",
+    "title": "Let's write",
+    "highlight": "your success story.",
+    "text": "Share the brief. A practice head will respond within one business day with a search plan and timeline.",
+    "ctas": [
+      { "label": "Start your hire", "url": "/hire", "variant": "glow" },
+      { "label": "Industries we serve", "url": "/industries", "variant": "ghost" }
+    ]
+  }
+}

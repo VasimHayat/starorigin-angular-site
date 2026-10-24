@@ -1,0 +1,66 @@
+@switch (state().status) {
+  @case ('loading') { <app-page-skeleton /> }
+  @case ('error') { <app-page-error [notFound]="notFound()" /> }
+  @case ('success') {
+    @if (article(); as a) {
+      <section class="page-hero">
+        <div class="aurora soft" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a routerLink="/">Home</a> / <a routerLink="/insights">Insights</a> /
+            <span aria-current="page">{{ a.breadcrumb ?? a.title }}</span>
+          </nav>
+          <span class="tag cat">{{ a.category }}</span>
+          <h1><app-headline [value]="a.headline ?? { title: a.title }" /></h1>
+          <p class="lead">{{ a.lead }}</p>
+          <div class="article-meta">
+            <span class="author">
+              @if (a.authorLogo) {<img class="logo" [src]="a.authorLogo" alt="" width="44" height="44" />}
+              <span><b>{{ a.author }}</b>{{ a.authorRole }}</span>
+            </span>
+            <span><time [attr.datetime]="a.publishedAt">{{ a.publishedAt | date: 'd MMM y' }}</time></span>
+            <span>{{ a.readMinutes }} min read</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="flush-top">
+        <div class="wrap layout-aside">
+          <app-prose-sections [intro]="a.intro" [sections]="a.sections" />
+
+          <aside class="sticky tools" aria-label="Article tools">
+            <app-toc [items]="toc()" />
+            <div class="glass toc">
+              <h4>Share</h4>
+              <div class="btn-row">
+                <button type="button" class="btn btn-ghost btn-sm" (click)="copyLink()"><app-icon name="copy" />Copy link</button>
+                <a class="btn btn-ghost btn-sm" [href]="linkedInUrl()" target="_blank" rel="noopener"
+                  aria-label="Share on LinkedIn (opens in a new tab)"><app-icon name="in" />LinkedIn</a>
+              </div>
+            </div>
+            @if (a.aside; as c) {
+              <div appSpotlight class="card highlight">
+                @if (c.eyebrow) {<span class="tag">{{ c.eyebrow }}</span>}
+                @if (c.text) {<p>{{ c.text }}</p>}
+                @if (c.link) {<a [routerLink]="c.link.url" class="link">{{ c.link.label }} <app-icon name="arrow" /></a>}
+              </div>
+            }
+          </aside>
+        </div>
+      </section>
+
+      @if (related().length) {
+        <section class="tight">
+          <div class="wrap">
+            <div class="sec-head"><span class="tag">Related insights</span></div>
+            <div class="grid g2 posts">
+              @for (p of related(); track p.slug) {<app-post-card [article]="p" />}
+            </div>
+          </div>
+        </section>
+      }
+
+      @if (a.cta) { <app-cta-band [band]="a.cta" /> }
+    }
+  }
+}

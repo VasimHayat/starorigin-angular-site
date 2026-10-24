@@ -1,0 +1,71 @@
+@if (page(); as p) {
+  <app-page-hero [hero]="p.hero" />
+
+  @if (featured(); as f) {
+    <section class="flush-top">
+      <div class="wrap">
+        <a class="post feature" appReveal [routerLink]="['/insights', f.slug]">
+          <div class="thumb" [style.--c1]="f.thumb.c1" [style.--c2]="f.thumb.c2"><span>Latest · {{ f.category }}</span></div>
+          <div>
+            <span class="tag">Featured</span>
+            <h3 class="feature-title">{{ f.title }}</h3>
+            <p>{{ f.featuredExcerpt ?? f.excerpt }}</p>
+            <p class="pm feature-meta">{{ f.author }} · {{ f.publishedAt | date: 'd MMM y' }} · {{ f.readMinutes }} min read</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  }
+
+  <section class="tight">
+    <div class="wrap">
+      <app-section-heading class="browse" [heading]="p.browse" />
+      <p-tabs [value]="filter()" (valueChange)="setFilter($event)" scrollable>
+        <p-tablist aria-label="Filter insights by category">
+          @for (f of filters; track f.value) {<p-tab [value]="f.value">{{ f.label }}</p-tab>}
+        </p-tablist>
+        <p-tabpanels>
+          <p-tabpanel [value]="filter()">
+            <p class="sr-only" aria-live="polite" aria-atomic="true">Showing {{ countLabel() }}</p>
+            <div class="grid g3 posts">
+              @for (post of visible(); track post.slug) {<app-post-card [article]="post" />}
+            </div>
+          </p-tabpanel>
+        </p-tabpanels>
+      </p-tabs>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="glass highlight split nl-box">
+        <div>
+          <span class="tag">{{ p.newsletter.eyebrow }}</span>
+          <h2 class="nl-title">{{ p.newsletter.title }}</h2>
+          <p class="muted">{{ p.newsletter.text }}</p>
+        </div>
+        <form class="form" [formGroup]="form" (ngSubmit)="subscribe()" novalidate aria-label="Newsletter sign-up">
+          <app-form-field label="Work email" for="nlEmail" [control]="form.controls.email" required>
+            <input pInputText id="nlEmail" type="email" formControlName="email" placeholder="you@company.com" autocomplete="email" />
+          </app-form-field>
+          <app-form-field label="I'm mostly interested in" for="nlRole">
+            <p-select inputId="nlRole" formControlName="interest" [options]="p.newsletter.interests" appendTo="body" styleClass="w-full" />
+          </app-form-field>
+          <app-form-field [control]="form.controls.consent" [messages]="{ required: 'Please agree to continue.' }">
+            <div class="consent">
+              <p-checkbox inputId="nlConsent" formControlName="consent" [binary]="true" />
+              <label for="nlConsent">I agree to receive the newsletter and accept the <a routerLink="/legal/privacy">privacy policy</a>.</label>
+            </div>
+          </app-form-field>
+          <button class="btn btn-glow" type="submit" [disabled]="sending()">
+            @if (sending()) {Sending…} @else {Subscribe <app-icon name="arrow" />}
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  @if (p.cta) { <app-cta-band [band]="p.cta" /> }
+} @else {
+  <app-page-skeleton />
+}

@@ -1,0 +1,66 @@
+@switch (state().status) {
+  @case ('loading') { <app-page-skeleton /> }
+  @case ('error') { <app-page-error /> }
+  @case ('success') {
+    @if (page(); as p) {
+      <app-page-hero [hero]="p.hero" />
+
+      <section class="tight" id="cases">
+        <div class="wrap">
+          <div class="sec-row">
+            <app-section-heading [heading]="p.casesHeading" />
+            <span class="tag count" aria-live="polite">{{ countLabel() }}</span>
+          </div>
+
+          <p-tabs [value]="filter()" (valueChange)="setFilter($event)" scrollable class="cs-filter">
+            <p-tablist aria-label="Filter case studies">
+              @for (f of filters; track f.value) {
+                <p-tab [value]="f.value">{{ f.label }}</p-tab>
+              }
+            </p-tablist>
+          </p-tabs>
+
+          <div class="grid g2">
+            @for (c of visible(); track c.id; let i = $index) {
+              <article appSpotlight appReveal [revealDelay]="i" class="card">
+                <div class="mini-tags">
+                  <span>{{ c.industry }}</span>
+                  @for (s of c.services; track s) {<span>{{ s }}</span>}
+                  <app-sample-tag [label]="c.sample" />
+                </div>
+                <div class="kpi grad-text">{{ c.kpi }}@if (c.kpiNote) {<small>{{ c.kpiNote }}</small>}</div>
+                <h3>{{ c.title }}</h3>
+                <p><b>Challenge.</b> {{ c.challenge }}</p>
+                <p><b>Approach.</b> {{ c.approach }}</p>
+                <p><b>Result.</b> {{ c.result }}</p>
+                @if (c.link) {
+                  <a [routerLink]="c.link.url" class="link more">{{ c.link.label }} <app-icon name="arrow" /></a>
+                }
+              </article>
+            } @empty {
+              <p class="muted">No case studies in this category yet.</p>
+            }
+          </div>
+        </div>
+      </section>
+
+      <section class="flush-top">
+        <div class="wrap">
+          <app-section-heading [heading]="p.testimonialsHeading" />
+          <div class="grid g3">
+            @for (t of testimonials(); track t.id; let i = $index) {
+              <figure appSpotlight appReveal [revealDelay]="i" class="t-card">
+                <blockquote>“{{ t.quote }}”</blockquote>
+                <figcaption class="who">
+                  <span class="av">{{ t.initials }}</span><span><b>{{ t.author }}</b><span>{{ t.organisation }}</span></span>
+                </figcaption>
+              </figure>
+            }
+          </div>
+        </div>
+      </section>
+
+      @if (p.cta) { <app-cta-band [band]="p.cta" /> }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@let b = block();
+@switch (b.type) {
+  @case ('cards') {
+    <div class="grid" [class]="'g' + (b.columns ?? 3)">
+      @for (c of b.items; track c.title; let i = $index) {
+        <app-info-card appReveal [revealDelay]="i" [card]="c" />
+      }
+    </div>
+  }
+  @case ('links') {
+    <div class="grid g3">
+      @for (c of b.items; track c.title; let i = $index) {
+        <app-info-card appReveal [revealDelay]="i" [card]="c" />
+      }
+    </div>
+  }
+  @case ('process') {
+    <app-process-steps [steps]="b.items" [variant]="b.variant" />
+  }
+  @case ('checklist') {
+    <div [class.why-grid]="!!b.aside">
+      <app-checklist-card appReveal [badge]="b.badge" [title]="b.title" [sub]="b.sub" [items]="b.items" />
+      @if (b.aside) {
+        <app-info-card appReveal [card]="b.aside" />
+      }
+    </div>
+  }
+  @case ('compare') {
+    <div class="why-grid">
+      <app-checklist-card appReveal [muted]="true" [title]="b.them.title" [sub]="b.them.sub" [items]="b.them.items" />
+      <app-checklist-card appReveal [badge]="b.us.badge" [title]="b.us.title" [sub]="b.us.sub" [items]="b.us.items" />
+    </div>
+  }
+  @case ('stats') {
+    <app-stat-row [stats]="b.items" />
+  }
+  @case ('faq') {
+    <app-faq-accordion [items]="b.items" />
+  }
+  @case ('table') {
+    <div class="glass table-card prose" appReveal>
+      <table>
+        <thead>
+          <tr>@for (c of b.columns; track c) {<th scope="col">{{ c }}</th>}</tr>
+        </thead>
+        <tbody>
+          @for (row of b.rows; track $index) {
+            <tr>
+              @for (cell of row; track $index; let first = $first) {
+                @if (first) {<th scope="row">{{ cell }}</th>} @else {<td>{{ cell }}</td>}
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+    @if (b.note || b.sample) {
+      <p class="table-note">{{ b.note }} <app-sample-tag [label]="b.sample" /></p>
+    }
+  }
+  @case ('tags') {
+    <div appSpotlight appReveal class="card">
+      @if (b.title) {<h3>{{ b.title }}</h3>}
+      @if (b.text) {<p>{{ b.text }}</p>}
+      <div class="mini-tags">@for (t of b.tags; track t) {<span>{{ t }}</span>}</div>
+    </div>
+  }
+  @case ('funnel') {
+    <div appSpotlight appReveal class="card">
+      @if (b.title) {<h3>{{ b.title }}</h3>}
+      <app-funnel [steps]="b.steps" />
+      @if (b.note || b.sample) {<p class="table-note">{{ b.note }} <app-sample-tag [label]="b.sample" /></p>}
+    </div>
+  }
+  @case ('prose') {
+    <div class="prose" appRouterLinks [innerHTML]="b.html"></div>
+  }
+  @case ('tabs') {
+    <p-tabs [value]="0" scrollable>
+      <p-tablist>
+        @for (t of b.tabs; track t.label; let i = $index) {
+          <p-tab [value]="i">{{ t.label }}</p-tab>
+        }
+      </p-tablist>
+      <p-tabpanels>
+        @for (t of b.tabs; track t.label; let i = $index) {
+          <p-tabpanel [value]="i">
+            <div class="nested">
+              @for (nb of t.blocks; track $index) {
+                <app-block-view [block]="nb" />
+              }
+            </div>
+          </p-tabpanel>
+        }
+      </p-tabpanels>
+    </p-tabs>
+  }
+}

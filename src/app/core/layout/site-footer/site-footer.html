@@ -1,0 +1,49 @@
+<footer class="site">
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a routerLink="/" class="brand"><span class="mark"><img [src]="contact.logo" alt="" width="30" height="32" /></span>StarOrigin</a>
+        <p>Global recruitment and staffing — connecting ambitious companies with proven people across India, the UAE and the US.</p>
+        <form class="news" (ngSubmit)="subscribe()">
+          <label class="sr-only" for="newsEmail">Work email</label>
+          <input id="newsEmail" type="email" placeholder="Work email" [formControl]="email" autocomplete="email" />
+          <button type="submit" [disabled]="sending()">{{ sending() ? 'Sending…' : 'Get insights' }}</button>
+        </form>
+        <div class="social">
+          <a [href]="contact.linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><app-icon name="in" /></a>
+          <a [href]="contact.facebook" target="_blank" rel="noopener" aria-label="Facebook"><app-icon name="fb" /></a>
+          <a [href]="contact.instagram" target="_blank" rel="noopener" aria-label="Instagram"><app-icon name="ig" /></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Employers</h4>
+        <ul>
+          @for (s of services(); track s.slug) {
+            <li><a [routerLink]="['/services', s.slug]">{{ s.slug === 'rpo' ? 'RPO' : s.name }}</a></li>
+          }
+          <li><a routerLink="/hire">Hire talent</a></li>
+        </ul>
+      </div>
+      @for (col of columns; track col.title) {
+        <div>
+          <h4>{{ col.title }}</h4>
+          <ul>
+            @for (l of col.links; track l.label) {
+              <li><a [routerLink]="l.url">{{ l.label }}</a></li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+
+    <div class="wordmark" aria-hidden="true">StarOrigin</div>
+
+    <div class="f-bottom">
+      <span>© {{ year }} StarOrigin Pvt. Ltd. · <a [href]="'mailto:' + contact.email">{{ contact.email }}</a></span>
+      <nav aria-label="Legal">
+        @for (l of legal; track l.url) {<a [routerLink]="l.url">{{ l.label }}</a>}
+      </nav>
+    </div>
+  </div>
+</footer>

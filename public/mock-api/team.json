@@ -1,0 +1,10 @@
+[
+  { "id": "ritu-maloo", "name": "Ritu Maloo", "role": "Founder & CEO", "photoUrl": "https://starorigin.in/wp-content/uploads/2023/12/Ritu-New.jpg", "featured": true, "focus": "Client partnerships, leadership hiring and growth across India, the UAE and the US.", "sample": "sample" },
+  { "id": "sachin-kanekar", "name": "Sachin Kanekar", "role": "HR Manager", "photoUrl": "https://starorigin.in/wp-content/uploads/2023/12/Sachin-New.jpg" },
+  { "id": "dhiraj-pandey", "name": "Dhiraj Pandey", "role": "Assistant HR Manager", "photoUrl": "https://starorigin.in/wp-content/uploads/2023/12/Dhiraj-New.jpg" },
+  { "id": "pranoti-dhawanjewar", "name": "Pranoti Dhawanjewar", "role": "Senior HR Specialist", "photoUrl": "https://starorigin.in/wp-content/uploads/2023/12/Pranoti-New.jpg" },
+  { "id": "syam-paidimarri", "name": "Syam Paidimarri", "role": "Talent Acquisition Manager", "photoUrl": "https://starorigin.in/wp-content/uploads/2024/03/IMG_0016-removebg-1.png" },
+  { "id": "kishor-naik", "name": "Kishor Naik", "role": "Account Manager", "photoUrl": "https://starorigin.in/wp-content/uploads/2024/03/kishor.jpeg" },
+  { "id": "sakshi-gawande", "name": "Sakshi Gawande", "role": "Senior HR Specialist", "photoUrl": "https://starorigin.in/wp-content/uploads/2023/12/Sakshi-New.jpg" },
+  { "id": "ashwini-mohite", "name": "Ashwini Mohite", "role": "Assistant HR Manager", "photoUrl": "https://starorigin.in/wp-content/uploads/2023/12/Ashiwini_New.jpg" }
+]

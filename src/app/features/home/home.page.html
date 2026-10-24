@@ -1,0 +1,193 @@
+@let h = copy.hero;
+
+<!-- HERO -->
+<section class="hero">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="status"><span class="dot"></span><b>{{ h.status }}</b> · {{ h.regions }}</span>
+      <h1>{{ h.title }} <span class="grad-text">{{ h.highlight }}</span></h1>
+      <p class="lead">{{ h.lead }}</p>
+
+      <div class="intent" role="search">
+        <div class="seg" role="tablist" aria-label="I am">
+          <span class="pill" aria-hidden="true" [class.right]="mode() === 'job'"></span>
+          <button type="button" role="tab" [attr.aria-selected]="mode() === 'hire'" (click)="mode.set('hire')">{{ h.modes.hire.tab }}</button>
+          <button type="button" role="tab" [attr.aria-selected]="mode() === 'job'" (click)="mode.set('job')">{{ h.modes.job.tab }}</button>
+        </div>
+        <form class="intent-row" (ngSubmit)="submitIntent()">
+          <label>
+            <app-icon name="sparkle" />
+            <input type="text" name="intent" [ngModel]="query()" (ngModelChange)="query.set($event)" [placeholder]="h.modes[mode()].placeholder" aria-label="Describe what you need" />
+          </label>
+          <button class="btn btn-primary" type="submit">{{ h.modes[mode()].button }} <app-icon name="arrow" /></button>
+        </form>
+      </div>
+      <div class="chips" aria-label="Suggestions">
+        @for (c of chips(); track c) {
+          <button type="button" class="chip" (click)="query.set(c)">{{ c }}</button>
+        }
+      </div>
+    </div>
+
+    <div class="globe-wrap" aria-hidden="true">
+      <div class="ring"></div>
+      <app-globe />
+      @for (hud of h.hud; track hud.title; let i = $index) {
+        <div class="hud" [class]="'hud hud-' + (i + 1)">
+          <span class="ic" [class]="'ic tone-' + hud.tone"><app-icon [name]="hud.icon" /></span>
+          <span><b>{{ hud.title }}</b>{{ hud.text }}</span>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+@if (content(); as c) {
+  <div class="marquee" aria-label="Clients">
+    <p>Trusted by teams across BFSI, IT &amp; manufacturing &nbsp;<app-sample-tag [label]="c.clientLogosSample" /></p>
+    <div class="track" aria-hidden="true">
+      @for (pass of [1, 2]; track pass) {
+        @for (logo of c.clientLogos; track logo.name) {<span>{{ logo.name }}</span>}
+      }
+    </div>
+  </div>
+
+  <section class="tight">
+    <div class="wrap"><app-stat-row [stats]="c.stats" /></div>
+  </section>
+}
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <app-section-heading [heading]="copy.services" />
+    <div class="bento">
+      @if (content(); as c) {
+        @let es = c.featuredServices.executiveSearch;
+        <a appSpotlight appReveal class="card b-xl" [routerLink]="es.link?.url">
+          <span class="ic"><app-icon [name]="es.icon ?? 'crown'" /></span>
+          <h3>{{ es.title }}</h3>
+          <p>{{ es.text }}</p>
+          <div class="mini-tags">@for (t of es.tags; track t) {<span>{{ t }}</span>}</div>
+          <div class="viz">@for (v of es.viz; track v.label) {<div><b>{{ v.value }}</b>{{ v.label }}</div>}</div>
+        </a>
+        @let rpo = c.featuredServices.rpo;
+        <a appSpotlight appReveal class="card b-l" [routerLink]="rpo.link?.url">
+          <span class="ic"><app-icon [name]="rpo.icon ?? 'cog'" /></span>
+          <h3>{{ rpo.title }}</h3>
+          <p>{{ rpo.text }}</p>
+          <app-funnel [steps]="rpo.funnel" />
+        </a>
+      }
+      @for (s of smallServices(); track s.slug; let i = $index) {
+        <a appSpotlight appReveal [revealDelay]="i" class="card b-m" [routerLink]="['/services', s.slug]">
+          <span class="ic"><app-icon [name]="s.icon" /></span>
+          <h3>{{ s.name }}</h3>
+          <p class="grow">{{ s.summary }}</p>
+          <span class="link">Explore <app-icon name="arrow" /></span>
+        </a>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="flush-top">
+  <div class="wrap">
+    <app-section-heading [heading]="copy.processHeading" />
+    <app-process-steps [steps]="copy.process" variant="steps" />
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap">
+    <p class="quote-big" appReveal>
+      {{ copy.why.statement.before }} <span class="grad-text">{{ copy.why.statement.highlight }}</span> {{ copy.why.statement.after }}
+    </p>
+    <div class="why-grid">
+      <app-checklist-card appReveal [muted]="true" [title]="copy.why.them.title" [sub]="copy.why.them.sub" [items]="copy.why.them.items" />
+      <app-checklist-card appReveal [badge]="copy.why.us.badge" [title]="copy.why.us.title" [sub]="copy.why.us.sub" [items]="copy.why.us.items" />
+    </div>
+  </div>
+</section>
+
+<!-- JOBS -->
+<section id="jobs" class="flush-top">
+  <div class="wrap">
+    <app-section-heading [heading]="copy.jobsHeading" />
+    <div class="jobs-ui" appReveal>
+      <div class="jobs-bar">
+        <app-icon name="search" />
+        <label class="sr-only" for="jobQ">Search jobs</label>
+        <input id="jobQ" type="search" placeholder="Search role, skill or city…" [ngModel]="jobQuery()" (ngModelChange)="jobQuery.set($event)" />
+        <span class="count" aria-live="polite">{{ filteredJobs().length }} of {{ jobs().length }} roles</span>
+      </div>
+      <div class="filters" role="group" aria-label="Filter jobs">
+        @for (chip of jobChips; track chip.value) {
+          <button type="button" [attr.aria-pressed]="jobChip() === chip.value" (click)="jobChip.set(chip.value)">{{ chip.label }}</button>
+        }
+      </div>
+      <div class="job-list">
+        @for (j of filteredJobs().slice(0, 6); track j.id) {
+          <app-job-row [job]="j" />
+        } @empty {
+          <p class="empty-state">No roles match — <a routerLink="/submit-cv" class="link">share your CV</a> and we'll reach out.</p>
+        }
+      </div>
+      <div class="jobs-foot">
+        <p>Don't see your role? Our recruiters match new openings daily.</p>
+        <div class="btn-row">
+          <a routerLink="/submit-cv" class="btn btn-ghost btn-sm">Upload CV</a>
+          <a routerLink="/jobs" class="btn btn-primary btn-sm">All jobs <app-icon name="arrow" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section class="flush-top">
+  <div class="wrap">
+    <app-section-heading [heading]="copy.outcomesHeading" />
+    <div class="grid g3">
+      @for (t of testimonials(); track t.id; let i = $index) {
+        <figure appSpotlight appReveal [revealDelay]="i" class="t-card">
+          <div class="kpi grad-text">{{ t.kpi }}<small>{{ t.kpiNote }}</small></div>
+          <blockquote>“{{ t.quote }}”</blockquote>
+          <figcaption class="who">
+            <span class="av">{{ t.initials }}</span><span><b>{{ t.author }}</b><span>{{ t.organisation }}</span></span>
+          </figcaption>
+        </figure>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="flush-top">
+  <div class="wrap">
+    <app-section-heading [heading]="copy.teamHeading" />
+    <div class="team">
+      @for (m of featuredTeam(); track m.id; let i = $index) {
+        <app-member-card appReveal [revealDelay]="i" [member]="m" />
+      }
+    </div>
+  </div>
+</section>
+
+<!-- OFFICES -->
+<section class="flush-top">
+  <div class="wrap">
+    <app-section-heading [heading]="copy.officesHeading" />
+    <div class="grid g4">
+      @for (o of offices(); track o.id; let i = $index) {
+        <app-office-card appReveal [revealDelay]="i" [office]="o" />
+      }
+    </div>
+  </div>
+</section>
+
+<app-cta-band [band]="copy.cta" />

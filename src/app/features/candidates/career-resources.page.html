@@ -1,0 +1,97 @@
+@if (page(); as p) {
+  <app-page-hero [hero]="p.hero" />
+
+  <section class="flush-top" aria-label="Featured article">
+    <div class="wrap">
+      <a [routerLink]="p.featured.link.url" class="post feature" appReveal>
+        <div class="thumb"><span>{{ p.featured.thumbLabel }}</span></div>
+        <div>
+          <span class="tag">{{ p.featured.eyebrow }}</span>
+          <h3 class="feat-title">{{ p.featured.title }}</h3>
+          <p>{{ p.featured.text }}</p>
+          <span class="link feat-link">{{ p.featured.link.label }} <app-icon name="arrow" /></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section aria-label="Guides">
+    <div class="wrap">
+      <app-section-heading [heading]="p.guidesHeading" />
+      <div class="grid g3">
+        @for (g of p.guides; track g.title; let i = $index) {
+          @if (g.highlight && g.link) {
+            <a appSpotlight appReveal [revealDelay]="i" class="card highlight guide" [routerLink]="g.link.url">
+              <span class="ic"><app-icon [name]="g.icon ?? 'book'" /></span>
+              <h3>{{ g.title }}</h3>
+              <p>{{ g.text }}</p>
+              <span class="link foot">{{ g.link.label }} <app-icon name="arrow" /></span>
+            </a>
+          } @else {
+            <div appSpotlight appReveal [revealDelay]="i" class="card guide">
+              <span class="ic"><app-icon [name]="g.icon ?? 'file'" /></span>
+              <h3>{{ g.title }}</h3>
+              <p>{{ g.text }}</p>
+              <ul class="checks">
+                @for (pt of g.points; track pt) {<li><app-icon name="check" />{{ pt }}</li>}
+              </ul>
+              @if (g.link) {
+                <a class="link foot" [routerLink]="g.link.url.split('#')[0]" [fragment]="g.link.url.split('#')[1]">{{ g.link.label }} <app-icon name="arrow" /></a>
+              } @else {
+                <span class="foot"><app-sample-tag [label]="g.sample" /></span>
+              }
+            </div>
+          }
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="flush-top" aria-label="Recruiter facts">
+    <div class="wrap">
+      <app-section-heading [heading]="p.factsHeading" />
+      <div class="grid g3">
+        @for (s of p.facts; track s.value; let i = $index; let last = $last) {
+          <div class="stat" appReveal [revealDelay]="i">
+            <strong [class.grad-text]="s.highlight">{{ s.value }}</strong>
+            <span>{{ s.label }}@if (last) { <a routerLink="." fragment="checklist" class="link">Check yours</a>}</span>
+          </div>
+        }
+      </div>
+      <p class="note">{{ p.factsNote }}</p>
+    </div>
+  </section>
+
+  <section id="checklist" aria-labelledby="clTitle">
+    <div class="wrap split cl">
+      <div class="sec-head cl-head">
+        <span class="tag">{{ p.checklist.eyebrow }}</span>
+        <h2 id="clTitle">{{ p.checklist.title }} <span class="grad-text">{{ p.checklist.highlight }}</span></h2>
+        <p>{{ p.checklist.lead }}</p>
+        <div class="btn-row"><a routerLink="/submit-cv" class="btn btn-glow">Submit your CV <app-icon name="arrow" /></a></div>
+      </div>
+      <div class="glass card cl-card" appReveal>
+        <div class="pipe">
+          <span aria-live="polite">{{ doneCount() }}/{{ total() }} done</span>
+          <span class="bar" role="progressbar" aria-label="Checklist progress" [attr.aria-valuenow]="pct()" aria-valuemin="0" aria-valuemax="100">
+            <i [style.width.%]="pct()"></i>
+          </span>
+        </div>
+        <fieldset class="cl-list">
+          <legend class="sr-only">CV checklist</legend>
+          @for (item of p.checklist.items; track item; let i = $index) {
+            <label class="check"><input type="checkbox" [checked]="ticked().has(i)" (change)="toggle(i, $any($event.target).checked)" />{{ item }}</label>
+          }
+        </fieldset>
+        @if (allDone()) {
+          <p class="cl-done" role="status">All done — your CV is ready. <a routerLink="/jobs" class="link">Find a role</a></p>
+        }
+        <button type="button" class="btn btn-ghost btn-sm cl-reset" [disabled]="!doneCount()" (click)="reset()">Reset checklist</button>
+      </div>
+    </div>
+  </section>
+
+  @if (p.cta) {<app-cta-band [band]="p.cta" />}
+} @else {
+  <app-page-skeleton />
+}

@@ -1,0 +1,92 @@
+@switch (state().status) {
+  @case ('loading') { <app-page-skeleton /> }
+  @case ('error') { <app-page-error [notFound]="notFound()" /> }
+  @case ('success') {
+    @if (job(); as j) {
+      <section class="page-hero">
+        <div class="aurora soft" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a routerLink="/">Home</a> / <a routerLink="/jobs">Jobs</a> / <span aria-current="page">{{ j.title }}</span>
+          </nav>
+          <h1><span class="grad-text">{{ j.title }}</span></h1>
+          @if (j.isNew || j.sample) {
+            <div class="badges">
+              @if (j.isNew) {<span class="new">NEW</span>}
+              <app-sample-tag [label]="j.sample ? 'sample role' : undefined" />
+            </div>
+          }
+          <div class="job-meta" aria-label="Role details">
+            <span><app-icon name="pin" /><span class="sr-only">Location: </span><bdi>{{ j.location }}</bdi></span>
+            <span><app-icon name="brief" /><span class="sr-only">Job type: </span><bdi>{{ j.type }}</bdi></span>
+            <span><app-icon name="clock" /><span class="sr-only">Experience: </span><bdi>{{ j.experience }}</bdi></span>
+            <span><app-icon name="calendar" /><time [attr.datetime]="j.postedAt">{{ posted() }}</time></span>
+          </div>
+          <p class="lead">Client: {{ j.client }} · {{ j.function }} · {{ j.level }} level. Recruited by StarOrigin.</p>
+          <div class="btn-row">
+            <a routerLink="." fragment="apply" class="btn btn-glow">Apply now <app-icon name="arrow" /></a>
+            <a routerLink="/jobs" class="btn btn-ghost"><app-icon name="arrow-l" />All jobs</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="flush-top">
+        <div class="wrap layout-aside">
+          <article class="prose">
+            <h2 class="first">Summary</h2>
+            <p>{{ j.summary }}</p>
+
+            <h2>Responsibilities</h2>
+            <ul>@for (r of j.responsibilities; track r) {<li>{{ r }}</li>}</ul>
+
+            <h2>Requirements</h2>
+            <ul>@for (r of j.requirements; track r) {<li>{{ r }}</li>}</ul>
+
+            <h2>What we offer you as a candidate</h2>
+            <ul>
+              <li><strong>A dedicated recruiter</strong> who knows the client and the role, and stays your single point of contact.</li>
+              <li><strong>Interview preparation</strong> — a briefing on the client, the interview format and what the panel looks for.</li>
+              <li><strong>Honest feedback</strong> after every stage, typically within 5 working days. <app-sample-tag label="sample" /></li>
+              <li><strong>Confidentiality</strong> — your CV is never shared with an employer without your go-ahead.</li>
+            </ul>
+            <p class="callout">Compensation for this role is discussed with your recruiter on the first call, based on your experience and the client's band.</p>
+
+            <h2>About the hiring process</h2>
+            <app-process-steps class="timeline" variant="timeline" [steps]="process" />
+          </article>
+
+          <aside class="sticky aside" id="apply">
+            <app-apply-form [job]="j" />
+
+            <div class="glass card share">
+              <span class="tag">Share this role</span>
+              <div class="btn-row">
+                <button type="button" class="btn btn-ghost btn-sm" (click)="copyLink()"><app-icon name="copy" />Copy link</button>
+                <a class="btn btn-ghost btn-sm" [href]="linkedInHref()" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><app-icon name="in" />LinkedIn</a>
+                <a class="btn btn-ghost btn-sm" [href]="whatsAppHref()" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><app-icon name="wa" />WhatsApp</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section aria-labelledby="similarTitle">
+        <div class="wrap">
+          <div class="sec-row">
+            <div class="sec-head"><span class="tag">Keep exploring</span><h2 id="similarTitle">Similar <span class="grad-text">roles.</span></h2></div>
+            <a routerLink="/jobs" class="link">All jobs <app-icon name="arrow" /></a>
+          </div>
+          <div class="jobs-ui" appReveal>
+            <div class="job-list">
+              @for (s of similar(); track s.id) {<app-job-row [job]="s" />}
+            </div>
+            <div class="jobs-foot">
+              <p>Not quite right? Register once and we'll match you to new openings.</p>
+              <div class="btn-row"><a routerLink="/submit-cv" class="btn btn-primary btn-sm">Submit your CV <app-icon name="arrow" /></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    }
+  }
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "slug": "core-banking-hiring-2027",
+    "title": "Hiring for core-banking transformations: skills in demand in 2027",
+    "category": "Hiring Trends",
+    "excerpt": "The techno-functional profiles banks will compete for, and how to plan hiring around a programme timeline.",
+    "publishedAt": "2026-10-14",
+    "readMinutes": 7,
+    "author": "StarOrigin Editorial",
+    "thumb": {
+      "c1": "rgb(45 212 191/.5)",
+      "c2": "rgb(139 92 246/.4)"
+    },
+    "featured": true,
+    "featuredExcerpt": "FLEXCUBE, OFSAA FCCM, OBTF, OBDX, OBLM — which profiles banks will compete for, why techno-functional talent is the bottleneck, and how to plan hiring before the programme clock starts."
+  },
+  {
+    "slug": "first-90-seconds-interview",
+    "title": "The first 90 seconds: what interviewers decide before you finish your intro",
+    "category": "Career Advice",
+    "excerpt": "First impressions form fast. Here's what interviewers notice early, and a simple plan for the opening minute and a half.",
+    "publishedAt": "2026-10-02",
+    "readMinutes": 6,
+    "author": "StarOrigin Editorial",
+    "thumb": {
+      "c1": "rgb(56 189 248/.5)",
+      "c2": "rgb(163 230 53/.35)"
+    }
+  },
+  {
+    "slug": "rpo-vs-agency-hiring",
+    "title": "RPO vs. agency hiring: which model fits a scaling team?",
+    "category": "Employers",
+    "excerpt": "A side-by-side on cost, control, scale and speed — plus a decision checklist and when a hybrid makes sense.",
+    "publishedAt": "2026-09-18",
+    "readMinutes": 7,
+    "author": "StarOrigin Editorial",
+    "thumb": {
+      "c1": "rgb(139 92 246/.45)",
+      "c2": "rgb(45 212 191/.4)"
+    }
+  },
+  {
+    "slug": "gcc-tier-2-cities",
+    "title": "Why global capability centres are looking beyond the metros",
+    "category": "Hiring Trends",
+    "excerpt": "What Tier-2 cities like Nagpur offer GCCs on talent depth, attrition and cost — and what they don't yet.",
+    "thumb": {
+      "c1": "rgb(163 230 53/.35)",
+      "c2": "rgb(56 189 248/.3)"
+    },
+    "publishedAt": "2026-11-01",
+    "readMinutes": 6,
+    "author": "StarOrigin Editorial",
+    "comingSoon": true,
+    "sample": "sample"
+  },
+  {
+    "slug": "uae-job-offer-guide",
+    "title": "Reading a UAE job offer: allowances, gratuity and the questions to ask",
+    "category": "Career Advice",
+    "excerpt": "How Gulf packages are usually structured, and how to compare an offer fairly against your current role.",
+    "thumb": {
+      "c1": "rgb(56 189 248/.4)",
+      "c2": "rgb(139 92 246/.35)"
+    },
+    "publishedAt": "2026-11-01",
+    "readMinutes": 6,
+    "author": "StarOrigin Editorial",
+    "comingSoon": true,
+    "sample": "sample"
+  },
+  {
+    "slug": "background-verification-policy",
+    "title": "Writing a background-verification policy candidates will trust",
+    "category": "Employers",
+    "excerpt": "Consent, scope and turnaround — a practical template for checks that protect you without slowing offers.",
+    "thumb": {
+      "c1": "rgb(45 212 191/.4)",
+      "c2": "rgb(163 230 53/.3)"
+    },
+    "publishedAt": "2026-11-01",
+    "readMinutes": 6,
+    "author": "StarOrigin Editorial",
+    "comingSoon": true,
+    "sample": "sample"
+  }
+]

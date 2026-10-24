@@ -1,0 +1,7 @@
+// Global styles entry. Tailwind is loaded separately (src/tailwind.css) before this file.
+//   _tokens      design tokens, dark default + light theme, theme toggle
+//   _components  design-system components (cascade layer "components")
+//   _primeng     PrimeNG skin to match the design system
+@use 'styles/tokens';
+@use 'styles/components';
+@use 'styles/primeng';

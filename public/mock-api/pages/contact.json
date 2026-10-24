@@ -1,0 +1,53 @@
+{
+  "slug": "contact",
+  "seo": {
+    "title": "Contact StarOrigin | Hiring, jobs and partnerships",
+    "description": "Contact StarOrigin by form, phone, email or WhatsApp. Offices in Nagpur, Hyderabad, Dubai and Dallas. Answers to common questions from employers and candidates."
+  },
+  "hero": {
+    "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Contact", "url": "/contact" }],
+    "title": "Let's start",
+    "highlight": "a conversation.",
+    "lead": "Hiring, job hunting or exploring a partnership? Tell us a little about what you need and the right person will get back to you."
+  },
+  "blocks": [],
+  "intents": [
+    { "value": "hire", "label": "I want to hire", "description": "Roles, staffing or RPO" },
+    { "value": "job", "label": "I'm looking for a job", "description": "Roles and CV questions" },
+    { "value": "partnership", "label": "Partnership", "description": "Vendors and alliances" },
+    { "value": "other", "label": "Other", "description": "Media and general queries" }
+  ],
+  "intentHints": {
+    "hire": { "text": "Have a specific role in mind? A hiring brief gets you a faster, more precise response.", "link": { "label": "Brief us on a role", "url": "/hire" } },
+    "job": { "text": "Looking for openings? Browse live roles from our clients and apply directly.", "link": { "label": "Browse jobs", "url": "/jobs" } }
+  },
+  "successTitle": "Message sent",
+  "successText": "Thanks for reaching out. A member of our team will reply within one business day.",
+  "faq": {
+    "heading": { "eyebrow": "FAQ", "title": "Questions,", "highlight": "answered.", "align": "center" },
+    "employers": [
+      { "question": "Which industries do you work with?", "answer": "Our clients span many industries, and we recruit across all functional areas." },
+      { "question": "Do you work with startups and small companies?", "answer": "Yes. We support new projects as well as small companies planning to expand." },
+      { "question": "What levels do you hire for?", "answer": "From managers up to CXO level." },
+      { "question": "Are your searches confidential?", "answer": "Yes. All searches and search criteria are kept confidential." },
+      { "question": "How do you find candidates?", "answer": "About 20% of placements come through job postings. The other 80% come from dedicated headhunting, approaching people who aren't actively applying." },
+      { "question": "Do you only hire in the cities where you have offices?", "answer": "No. We serve clients nationally, not just in Nagpur and Hyderabad, and internationally through our UAE and US entities. See <a href=\"/offices\">our offices</a>." }
+    ],
+    "candidates": [
+      { "question": "How do I apply for a role?", "answer": "Browse <a href=\"/jobs\">open jobs</a> and apply to any that fit, or <a href=\"/submit-cv\">submit your CV</a> and we'll match you to new openings." },
+      { "question": "Do I have to pay to use StarOrigin?", "answer": "Generally, no. Our fees are paid by the employers we recruit for, so job seekers aren't charged for our recruitment services." },
+      { "question": "How long do you keep my CV?", "answer": "How long we keep your data and how you can ask us to delete it is explained in our <a href=\"/legal/candidate-data\">candidate data notice</a>." },
+      { "question": "How do I update my profile or CV?", "answer": "Submit your latest CV through the <a href=\"/submit-cv\">CV form</a> using the same email address, or write to <a href=\"mailto:hello@starorigin.in\">hello@starorigin.in</a> with your changes." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Ready when you are",
+    "title": "Hiring or job hunting?",
+    "highlight": "Start here.",
+    "text": "Brief us on a role, or browse live openings from our clients.",
+    "ctas": [
+      { "label": "Hire talent", "url": "/hire", "variant": "glow" },
+      { "label": "Find jobs", "url": "/jobs", "variant": "ghost" }
+    ]
+  }
+}

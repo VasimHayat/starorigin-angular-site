@@ -1,0 +1,111 @@
+@switch (vm.state().status) {
+  @case ('loading') { <app-page-skeleton /> }
+  @case ('error') { <app-page-error [notFound]="vm.notFound()" /> }
+  @case ('success') {
+    @if (vm.page(); as p) {
+      <app-page-hero [hero]="p.hero" />
+
+      <section class="flush-top">
+        <div class="wrap layout-aside">
+          <div class="glass form-card">
+            @if (submitted()) {
+              <app-form-success [title]="p.successTitle" [text]="p.successText">
+                <button type="button" class="btn btn-ghost" (click)="submitted.set(false)">Send another message</button>
+                <a routerLink="/jobs" class="btn btn-glow">Browse jobs <app-icon name="arrow" /></a>
+              </app-form-success>
+            } @else {
+              <form class="form" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+                <app-form-field [control]="form.controls.intent" [messages]="{ required: 'Please choose an option.' }">
+                  <span class="lbl" id="intentLbl">How can we help? <span class="req">*</span></span>
+                  <app-radio-cards formControlName="intent" [options]="p.intents" ariaLabel="How can we help?" />
+                </app-form-field>
+                @if (hint(); as h) {
+                  <p class="intent-hint" role="status">
+                    <app-icon name="info" />
+                    <span>{{ h.text }} <a class="link" [routerLink]="h.link.url">{{ h.link.label }} <app-icon name="arrow" /></a></span>
+                  </p>
+                }
+                <div class="form-row">
+                  <app-form-field label="Full name" for="kName" required [control]="form.controls.name" [messages]="{ required: 'Please enter your name.' }">
+                    <input pInputText id="kName" formControlName="name" autocomplete="name" />
+                  </app-form-field>
+                  <app-form-field label="Email" for="kEmail" required [control]="form.controls.email" [messages]="{ required: 'Please enter a valid email.' }">
+                    <input pInputText id="kEmail" type="email" formControlName="email" autocomplete="email" />
+                  </app-form-field>
+                </div>
+                <div class="form-row">
+                  <app-form-field label="Phone" for="kPhone" required [control]="form.controls.phone" [messages]="{ required: 'Please enter a valid phone number.', pattern: 'Please enter a valid phone number.' }">
+                    <input pInputText id="kPhone" type="tel" formControlName="phone" autocomplete="tel" />
+                  </app-form-field>
+                  <app-form-field label="Company (optional)" for="kCompany" [control]="form.controls.company">
+                    <input pInputText id="kCompany" formControlName="company" autocomplete="organization" />
+                  </app-form-field>
+                </div>
+                <app-form-field label="Message" for="kMsg" required [control]="form.controls.message" [messages]="{ required: 'Please add a message.' }">
+                  <textarea pTextarea id="kMsg" rows="5" formControlName="message" placeholder="Tell us about the role, your search or your question."></textarea>
+                </app-form-field>
+                <app-form-field [control]="form.controls.consent" [messages]="{ required: 'Please accept to continue.' }">
+                  <div class="consent">
+                    <p-checkbox inputId="kConsent" formControlName="consent" [binary]="true" />
+                    <label for="kConsent">
+                      I agree that StarOrigin may use these details to respond to my enquiry, as described in the
+                      <a routerLink="/legal/privacy">privacy policy</a>.
+                    </label>
+                  </div>
+                </app-form-field>
+                <button type="submit" class="btn btn-glow btn-block" [disabled]="submitting()">
+                  @if (submitting()) { Sending… } @else { Send message <app-icon name="arrow" /> }
+                </button>
+              </form>
+            }
+          </div>
+
+          <aside class="sticky aside">
+            <div class="glass card channels">
+              <span class="tag">Direct channels</span>
+              <a class="link" [href]="'tel:' + contact.tel"><app-icon name="phone" />{{ contact.phone }} <small class="muted">India &amp; UAE</small></a>
+              <a class="link" [href]="'tel:' + contact.usTel"><app-icon name="phone" />{{ contact.usPhone }} <small class="muted">US</small></a>
+              <a class="link" [href]="'mailto:' + contact.email"><app-icon name="mail" />{{ contact.email }}</a>
+              <a class="link" [href]="contact.whatsapp" target="_blank" rel="noopener"><app-icon name="wa" />Chat on WhatsApp</a>
+              <a class="link" [href]="contact.linkedin" target="_blank" rel="noopener"><app-icon name="in" />Follow on LinkedIn</a>
+            </div>
+            <ul class="glass card offices" aria-label="Our offices">
+              @for (o of offices(); track o.id) {
+                <li>
+                  <span><b>{{ o.city }}</b><small>{{ o.code }}</small></span>
+                  <span class="t">
+                    <time>{{ timeIn(o) }}</time>
+                    <small [class.closed]="!isOpen(o)">{{ isOpen(o) ? 'Open' : 'Closed' }}</small>
+                  </span>
+                </li>
+              }
+            </ul>
+            <a routerLink="/offices" class="link">Office details &amp; maps <app-icon name="arrow" /></a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="narrow">
+          <app-section-heading [heading]="p.faq.heading" />
+          <p-tabs [value]="faqTab()" (valueChange)="faqTab.set($any($event))">
+            <p-tablist>
+              <p-tab value="employers">Employers</p-tab>
+              <p-tab value="candidates">Candidates</p-tab>
+            </p-tablist>
+            <p-tabpanels>
+              <p-tabpanel value="employers">
+                <app-faq-accordion [items]="p.faq.employers" />
+              </p-tabpanel>
+              <p-tabpanel value="candidates">
+                <app-faq-accordion [items]="p.faq.candidates" />
+              </p-tabpanel>
+            </p-tabpanels>
+          </p-tabs>
+        </div>
+      </section>
+
+      @if (p.cta) { <app-cta-band [band]="p.cta" /> }
+    }
+  }
+}

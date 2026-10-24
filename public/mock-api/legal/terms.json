@@ -1,0 +1,71 @@
+{
+  "slug": "terms",
+  "title": "Terms of use",
+  "headline": {
+    "title": "Terms of",
+    "highlight": "use"
+  },
+  "seo": {
+    "title": "Terms of Use",
+    "description": "The terms that govern your use of the StarOrigin website, job listings and online forms."
+  },
+  "updatedAt": "2026-10-23",
+  "draftNotice": "<strong>Draft template</strong> — to be reviewed and approved by StarOrigin's legal counsel before publishing.",
+  "intro": "<p>These terms govern your use of the StarOrigin website, including its job listings, CV submission and enquiry forms (together, the \"Site\"). The Site is operated by StarOrigin Pvt. Ltd. on behalf of the StarOrigin group, including StarOrigin LLC FZ (UAE) and StarOrigin Inc (USA). By using the Site you agree to these terms. If you do not agree, please do not use the Site.</p>",
+  "sections": [
+    {
+      "id": "use",
+      "heading": "1. Using the Site",
+      "html": "<ul><li>You must be at least 18 years old, or the minimum legal working age in your country, to submit an application.</li><li>You agree to use the Site lawfully and not to interfere with its operation, attempt unauthorised access, scrape content at scale, or upload malicious code.</li><li>You must not impersonate another person or submit information you are not entitled to share.</li></ul>",
+      "tocLabel": "Using the Site"
+    },
+    {
+      "id": "candidates",
+      "heading": "2. Candidates",
+      "html": "<ul><li>Information you submit — including your CV — must be accurate and your own. Misrepresentation may lead us to withdraw your application.</li><li>Submitting a CV does not guarantee an interview, offer or placement. Hiring decisions are made by our clients.</li><li><strong>We never charge candidates a fee</strong> for placement, interviews or job offers. If anyone asks for payment in StarOrigin's name, please report it to <a href=\"mailto:hello@starorigin.in\">hello@starorigin.in</a>.</li><li>How we handle your data is described in our <a href=\"/legal/candidate-data\">Candidate data notice</a> and <a href=\"/legal/privacy\">Privacy policy</a>.</li></ul>",
+      "tocLabel": "Candidates"
+    },
+    {
+      "id": "employers",
+      "heading": "3. Employers",
+      "html": "<p>Submitting a hiring request through the Site is an enquiry, not a contract. Recruitment, staffing and related services are provided only under a separate written agreement, whose terms prevail over these terms in case of conflict. Candidate information shared with you must be used only for the purpose of evaluating that candidate and handled in line with applicable data protection law.</p>",
+      "tocLabel": "Employers"
+    },
+    {
+      "id": "listings",
+      "heading": "4. Job listings and content",
+      "html": "<p>We try to keep job listings and other content accurate and current, but roles may be filled, changed or withdrawn without notice, and some listings may be illustrative. Articles and guides are general information, not legal, financial or career advice tailored to your situation.</p>",
+      "tocLabel": "Job listings and content"
+    },
+    {
+      "id": "ip",
+      "heading": "5. Intellectual property",
+      "html": "<p>The Site's design, text, graphics, logos and code are owned by or licensed to StarOrigin and protected by intellectual property laws. You may view and print pages for personal, non-commercial use. Any other reproduction requires our prior written permission. \"StarOrigin\" and the StarOrigin logo are our trade marks.</p>",
+      "tocLabel": "Intellectual property"
+    },
+    {
+      "id": "third-party",
+      "heading": "6. Third-party links",
+      "html": "<p>The Site may link to third-party websites, such as social networks or map services. We are not responsible for their content or privacy practices; your use of them is governed by their own terms.</p>",
+      "tocLabel": "Third-party links"
+    },
+    {
+      "id": "liability",
+      "heading": "7. Disclaimers and liability",
+      "html": "<div class=\"callout\">The Site is provided \"as is\" and \"as available\". To the fullest extent permitted by law, we exclude all warranties, and we are not liable for indirect or consequential loss, loss of data or loss of opportunity arising from your use of the Site. Nothing in these terms limits liability that cannot be limited under applicable law.</div>",
+      "tocLabel": "Disclaimers and liability"
+    },
+    {
+      "id": "law",
+      "heading": "8. Governing law",
+      "html": "<p>These terms are governed by the laws of India, and the courts at Nagpur, Maharashtra have jurisdiction, unless mandatory law in your country of residence gives you the right to bring proceedings elsewhere. Services contracted with our UAE or US entities are governed by the law specified in the relevant agreement.</p>",
+      "tocLabel": "Governing law"
+    },
+    {
+      "id": "changes",
+      "heading": "9. Changes and contact",
+      "html": "<p>We may update these terms from time to time; the \"Last updated\" date shows the latest version. Continued use of the Site after changes means you accept them. Questions? Write to <a href=\"mailto:hello@starorigin.in\">hello@starorigin.in</a> or use our <a href=\"/contact\">contact page</a>.</p>\n<p>Related: <a href=\"/legal/privacy\">Privacy policy</a> · <a href=\"/legal/cookies\">Cookie policy</a> · <a href=\"/legal/candidate-data\">Candidate data notice</a></p>",
+      "tocLabel": "Changes and contact"
+    }
+  ]
+}

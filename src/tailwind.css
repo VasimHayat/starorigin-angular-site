@@ -1,0 +1,32 @@
+/* Tailwind v4 entry. Kept as plain CSS (Tailwind v4 is not processed through Sass).
+   Layer order: PrimeNG sits below our design-system "components" layer so our styles win,
+   and Tailwind utilities sit on top so a utility class always wins. */
+@layer theme, base, primeng, components, utilities;
+
+@import "tailwindcss";
+@plugin "tailwindcss-primeui";
+
+/* Expose the design tokens (defined in styles/_tokens.scss) to Tailwind utilities,
+   e.g. bg-panel, text-muted, border-stroke, font-head, text-teal. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-stroke: var(--stroke);
+  --color-stroke-2: var(--stroke-2);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-dim: var(--dim);
+  --color-teal: var(--teal);
+  --color-cyan: var(--cyan);
+  --color-lime: var(--lime);
+  --color-danger: var(--danger);
+  --font-head: var(--head);
+  --font-body: var(--body);
+  --font-mono: var(--mono);
+  --radius-card: var(--r);
+}
+
+/* Dark is the default; `dark:` variants apply unless the light theme is active. */
+@custom-variant dark (&:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *));

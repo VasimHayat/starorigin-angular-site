@@ -1,0 +1,184 @@
+@switch (state().status) {
+  @case ('loading') { <app-page-skeleton /> }
+  @case ('error') { <app-page-error /> }
+  @case ('success') {
+    @if (page(); as p) {
+      <app-page-hero class="hire-hero" [hero]="p.hero" />
+
+      <section class="flush-top">
+        <div class="wrap layout-aside">
+          <div appSpotlight appReveal class="card brief">
+            @if (submitted()) {
+              <app-form-success
+                title="Brief received."
+                [text]="'Thank you — a practice head will reply within one business day to book a short call. Need us sooner? Call ' + contact.phone + '.'"
+              >
+                <a routerLink="/" class="btn btn-ghost">Back to home</a>
+                <a routerLink="/services" class="btn btn-primary">Explore services <app-icon name="arrow" /></a>
+              </app-form-success>
+            } @else {
+              <form [formGroup]="form" class="form" novalidate aria-label="Hiring brief" (ngSubmit)="submit()">
+                <p-stepper [value]="step()" [linear]="true">
+                  <p-step-list>
+                    <p-step [value]="1">Role</p-step>
+                    <p-step [value]="2">Details</p-step>
+                    <p-step [value]="3">Contact</p-step>
+                  </p-step-list>
+                  <p-step-panels>
+                    <!-- STEP 1: ROLE -->
+                    <p-step-panel [value]="1">
+                      <ng-template #content>
+                        <div class="fstep-body" formGroupName="role">
+                          <app-form-field label="Service needed" for="hService" required [control]="c.role.service"
+                            [messages]="{ required: 'Please choose a service, or &quot;Not sure yet&quot;.' }">
+                            <p-select inputId="hService" formControlName="service" [options]="serviceOptions()" optionLabel="label"
+                              optionValue="value" placeholder="Select a service" styleClass="w-full" />
+                          </app-form-field>
+                          <app-form-field label="Role title" for="hRole" required [control]="c.role.roleTitle"
+                            [messages]="{ required: 'Please tell us the role you’re hiring for.' }">
+                            <input pInputText id="hRole" formControlName="roleTitle" autocomplete="off"
+                              placeholder="e.g. Oracle FLEXCUBE Project Manager" class="w-full" />
+                          </app-form-field>
+                          <div class="form-row">
+                            <app-form-field label="Seniority" for="hLevel" required [control]="c.role.seniority"
+                              [messages]="{ required: 'Please choose a seniority level.' }">
+                              <p-select inputId="hLevel" formControlName="seniority" [options]="seniorityOptions"
+                                placeholder="Select level" styleClass="w-full" />
+                            </app-form-field>
+                            <app-form-field label="Number of hires" for="hCount" required [control]="c.role.hires"
+                              [messages]="{ required: 'Please choose how many hires you need.' }">
+                              <p-select inputId="hCount" formControlName="hires" [options]="hiresOptions" placeholder="Select"
+                                styleClass="w-full" />
+                            </app-form-field>
+                          </div>
+                          <div class="form-nav">
+                            <span></span>
+                            <button type="button" class="btn btn-primary" (click)="next(form.controls.role, 2)">Continue</button>
+                          </div>
+                        </div>
+                      </ng-template>
+                    </p-step-panel>
+
+                    <!-- STEP 2: DETAILS -->
+                    <p-step-panel [value]="2">
+                      <ng-template #content>
+                        <div class="fstep-body" formGroupName="details">
+                          <app-form-field label="Location(s)" for="hLoc" required [control]="c.details.locations"
+                            hint="Cities, countries or remote — we hire across India, the UAE and the US."
+                            [messages]="{ required: 'Please add at least one location.' }">
+                            <input pInputText id="hLoc" formControlName="locations" placeholder="e.g. Bangalore, Dubai, remote (US)"
+                              class="w-full" />
+                          </app-form-field>
+                          <app-form-field label="When do you need them?" required [control]="c.details.timeline"
+                            [messages]="{ required: 'Please choose a timeline.' }">
+                            <app-radio-cards formControlName="timeline" ariaLabel="When do you need them?" [options]="timelineOptions" />
+                          </app-form-field>
+                          <app-form-field label="Budget / CTC range (optional)" for="hBudget">
+                            <input pInputText id="hBudget" formControlName="budget" placeholder="e.g. ₹35–45 LPA, AED 40k/month, $120k"
+                              class="w-full" />
+                          </app-form-field>
+                          <app-form-field label="About the role (optional)" for="hDesc">
+                            <textarea pTextarea id="hDesc" formControlName="description" rows="5" class="w-full"
+                              placeholder="Must-have skills, team context, reporting line, anything confidential we should know…"></textarea>
+                          </app-form-field>
+                          <div class="form-nav">
+                            <button type="button" class="btn btn-ghost" (click)="back(1)">Back</button>
+                            <button type="button" class="btn btn-primary" (click)="next(form.controls.details, 3)">Continue</button>
+                          </div>
+                        </div>
+                      </ng-template>
+                    </p-step-panel>
+
+                    <!-- STEP 3: CONTACT -->
+                    <p-step-panel [value]="3">
+                      <ng-template #content>
+                        <div class="fstep-body" formGroupName="contact">
+                          <div class="form-row">
+                            <app-form-field label="Full name" for="hName" required [control]="c.contact.name"
+                              [messages]="{ required: 'Please enter your name.' }">
+                              <input pInputText id="hName" formControlName="name" autocomplete="name" class="w-full" />
+                            </app-form-field>
+                            <app-form-field label="Company" for="hCompany" required [control]="c.contact.company"
+                              [messages]="{ required: 'Please enter your company.' }">
+                              <input pInputText id="hCompany" formControlName="company" autocomplete="organization" class="w-full" />
+                            </app-form-field>
+                          </div>
+                          <div class="form-row">
+                            <app-form-field label="Work email" for="hEmail" required [control]="c.contact.email"
+                              [messages]="{ required: 'Please enter a valid work email.', email: 'Please enter a valid work email.' }">
+                              <input pInputText id="hEmail" type="email" formControlName="email" autocomplete="email"
+                                placeholder="you@company.com" class="w-full" />
+                            </app-form-field>
+                            <app-form-field label="Phone" for="hPhone" required [control]="c.contact.phone"
+                              [messages]="{ required: 'Please enter a phone number we can call.', pattern: 'Please enter a phone number we can call.' }">
+                              <input pInputText id="hPhone" type="tel" formControlName="phone" autocomplete="tel"
+                                placeholder="+91 / +971 / +1 …" class="w-full" />
+                            </app-form-field>
+                          </div>
+                          <app-form-field [control]="c.contact.consent" [messages]="{ required: 'Please accept to continue.' }">
+                            <div class="consent">
+                              <p-checkbox inputId="hConsent" formControlName="consent" [binary]="true" />
+                              <label for="hConsent">
+                                I agree that StarOrigin may use these details to respond to my hiring enquiry, as described in the
+                                <a routerLink="/legal/privacy">privacy policy</a>.
+                              </label>
+                            </div>
+                          </app-form-field>
+                          <div class="form-nav">
+                            <button type="button" class="btn btn-ghost" (click)="back(2)">Back</button>
+                            <button type="submit" class="btn btn-glow" [disabled]="sending()">
+                              {{ sending() ? 'Sending…' : 'Send brief' }}
+                              @if (!sending()) {<app-icon name="arrow" />}
+                            </button>
+                          </div>
+                        </div>
+                      </ng-template>
+                    </p-step-panel>
+                  </p-step-panels>
+                </p-stepper>
+              </form>
+            }
+          </div>
+
+          <aside class="sticky aside" aria-label="What happens next and direct contact">
+            @if (nextSteps(); as ns) {
+              <div appSpotlight appReveal class="card">
+                <span class="tag">{{ ns.heading?.eyebrow }}</span>
+                <app-process-steps class="next" [steps]="ns.items" variant="timeline" />
+              </div>
+            }
+
+            <div appSpotlight appReveal class="card">
+              <span class="tag">Prefer to talk?</span>
+              <ul class="checks">
+                <li>
+                  <app-icon name="phone" />
+                  <span><a [href]="'tel:' + contact.tel">{{ contact.phone }}</a><br /><small class="muted">India · UAE</small></span>
+                </li>
+                <li>
+                  <app-icon name="phone" />
+                  <span><a [href]="'tel:' + contact.usTel">{{ contact.usPhone }}</a><br /><small class="muted">United States · Dallas</small></span>
+                </li>
+                <li><app-icon name="mail" /><a [href]="'mailto:' + contact.email">{{ contact.email }}</a></li>
+                <li><app-icon name="wa" /><a [href]="contact.whatsapp" target="_blank" rel="noopener">Message us on WhatsApp</a></li>
+              </ul>
+            </div>
+
+            @if (trust(); as t) {
+              <div appReveal class="card highlight trust">
+                <span class="tag">{{ t.heading?.eyebrow }}</span>
+                <ul class="checks">
+                  @for (item of t.items; track item.title) {
+                    <li><app-icon [name]="item.icon ?? 'check'" />{{ item.title }}</li>
+                  }
+                </ul>
+              </div>
+            }
+          </aside>
+        </div>
+      </section>
+
+      <div class="reassure"><app-block-renderer [blocks]="reassurance()" /></div>
+    }
+  }
+}

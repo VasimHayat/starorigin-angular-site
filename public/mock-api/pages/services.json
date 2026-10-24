@@ -1,0 +1,173 @@
+{
+  "slug": "services",
+  "seo": {
+    "title": "Hiring & Staffing Services",
+    "description": "Executive search, mid-senior and bulk hiring, flexible staffing, US staffing, RPO, interim management and background verification — one accountable partner."
+  },
+  "hero": {
+    "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Services", "url": "/services" }],
+    "title": "Every way you hire,",
+    "highlight": "one accountable partner.",
+    "lead": "From a confidential CXO search to staffing a new site, pick the model that fits the role — or tell us the brief and we'll recommend one.",
+    "ctas": [
+      { "label": "Get a hiring plan", "url": "/hire", "variant": "glow" },
+      { "label": "Compare models", "url": "/services#compare", "variant": "ghost" }
+    ]
+  },
+  "bento": {
+    "after": 1,
+    "id": "all",
+    "heading": {
+      "eyebrow": "Our services",
+      "title": "Built around",
+      "highlight": "how you grow.",
+      "lead": "Permanent, contract or fully outsourced — each service is run by a specialist team with one point of contact."
+    },
+    "featured": {
+      "executive-search": {
+        "size": "xl",
+        "text": "Confidential, research-led search for CXO and leadership roles — mapped to your strategy, not just a job description.",
+        "tags": ["Market mapping", "Confidential", "Offer negotiation"],
+        "viz": [
+          { "value": "CXO", "label": "COO · CFO · CTO · CIO" },
+          { "value": "100%", "label": "Confidential searches" },
+          { "value": "80%", "label": "Filled via headhunting" }
+        ]
+      },
+      "rpo": {
+        "size": "l",
+        "text": "We become your talent-acquisition team — sourcing to onboarding, under your brand.",
+        "linkLabel": "Explore RPO"
+      }
+    }
+  },
+  "blocks": [
+    {
+      "type": "stats",
+      "tight": true,
+      "items": [
+        { "value": "8,240+", "label": "Candidate profiles in our talent network", "highlight": true },
+        { "value": "8", "label": "Specialised hiring & staffing services" },
+        { "value": "4", "label": "Offices in India, the UAE and the US" },
+        { "value": "Mgr→CXO", "label": "Positions from managers to the C-suite" }
+      ]
+    },
+    {
+      "type": "tabs",
+      "id": "compare",
+      "heading": {
+        "eyebrow": "Which model fits you?",
+        "title": "Four models,",
+        "highlight": "side by side.",
+        "lead": "Timelines and pricing below are typical ranges to help you shortlist — every engagement is scoped to your brief.",
+        "sample": "sample ranges — confirm"
+      },
+      "tabs": [
+        {
+          "label": "Executive Search",
+          "blocks": [
+            {
+              "type": "cards",
+              "columns": 3,
+              "items": [
+                { "eyebrow": "Best for", "title": "One critical leadership hire", "text": "CXO, VP and functional heads — confidential replacements, new market entries and transformation mandates." },
+                { "eyebrow": "Timeline", "title": "6–12 weeks", "text": "From brief to accepted offer, with a shortlist of 3–5 assessed candidates along the way.", "sample": "sample" },
+                { "eyebrow": "Pricing model", "title": "Retained fee", "text": "Typically a percentage of first-year CTC, staged across search milestones.", "sample": "sample", "link": { "label": "Executive Search", "url": "/services/executive-search" } }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "RPO",
+          "blocks": [
+            {
+              "type": "cards",
+              "columns": 3,
+              "items": [
+                { "eyebrow": "Best for", "title": "Ongoing, multi-role hiring", "text": "Companies that need a predictable pipeline across functions without growing an in-house TA team." },
+                { "eyebrow": "Timeline", "title": "Live in 2–4 weeks", "text": "Discovery, process design and recruiter onboarding, then continuous delivery against SLAs.", "sample": "sample" },
+                { "eyebrow": "Pricing model", "title": "Monthly + per hire", "text": "A management fee for the embedded team, plus a success fee per hire — or per-project pricing.", "sample": "sample", "link": { "label": "RPO", "url": "/services/rpo" } }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Bulk Hiring",
+          "blocks": [
+            {
+              "type": "cards",
+              "columns": 3,
+              "items": [
+                { "eyebrow": "Best for", "title": "Many similar roles, fast", "text": "New sites, plant expansions, project ramp-ups and seasonal peaks." },
+                { "eyebrow": "Timeline", "title": "2–6 weeks per drive", "text": "Depends on volume, locations and assessment steps agreed at kick-off.", "sample": "sample" },
+                { "eyebrow": "Pricing model", "title": "Per hire, tiered", "text": "A fixed fee per joiner, with volume tiers for larger drives.", "sample": "sample", "link": { "label": "Bulk Hiring", "url": "/services/bulk-hiring" } }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Flexible Staffing",
+          "blocks": [
+            {
+              "type": "cards",
+              "columns": 3,
+              "items": [
+                { "eyebrow": "Best for", "title": "Flexible capacity", "text": "Projects, backfills and skills you need now — without adding permanent headcount." },
+                { "eyebrow": "Timeline", "title": "Days to 2 weeks", "text": "Deploy from our pre-screened network; scale up or down as the work changes.", "sample": "sample" },
+                { "eyebrow": "Pricing model", "title": "Monthly bill rate", "text": "One invoice covering salary, statutory costs, compliance and our service fee.", "sample": "sample", "link": { "label": "Flexible Staffing", "url": "/services/flexible-staffing" } }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "id": "taas",
+      "tight": true,
+      "heading": {
+        "eyebrow": "Talent-as-a-Service",
+        "title": "Why teams choose",
+        "highlight": "TaaS.",
+        "lead": "Our flexible staffing model gives you ready talent on demand — with the employer responsibilities handled by us.",
+        "link": { "label": "How TaaS works", "url": "/services/flexible-staffing" }
+      },
+      "badge": "10 benefits",
+      "title": "Ten reasons, one model",
+      "items": [
+        "Extensive Talent Network",
+        "Quick Response Time",
+        "Competitive Cost",
+        "Instant Productivity",
+        "Upskilling & Cross Skilling",
+        "Customised Talent Solutions",
+        "Specialised Experts",
+        "Support & Monitoring",
+        "Flexibility to Ramp up/down",
+        "Soft Skills Trained"
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "tight": true,
+      "heading": { "eyebrow": "Not sure?", "title": "Common questions.", "align": "center" },
+      "items": [
+        { "question": "Which service should I start with?", "answer": "Tell us the roles, volumes and timelines. We'll recommend a model — often a mix, such as executive search for the leader and bulk hiring for the team." },
+        { "question": "Can you hire outside your office cities?", "answer": "Yes. We serve clients across India and internationally through our UAE and US entities, from offices in Nagpur, Hyderabad, Dubai and Dallas." },
+        { "question": "Are searches confidential?", "answer": "Yes. All searches and search criteria are kept confidential, and client identity is shared only at the stage you approve." },
+        { "question": "Do you also help candidates?", "answer": "Yes — candidates can <a href=\"/jobs\">browse open roles</a> or <a href=\"/submit-cv\">submit a CV</a> to join our network." }
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Free hiring consultation",
+    "title": "Tell us the role.",
+    "highlight": "We'll design the hire.",
+    "text": "Share your brief and a specialist will respond within one business day with a recommended model and plan.",
+    "ctas": [
+      { "label": "Get a hiring plan", "url": "/hire", "variant": "glow" },
+      { "label": "+91 83810 84000", "url": "tel:+918381084000", "variant": "ghost", "icon": "phone" }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+:host { display: block; }
+
+.feature {
+  padding: 24px;
+  gap: 48px;
+  border-radius: 28px;
+}
+.feature-photo { max-width: 440px; width: 100%; }
+.feature-body { padding: 8px; }
+.feature-body h2 { font-size: clamp(34px, 4.4vw, 56px); margin: 18px 0 8px; }
+.role {
+  font: 500 13px/1 var(--mono);
+  color: var(--teal);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.bio { font-size: 17px; margin-bottom: 16px; }
+.focus { font-size: 15px; margin-bottom: 28px; }
+
+.join {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.join-copy { display: flex; gap: 18px; align-items: center; max-width: 640px; }
+
+@media (max-width: 760px) {
+  .feature { padding: 16px; gap: 24px; }
+  .join-copy { align-items: flex-start; }
+}

@@ -1,0 +1,218 @@
+// PrimeNG skin: make PrimeNG components match the StarOrigin glass design system.
+// The preset (app/core/theme/primeng-preset.ts) sets the palette; these rules
+// handle surfaces, radii and focus states that are easier to express in CSS.
+
+@layer components {
+  // ---- form controls ----
+  .p-inputtext,
+  .p-textarea,
+  .p-select,
+  .p-multiselect,
+  .p-inputmask {
+    width: 100%;
+    background: rgb(var(--fg-rgb) / 0.03);
+    border: 1px solid var(--stroke-2);
+    border-radius: 12px;
+    color: var(--text);
+    font: inherit;
+    font-size: 15px;
+    box-shadow: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  }
+  .p-inputtext,
+  .p-textarea {
+    padding: 14px 16px;
+  }
+  .p-select .p-select-label,
+  .p-multiselect .p-multiselect-label {
+    padding: 14px 16px;
+    color: var(--text);
+  }
+  .p-select .p-select-label.p-placeholder,
+  .p-multiselect .p-multiselect-label.p-placeholder,
+  .p-inputtext::placeholder,
+  .p-textarea::placeholder {
+    color: var(--dim);
+  }
+  .p-inputtext:enabled:focus,
+  .p-textarea:enabled:focus,
+  .p-select.p-focus,
+  .p-multiselect.p-focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 0 4px rgb(45 212 191 / 0.15);
+    background: rgb(var(--fg-rgb) / 0.05);
+  }
+  .p-inputtext.ng-invalid.ng-touched,
+  .p-textarea.ng-invalid.ng-touched,
+  .p-select.ng-invalid.ng-touched {
+    border-color: var(--danger);
+  }
+  .p-select-overlay,
+  .p-multiselect-overlay {
+    background: var(--bg-2);
+    border: 1px solid var(--stroke-2);
+    border-radius: 14px;
+    box-shadow: 0 30px 80px rgb(var(--shadow-rgb) / 0.4);
+  }
+  .p-select-option,
+  .p-multiselect-option {
+    color: var(--muted);
+    border-radius: 10px;
+  }
+  .p-select-option.p-focus,
+  .p-multiselect-option.p-focus,
+  .p-select-option:not(.p-disabled):hover {
+    background: var(--panel-2);
+    color: var(--text);
+  }
+  .p-select-option.p-select-option-selected {
+    background: rgb(45 212 191 / 0.12);
+    color: var(--teal);
+  }
+  .p-checkbox .p-checkbox-box,
+  .p-radiobutton .p-radiobutton-box {
+    background: var(--panel);
+    border-color: var(--stroke-2);
+  }
+  .p-checkbox-checked .p-checkbox-box,
+  .p-radiobutton-checked .p-radiobutton-box {
+    background: var(--teal);
+    border-color: var(--teal);
+  }
+
+  // ---- accordion (FAQ) ----
+  .p-accordion {
+    display: grid;
+    gap: 10px;
+  }
+  .p-accordionpanel {
+    border: 1px solid var(--stroke) !important;
+    border-radius: 16px;
+    background: var(--panel);
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .p-accordionpanel[data-p-active='true'] {
+    border-color: rgb(45 212 191 / 0.35) !important;
+  }
+  .p-accordionheader {
+    background: transparent !important;
+    color: var(--text) !important;
+    padding: 20px 22px;
+    font-weight: 600;
+    font-size: 16px;
+    border: 0 !important;
+  }
+  .p-accordioncontent-content {
+    background: transparent !important;
+    color: var(--muted) !important;
+    padding: 0 22px 22px !important;
+    font-size: 15.5px;
+    border: 0 !important;
+  }
+
+  // ---- tabs ----
+  .p-tabs {
+    background: transparent;
+  }
+  .p-tablist-tab-list {
+    background: var(--panel) !important;
+    border: 1px solid var(--stroke) !important;
+    border-radius: 14px;
+    padding: 5px;
+    gap: 6px;
+    width: max-content;
+    max-width: 100%;
+  }
+  .p-tablist-active-bar {
+    display: none;
+  }
+  .p-tab {
+    border: 0 !important;
+    border-radius: 10px;
+    padding: 10px 16px !important;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--muted) !important;
+    background: transparent !important;
+  }
+  .p-tab.p-tab-active {
+    background: var(--text) !important;
+    color: var(--bg) !important;
+  }
+  .p-tabpanels {
+    background: transparent !important;
+    padding: 28px 0 0 !important;
+    color: inherit;
+  }
+
+  // ---- stepper ----
+  .p-stepper .p-steplist {
+    padding: 0 0 24px;
+  }
+  .p-stepper .p-step-number {
+    background: var(--bg-2);
+    border: 1px solid var(--stroke-2);
+    color: var(--muted);
+    font-family: var(--mono);
+  }
+  .p-stepper .p-step-active .p-step-number {
+    background: var(--teal);
+    border-color: var(--teal);
+    color: var(--on-grad);
+  }
+  .p-stepper .p-step-title {
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .p-stepper .p-step-active .p-step-title {
+    color: var(--text);
+  }
+  .p-stepper-separator {
+    background: var(--stroke-2);
+  }
+  .p-steppanels,
+  .p-steppanel {
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  // ---- toast ----
+  .p-toast-message {
+    background: rgb(var(--glass-rgb) / 0.95) !important;
+    border: 1px solid rgb(45 212 191 / 0.4) !important;
+    border-radius: 14px !important;
+    color: var(--text) !important;
+    backdrop-filter: blur(16px);
+  }
+  .p-toast-message-error {
+    border-color: var(--danger) !important;
+  }
+
+  // ---- drawer (mobile menu) ----
+  .p-drawer {
+    background: rgb(var(--bg-rgb) / 0.97) !important;
+    border: 0 !important;
+    color: var(--text) !important;
+    backdrop-filter: blur(20px);
+  }
+  .p-drawer-header {
+    padding: 20px 24px !important;
+  }
+  .p-drawer-content {
+    padding: 0 24px 24px !important;
+  }
+
+  // ---- tags / skeleton ----
+  .p-tag {
+    font-family: var(--mono);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 10.5px;
+  }
+  .p-skeleton {
+    background: var(--panel-2) !important;
+    border-radius: 12px;
+  }
+}

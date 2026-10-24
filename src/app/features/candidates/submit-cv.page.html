@@ -1,0 +1,120 @@
+@if (page(); as p) {
+  <app-page-hero [hero]="p.hero" />
+
+  <section class="flush-top">
+    <div class="wrap layout-aside">
+      <div class="glass card form-card">
+        @if (done()) {
+          <app-form-success title="You're registered" text="Thanks — your CV is in. When a matching role opens, a recruiter will call you to talk it through first.">
+            <a routerLink="/jobs" class="btn btn-glow btn-sm">Browse live jobs <app-icon name="arrow" /></a>
+            <a routerLink="/career-resources" class="btn btn-ghost btn-sm">Career resources</a>
+          </app-form-success>
+        } @else {
+          <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+            <p-stepper [value]="step()" (valueChange)="goTo($event)" [linear]="true">
+              <p-step-list>
+                <p-step [value]="1">About you</p-step>
+                <p-step [value]="2">Preferences &amp; CV</p-step>
+              </p-step-list>
+              <p-step-panels>
+                <p-step-panel [value]="1">
+                  <ng-template #content>
+                    <div class="form" formGroupName="about">
+                      <div class="form-row">
+                        <app-form-field label="Full name" for="sName" required [control]="about.name" [messages]="{ required: 'Please enter your name.' }">
+                          <input pInputText id="sName" formControlName="name" autocomplete="name" />
+                        </app-form-field>
+                        <app-form-field label="Email" for="sEmail" required [control]="about.email" [messages]="{ required: 'Please enter a valid email.' }">
+                          <input pInputText id="sEmail" type="email" formControlName="email" autocomplete="email" />
+                        </app-form-field>
+                      </div>
+                      <div class="form-row">
+                        <app-form-field label="Phone" for="sPhone" required [control]="about.phone" [messages]="{ required: 'Please enter a valid phone number.', pattern: 'Please enter a valid phone number.' }">
+                          <input pInputText id="sPhone" type="tel" formControlName="phone" autocomplete="tel" placeholder="+91" />
+                        </app-form-field>
+                        <app-form-field label="Current location" for="sLoc" required [control]="about.currentLocation" [messages]="{ required: 'Please enter your city.' }">
+                          <input pInputText id="sLoc" formControlName="currentLocation" autocomplete="address-level2" placeholder="City, country" />
+                        </app-form-field>
+                      </div>
+                      <div class="form-row">
+                        <app-form-field label="Current job title" for="sTitle" required [control]="about.currentRole" [messages]="{ required: 'Please enter your current title.' }">
+                          <input pInputText id="sTitle" formControlName="currentRole" autocomplete="organization-title" placeholder="e.g. FLEXCUBE Consultant" />
+                        </app-form-field>
+                        <app-form-field label="Total experience" for="sExp" required [control]="about.experience" [messages]="{ required: 'Please choose your experience.' }">
+                          <p-select inputId="sExp" formControlName="experience" [options]="experience" placeholder="Select" appendTo="body" />
+                        </app-form-field>
+                      </div>
+                      <app-form-field label="LinkedIn profile" for="sLinkedin" hint="Optional — helps us match you faster." [control]="about.linkedinUrl" [messages]="{ pattern: 'Enter a full LinkedIn URL, e.g. https://www.linkedin.com/in/your-name' }">
+                        <input pInputText id="sLinkedin" type="url" formControlName="linkedinUrl" autocomplete="url" placeholder="https://www.linkedin.com/in/" />
+                      </app-form-field>
+                      <div class="form-nav end">
+                        <button type="button" class="btn btn-glow" (click)="goTo(2)">Continue <app-icon name="arrow" /></button>
+                      </div>
+                    </div>
+                  </ng-template>
+                </p-step-panel>
+
+                <p-step-panel [value]="2">
+                  <ng-template #content>
+                    <div class="form" formGroupName="prefs">
+                      <div class="form-row">
+                        <app-form-field label="Functions you're interested in" for="sFn">
+                          <p-multiselect inputId="sFn" formControlName="functions" [options]="functionOptions" optionLabel="label" optionValue="value" placeholder="Select functions" display="chip" [showToggleAll]="false" appendTo="body" />
+                        </app-form-field>
+                        <app-form-field label="Preferred locations" for="sPrefLoc">
+                          <p-multiselect inputId="sPrefLoc" formControlName="preferredLocations" [options]="locationOptions" optionLabel="label" optionValue="value" placeholder="Select locations" display="chip" [showToggleAll]="false" appendTo="body" />
+                        </app-form-field>
+                      </div>
+                      <div class="form-row">
+                        <app-form-field label="Expected role" for="sRole" required [control]="prefs.expectedRole" [messages]="{ required: 'Tell us the role you\'re looking for.' }">
+                          <input pInputText id="sRole" formControlName="expectedRole" placeholder="e.g. OFSAA Technical Lead" />
+                        </app-form-field>
+                        <app-form-field label="Notice period" for="sNotice" required [control]="prefs.noticePeriod" [messages]="{ required: 'Please choose your notice period.' }">
+                          <p-select inputId="sNotice" formControlName="noticePeriod" [options]="notice" placeholder="Select" appendTo="body" />
+                        </app-form-field>
+                      </div>
+                      <app-form-field label="Open to relocation?" required [control]="prefs.relocation" [messages]="{ required: 'Please choose an option.' }">
+                        <app-radio-cards formControlName="relocation" [options]="relocation" ariaLabel="Open to relocation?" />
+                      </app-form-field>
+                      <app-form-field label="CV" required [control]="prefs.cv" [messages]="{ required: 'Please attach your CV.' }">
+                        <app-file-drop formControlName="cv" />
+                      </app-form-field>
+                      <app-form-field [control]="prefs.consent" [messages]="{ required: 'Please give consent so we can register your CV.' }">
+                        <div class="consent">
+                          <p-checkbox inputId="sConsent" formControlName="consent" [binary]="true" />
+                          <label for="sConsent">
+                            I agree that StarOrigin may store and process my details to match me with suitable roles, as described in the
+                            <a routerLink="/legal/candidate-data">candidate data notice</a>.
+                          </label>
+                        </div>
+                      </app-form-field>
+                      <div class="form-nav">
+                        <button type="button" class="btn btn-ghost" (click)="goTo(1)"><app-icon name="arrow-l" />Back</button>
+                        <button type="submit" class="btn btn-glow" [disabled]="sending()">
+                          {{ sending() ? 'Sending…' : 'Submit CV' }} <app-icon name="arrow" />
+                        </button>
+                      </div>
+                    </div>
+                  </ng-template>
+                </p-step-panel>
+              </p-step-panels>
+            </p-stepper>
+          </form>
+        }
+      </div>
+
+      <aside class="sticky aside">
+        <app-checklist-card appReveal [badge]="p.why.badge" [title]="p.why.title" [sub]="p.why.sub" [items]="p.why.items" />
+        <div class="glass card talk">
+          <span class="tag">Prefer to talk?</span>
+          <p>Call <a href="tel:+918381084000">+91 83810 84000</a> or email <a href="mailto:hello@starorigin.in">hello&#64;starorigin.in</a>.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <app-block-renderer [blocks]="p.blocks" />
+  @if (p.cta) {<app-cta-band [band]="p.cta" />}
+} @else {
+  <app-page-skeleton />
+}

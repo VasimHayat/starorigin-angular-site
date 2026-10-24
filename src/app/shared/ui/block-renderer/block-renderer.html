@@ -1,0 +1,10 @@
+@for (b of blocks(); track $index) {
+  <section [attr.id]="b.id ?? null" [class.flush-top]="b.tight">
+    <div [class]="b.type === 'faq' ? 'narrow' : 'wrap'">
+      @if (b.heading) {
+        <app-section-heading [heading]="b.heading" />
+      }
+      <app-block-view [block]="b" />
+    </div>
+  </section>
+}

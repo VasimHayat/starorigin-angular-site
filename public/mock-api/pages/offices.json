@@ -1,0 +1,48 @@
+{
+  "slug": "offices",
+  "seo": {
+    "title": "Offices | StarOrigin in Nagpur, Hyderabad, Dubai and Dallas",
+    "description": "Visit or call StarOrigin: offices in Nagpur and Hyderabad (India), Dubai (UAE) and Dallas (USA), with addresses, phone numbers, live local times and maps."
+  },
+  "hero": {
+    "breadcrumbs": [
+      { "label": "Home", "url": "/" },
+      { "label": "About", "url": "/about" },
+      { "label": "Offices", "url": "/offices" }
+    ],
+    "title": "Four offices,",
+    "highlight": "three countries.",
+    "lead": "Local teams in India, the UAE and the US, serving clients nationally and internationally, not just in the cities where we sit."
+  },
+  "hoursNote": { "text": "Working hours: Monday to Saturday, 9:30 to 18:30 local time.", "sample": "sample" },
+  "detailsHeading": {
+    "eyebrow": "Office details",
+    "title": "Where to",
+    "highlight": "find us.",
+    "lead": "Each office is run by a registered StarOrigin entity. Load a map to see the exact location."
+  },
+  "officeTags": { "nagpur": "India · HQ", "hyderabad": "India", "dubai": "UAE", "dallas": "USA" },
+  "blocks": [
+    {
+      "type": "cards",
+      "id": "reach-us",
+      "tight": true,
+      "columns": 3,
+      "items": [
+        { "icon": "globe", "title": "Beyond our cities", "text": "We serve clients nationally across India and internationally through our UAE and US entities." },
+        { "icon": "mail", "title": "One inbox", "text": "Write to hello@starorigin.in and we'll route you to the right office.", "link": { "label": "Email hello@starorigin.in", "url": "mailto:hello@starorigin.in" } },
+        { "icon": "wa", "title": "WhatsApp", "text": "Prefer chat? Message us on WhatsApp during working hours.", "link": { "label": "Message us on WhatsApp", "url": "https://wa.me/918381084000", "external": true } }
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Visit or call",
+    "title": "Let's talk,",
+    "highlight": "wherever you are.",
+    "text": "Book a meeting at any of our offices, or start with a quick call.",
+    "ctas": [
+      { "label": "Contact us", "url": "/contact", "variant": "glow" },
+      { "label": "Hire talent", "url": "/hire", "variant": "ghost" }
+    ]
+  }
+}

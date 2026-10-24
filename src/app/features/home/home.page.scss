@@ -1,0 +1,45 @@
+// Home-only styles. Shared component styles live in styles/_components.scss.
+
+// Segmented control pill: two fixed halves, slides between them.
+.seg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: min(340px, 100%);
+  .pill {
+    left: 4px;
+    width: calc(50% - 6px);
+    &.right {
+      left: calc(50% + 2px);
+    }
+  }
+  button {
+    white-space: nowrap;
+  }
+}
+
+.hud .ic {
+  border: 0;
+  &.tone-teal {
+    background: rgb(45 212 191 / 0.15);
+    color: #2dd4bf;
+  }
+  &.tone-lime {
+    background: rgb(163 230 53 / 0.15);
+    color: #a3e635;
+  }
+  &.tone-violet {
+    background: rgb(139 92 246 / 0.18);
+    color: #a78bfa;
+  }
+}
+
+.empty-state {
+  padding: 28px;
+  text-align: center;
+  color: var(--dim);
+}
+
+// The hero needs the globe host to fill the square wrapper.
+app-globe {
+  position: relative;
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "nagpur",
+    "city": "Nagpur",
+    "code": "IN · HQ",
+    "entity": "StarOrigin Pvt Ltd",
+    "timezone": "Asia/Kolkata",
+    "address": "104, Shree Ambey, Wardhman Nagar, Nagpur 440008, Maharashtra, India",
+    "phone": "+91 83810 84000",
+    "tel": "+918381084000",
+    "email": "hello@starorigin.in",
+    "focus": "Head office, leadership hiring, bulk hiring and HR operations for Central India.",
+    "isHq": true,
+    "hours": { "open": "09:30", "close": "18:30", "sample": "sample" },
+    "sample": "sample"
+  },
+  {
+    "id": "hyderabad",
+    "city": "Hyderabad",
+    "code": "IN",
+    "entity": "StarOrigin Pvt Ltd",
+    "timezone": "Asia/Kolkata",
+    "address": "Workafella Western Aqua, Cross Street 1, Whitefields, Hyderabad 500081, Telangana, India",
+    "phone": "+91 83810 84000",
+    "tel": "+918381084000",
+    "email": "hello@starorigin.in",
+    "focus": "IT, banking technology and mid-senior hiring for South India.",
+    "hours": { "open": "09:30", "close": "18:30", "sample": "sample" },
+    "sample": "sample"
+  },
+  {
+    "id": "dubai",
+    "city": "Dubai",
+    "code": "AE",
+    "entity": "StarOrigin LLC FZ",
+    "timezone": "Asia/Dubai",
+    "address": "Unit 2903-X3, Jumeirah Bay Tower, Cluster X, JLT, Dubai, UAE",
+    "phone": "+91 83810 84000",
+    "tel": "+918381084000",
+    "email": "hello@starorigin.in",
+    "focus": "Executive search and specialist hiring across the GCC.",
+    "hours": { "open": "09:30", "close": "18:30", "sample": "sample" },
+    "sample": "sample"
+  },
+  {
+    "id": "dallas",
+    "city": "Dallas",
+    "code": "US",
+    "entity": "StarOrigin Inc",
+    "timezone": "America/Chicago",
+    "address": "11816 Inwood Rd #1593, Dallas, TX 75244, United States",
+    "phone": "+1 (467) 420 8880",
+    "tel": "+14674208880",
+    "email": "hello@starorigin.in",
+    "focus": "US IT staffing on W2, C2C and contract-to-hire terms.",
+    "hours": { "open": "09:30", "close": "18:30", "sample": "sample" },
+    "sample": "sample"
+  }
+]

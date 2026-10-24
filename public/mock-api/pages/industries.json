@@ -1,0 +1,104 @@
+{
+  "slug": "industries",
+  "seo": {
+    "title": "Industries we recruit for",
+    "description": "Sector-specialist recruitment across IT, BFSI and Oracle banking tech, manufacturing, healthcare, retail, engineering, telecom and logistics — India, the UAE and the US."
+  },
+  "hero": {
+    "breadcrumbs": [
+      { "label": "Home", "url": "/" },
+      { "label": "Services", "url": "/services" },
+      { "label": "Industries", "url": "/industries" }
+    ],
+    "title": "Sector depth,",
+    "highlight": "not guesswork.",
+    "lead": "Recruiters who speak your industry's language — from core-banking platforms to plant floors — hiring from managers to CXO across India, the UAE and the US.",
+    "ctas": [
+      { "label": "Share a brief", "url": "/hire", "variant": "glow" },
+      { "label": "Banking-tech focus", "url": "/industries#bfsi", "variant": "ghost" }
+    ],
+    "aside": {
+      "type": "stats",
+      "eyebrow": "Coverage snapshot",
+      "items": [
+        { "value": "8,240+", "label": "Candidate profiles" },
+        { "value": "4", "label": "Offices · 3 countries" },
+        { "value": "Mgr→CXO", "label": "Levels we fill" }
+      ],
+      "note": "Live Oracle banking-tech openings in Bangalore — FLEXCUBE, OFSAA FCCM, OBTF, OBDX and OBLM."
+    }
+  },
+  "sectorsHeading": {
+    "eyebrow": "Sectors",
+    "title": "Eight industries,",
+    "highlight": "one standard.",
+    "lead": "Typical roles we recruit for in each sector.",
+    "sample": "sample — confirm list with StarOrigin"
+  },
+  "blocks": [
+    {
+      "type": "checklist",
+      "id": "bfsi",
+      "heading": {
+        "eyebrow": "Deep dive · BFSI",
+        "title": "Oracle banking tech,",
+        "highlight": "known inside out.",
+        "lead": "Core-banking talent is scarce and project-critical. We recruit the consultants and leaders who implement Oracle's banking suite."
+      },
+      "badge": "Platforms we hire for",
+      "title": "The Oracle banking stack",
+      "sub": "Functional, technical and techno-functional roles — plus the managers who deliver them.",
+      "items": [
+        "FLEXCUBE — core banking implementation and upgrade programmes, up to project-manager level",
+        "OFSAA FCCM — financial crime and compliance: AML, KYC and fraud, technical and functional",
+        "OBTF — trade finance: LCs, guarantees and collections",
+        "OBDX — digital banking experience for retail and corporate channels",
+        "OBLM — Oracle Banking Liquidity Management: cash pooling and sweeps for transaction banking"
+      ],
+      "aside": {
+        "icon": "target",
+        "title": "Why it's hard — and how we help",
+        "text": "Platform experience is narrow, candidates are approached constantly, and a wrong hire can delay a go-live. We screen for hands-on module depth, project history and notice-period reality before anyone reaches your panel."
+      }
+    },
+    {
+      "type": "cards",
+      "columns": 2,
+      "tight": true,
+      "items": [
+        {
+          "icon": "pin",
+          "title": "Live roles in Bangalore",
+          "text": "We're currently hiring FLEXCUBE, OFSAA FCCM, OBTF, OBDX and OBLM profiles for banking-technology clients.",
+          "link": { "label": "Browse banking-tech jobs", "url": "/jobs", "queryParams": { "q": "banking" } }
+        },
+        {
+          "icon": "book",
+          "title": "Read: core-banking hiring in 2027",
+          "text": "Where demand for Oracle banking-platform talent is heading, and what it means for your next programme.",
+          "link": { "label": "Read the article", "url": "/insights/core-banking-hiring-2027" }
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "tight": true,
+      "heading": { "eyebrow": "Across every sector", "title": "The services behind the sectors.", "align": "center" },
+      "items": [
+        { "icon": "crown", "title": "Executive Search", "text": "Confidential CXO and leadership search in any industry.", "link": { "label": "Explore", "url": "/services/executive-search" } },
+        { "icon": "layers", "title": "Bulk Hiring", "text": "Volume teams for plants, warehouses, stores and new sites.", "link": { "label": "Explore", "url": "/services/bulk-hiring" } },
+        { "icon": "cog", "title": "RPO", "text": "An embedded TA team for sustained, multi-role hiring.", "link": { "label": "Explore", "url": "/services/rpo" } }
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Hiring in your sector?",
+    "title": "Talk to a recruiter",
+    "highlight": "who knows the field.",
+    "text": "Share the brief. A practice head will respond within one business day with a search plan and timeline.",
+    "ctas": [
+      { "label": "Share a brief", "url": "/hire", "variant": "glow" },
+      { "label": "See case studies", "url": "/case-studies", "variant": "ghost" }
+    ]
+  }
+}

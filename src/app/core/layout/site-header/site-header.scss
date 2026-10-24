@@ -1,0 +1,24 @@
+// Mobile drawer content (the drawer itself is a PrimeNG p-drawer, skinned in styles/_primeng.scss).
+.drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .d-link {
+    font: 600 28px/1 var(--head);
+    padding: 16px 0;
+    border-bottom: 1px solid var(--stroke);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font: 500 12px/1 var(--mono);
+      color: var(--dim);
+    }
+  }
+
+  .btn {
+    margin-top: 16px;
+  }
+}

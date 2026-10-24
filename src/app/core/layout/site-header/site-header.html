@@ -1,0 +1,63 @@
+<a href="#main" class="skip">Skip to content</a>
+<div class="bg-grid" aria-hidden="true"></div>
+
+<div class="nav-shell">
+  <nav class="nav" [class.scrolled]="scrolled()" aria-label="Primary">
+    <a routerLink="/" class="brand" aria-label="StarOrigin home">
+      <span class="mark"><img [src]="contact.logo" alt="" width="30" height="32" /></span>StarOrigin
+    </a>
+
+    <ul class="menu">
+      @for (m of menus(); track m.label) {
+        <li>
+          <a [routerLink]="m.url" [attr.aria-current]="isActive(m) ? 'page' : null">
+            {{ m.label }}
+            @if (m.items.length) {<app-icon name="chev" />}
+          </a>
+          @if (m.items.length) {
+            <div class="dd" [class.one-col]="!m.twoColumns">
+              @for (i of m.items; track i.url) {
+                <a [routerLink]="i.url">
+                  <span class="di"><app-icon [name]="i.icon ?? 'arrow'" /></span>
+                  <span><b>{{ i.label }}</b><small>{{ i.note }}</small></span>
+                </a>
+              }
+            </div>
+          }
+        </li>
+      }
+    </ul>
+
+    <div class="nav-r">
+      <a class="kbd" routerLink="/jobs" aria-label="Search jobs (press /)"><app-icon name="search" />Search jobs <span>/</span></a>
+      <a routerLink="/hire" class="btn btn-glow">Hire talent <app-icon name="arrow" /></a>
+      <button
+        class="theme-btn"
+        type="button"
+        (click)="theme.toggle()"
+        [attr.aria-pressed]="theme.isLight()"
+        [attr.aria-label]="theme.isLight() ? 'Switch to dark theme' : 'Switch to light theme'"
+      >
+        <app-icon [name]="theme.isLight() ? 'moon' : 'sun'" />
+      </button>
+      <button class="burger" type="button" aria-label="Open menu" [attr.aria-expanded]="drawerOpen()" (click)="drawerOpen.set(true)">
+        <app-icon name="menu" />
+      </button>
+    </div>
+  </nav>
+</div>
+
+<p-drawer [visible]="drawerOpen()" (visibleChange)="drawerOpen.set($event)" position="full" [modal]="true" ariaCloseLabel="Close menu">
+  <ng-template #header>
+    <a routerLink="/" class="brand" (click)="drawerOpen.set(false)">
+      <span class="mark"><img [src]="contact.logo" alt="" width="30" height="32" /></span>StarOrigin
+    </a>
+  </ng-template>
+  <div class="drawer-links">
+    @for (m of menus(); track m.label; let i = $index) {
+      <a class="d-link" [routerLink]="m.url" (click)="drawerOpen.set(false)">{{ m.label }} <span>0{{ i + 1 }}</span></a>
+    }
+    <a routerLink="/hire" class="btn btn-glow" (click)="drawerOpen.set(false)">Hire talent <app-icon name="arrow" /></a>
+    <a routerLink="/submit-cv" class="btn btn-ghost" (click)="drawerOpen.set(false)">Submit your CV</a>
+  </div>
+</p-drawer>

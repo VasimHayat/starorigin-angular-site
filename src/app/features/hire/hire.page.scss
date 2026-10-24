@@ -1,0 +1,31 @@
+:host { display: block; }
+
+// Tighter hero above the form (as in the prototype).
+.hire-hero ::ng-deep .page-hero { padding-bottom: 40px; }
+
+.brief { gap: 0; }
+.fstep-body { display: grid; gap: 18px; padding-top: 4px; }
+.form-nav { margin-top: 8px; }
+
+.consent { font-weight: 400; }
+.consent label { font-size: 13.5px; font-weight: 400; color: var(--muted); line-height: 1.5; cursor: pointer; }
+.consent a { color: var(--teal); text-decoration: underline; }
+
+.aside { display: grid; gap: 16px; }
+.aside .checks { margin-top: 6px; }
+.aside .checks a { color: var(--text); }
+.aside .checks a:hover { color: var(--teal); }
+.trust { border-radius: var(--r); }
+
+// Compact the shared timeline inside the narrow aside.
+.next { margin-top: 10px; }
+.next ::ng-deep .split { display: block; }
+.next ::ng-deep .vi h3 { font-size: 18px; }
+
+// Reassurance strip: smaller card headings.
+.reassure ::ng-deep section { padding-top: 24px; }
+.reassure ::ng-deep .card h3 { font-size: 18px; }
+
+@media (max-width: 1100px) {
+  .sticky { position: static; }
+}

@@ -1,0 +1,113 @@
+@if (page(); as p) {
+  <app-page-hero [hero]="p.hero">
+    <div class="jobs-ui search-ui">
+      <div class="jobs-bar">
+        <app-icon name="search" />
+        <label class="sr-only" for="jobQ">Search jobs</label>
+        <input
+          #searchBox
+          id="jobQ"
+          type="search"
+          placeholder="Search role, skill or city…"
+          autocomplete="off"
+          [value]="query()"
+          (input)="onSearch($event)"
+        />
+        <span class="count" aria-live="polite">{{ countLabel() }}</span>
+      </div>
+    </div>
+    <p class="tip">Tip: press <b>/</b> anywhere to jump to search.</p>
+  </app-page-hero>
+} @else {
+  <app-page-skeleton />
+}
+
+<section class="flush-top" aria-label="Job listings">
+  <div class="wrap jobs-layout">
+    <aside class="glass facets" aria-label="Filter jobs">
+      <fieldset>
+        <legend>Job type</legend>
+        @for (o of typeFacets; track o.value) {
+          <label class="check">
+            <input type="checkbox" [checked]="types().includes(o.value)" (change)="toggle(types, o.value, $any($event.target).checked)" />{{ o.label }}
+          </label>
+        }
+      </fieldset>
+      <fieldset>
+        <legend>Location</legend>
+        @for (o of locationFacets; track o.value) {
+          <label class="check">
+            <input type="checkbox" [checked]="locations().includes(o.value)" (change)="toggle(locations, o.value, $any($event.target).checked)" />{{ o.label }}
+          </label>
+        }
+      </fieldset>
+      <fieldset>
+        <legend>Function</legend>
+        @for (o of functionFacets; track o.value) {
+          <label class="check">
+            <input type="checkbox" [checked]="functions().includes(o.value)" (change)="toggle(functions, o.value, $any($event.target).checked)" />{{ o.label }}
+          </label>
+        }
+      </fieldset>
+      <button type="button" class="btn btn-ghost btn-sm btn-block" [disabled]="!hasFilters()" (click)="clearAll()">Clear all</button>
+    </aside>
+
+    <div class="jobs-ui">
+      <div class="filters" role="group" aria-label="Quick filters">
+        @for (c of chips; track c.value) {
+          <button type="button" [attr.aria-pressed]="chip() === c.value" (click)="chip.set(c.value)">{{ c.label }}</button>
+        }
+      </div>
+      <div class="job-list" aria-label="Results">
+        @if (jobs()) {
+          @for (j of results(); track j.id) {
+            <app-job-row [job]="j" />
+          } @empty {
+            <div class="empty shown">
+              No roles match these filters — <a routerLink="/submit-cv" class="link">share your CV</a> and we'll reach out when one opens.
+            </div>
+          }
+        } @else {
+          @for (i of [1, 2, 3, 4]; track i) {<div class="row-skel" aria-hidden="true"></div>}
+        }
+      </div>
+      <div class="jobs-foot">
+        <p>Don't see your role? Our recruiters match new openings against our 8,240+ candidate database daily.</p>
+        <div class="btn-row"><a routerLink="/submit-cv" class="btn btn-primary btn-sm">Submit your CV <app-icon name="arrow" /></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" aria-labelledby="alertsTitle">
+  <div class="wrap">
+    <div class="glass card alerts" appReveal>
+      <div class="split">
+        <div>
+          <span class="tag">Job alerts</span>
+          <h2 id="alertsTitle">Get new roles <span class="grad-text">in your inbox.</span></h2>
+          <p class="muted">Pick a function and we'll email you when a matching role goes live. Unsubscribe anytime.</p>
+        </div>
+        <form class="form" [formGroup]="alertForm" (ngSubmit)="submitAlert()" novalidate>
+          <div class="form-row">
+            <app-form-field label="Email" for="alertEmail" required [control]="alertForm.controls.email">
+              <input pInputText id="alertEmail" type="email" formControlName="email" placeholder="you@example.com" autocomplete="email" />
+            </app-form-field>
+            <app-form-field label="Function" for="alertFn">
+              <p-select inputId="alertFn" formControlName="fn" [options]="alertFunctions" appendTo="body" />
+            </app-form-field>
+          </div>
+          <button type="submit" class="btn btn-glow" [disabled]="alertSending()">
+            {{ alertSending() ? 'Sending…' : 'Create alert' }} <app-icon name="arrow" />
+          </button>
+          <p class="fine">By subscribing you agree to our <a routerLink="/legal/privacy">privacy policy</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+@if (page(); as p) {
+  <app-block-renderer [blocks]="p.blocks" />
+  @if (p.cta) {<app-cta-band [band]="p.cta" />}
+}

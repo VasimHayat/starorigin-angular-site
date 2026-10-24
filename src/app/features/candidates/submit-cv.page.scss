@@ -1,0 +1,17 @@
+:host { display: block; }
+
+.form-card { padding: 36px; }
+.aside { display: grid; gap: 16px; }
+.talk { padding: 24px; }
+.talk p { margin-top: 12px; color: var(--muted); }
+.talk a { color: var(--teal); }
+
+.form-nav.end { justify-content: flex-end; }
+.consent label { font-weight: 400; font-size: 13.5px; color: var(--muted); }
+
+@media (max-width: 680px) {
+  .form-card { padding: 22px 18px; }
+  /* Let long step titles wrap instead of clipping on phones. */
+  :host ::ng-deep .p-step-header { gap: 8px; padding: 0; }
+  :host ::ng-deep .p-step-title { white-space: normal; font-size: 13px; line-height: 1.25; }
+}

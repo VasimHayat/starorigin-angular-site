@@ -1,0 +1,16 @@
+:host { display: block; }
+
+.cat { margin-top: 22px; }
+.article-meta { margin-top: 28px; }
+
+/* Brand logo sits on a white rounded square in both themes. */
+.author .logo {
+  background: #fff;
+  object-fit: contain;
+  object-position: center;
+  padding: 6px;
+}
+
+.tools { display: grid; gap: 16px; }
+.posts { row-gap: 40px; }
+.sec-head { margin-bottom: 32px; }

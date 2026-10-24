@@ -1,0 +1,26 @@
+:host { display: block; }
+
+.feat-title { margin: 16px 0 12px; }
+.feat-link { margin-top: 16px; }
+
+.guide { display: flex; flex-direction: column; gap: 0; }
+.guide .checks { margin: 16px 0 20px; gap: 10px; }
+.guide .checks li { font-size: 14.5px; }
+.guide .foot { margin-top: auto; align-self: flex-start; }
+
+.note { margin-top: 16px; font-size: 13px; color: var(--dim); }
+.stat .link { font-size: 14px; }
+
+.cl { align-items: start; }
+.cl-head { margin: 0; }
+.cl-head .btn-row { margin-top: 24px; }
+.cl-card { padding: 30px; display: flex; flex-direction: column; gap: 14px; }
+/* Progress bar is driven by the signal, not the scroll-reveal `--w` variable. */
+.cl-card .bar i { transition: width 0.35s ease; }
+.cl-list { border: 0; display: grid; gap: 14px; }
+.cl-done { color: var(--lime); font-size: 14.5px; }
+.cl-reset { align-self: flex-start; }
+
+@media (max-width: 680px) {
+  .cl-card { padding: 22px; }
+}

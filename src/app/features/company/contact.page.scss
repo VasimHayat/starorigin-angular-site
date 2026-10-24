@@ -1,0 +1,42 @@
+:host { display: block; }
+
+.form-card { padding: clamp(20px, 4vw, 40px); }
+.consent label { font-weight: 400; font-size: 13.5px; color: var(--muted); }
+
+.intent-hint {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--grad-soft);
+  border: 1px solid var(--stroke);
+  font-size: 14px;
+  color: var(--muted);
+}
+.intent-hint > app-icon { width: 18px; height: 18px; flex: none; margin-top: 2px; color: var(--teal); }
+.intent-hint .link { font-size: 14px; }
+
+.aside { display: grid; gap: 16px; }
+.channels { gap: 14px; }
+.channels .link app-icon { width: 18px; height: 18px; flex: none; }
+.channels small { font-weight: 400; }
+
+.offices { list-style: none; padding: 8px 20px; gap: 0; }
+.offices li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--stroke);
+}
+.offices li:last-child { border-bottom: 0; }
+.offices b { display: block; font: 600 15px/1.2 var(--head); }
+.offices small { font: 500 11.5px/1 var(--mono); color: var(--dim); letter-spacing: 0.08em; }
+.offices .t { text-align: right; display: grid; gap: 4px; }
+.offices time { font: 500 17px/1 var(--mono); color: var(--text); }
+.offices .t small { color: var(--teal); }
+.offices .t small.closed { color: var(--dim); }
+
+p-tabs { display: block; }
