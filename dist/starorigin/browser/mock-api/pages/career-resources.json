@@ -1,0 +1,80 @@
+{
+  "slug": "career-resources",
+  "seo": {
+    "title": "Career resources — CV, interview and offer guides",
+    "description": "What our recruiters wish every candidate knew — from the CV that gets read to the first 90 seconds of the interview. Includes an interactive CV checklist."
+  },
+  "hero": {
+    "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Jobs", "url": "/jobs" }, { "label": "Career resources", "url": "/career-resources" }],
+    "title": "Walk in prepared.",
+    "highlight": "Walk out hired.",
+    "lead": "What our recruiters wish every candidate knew — from the CV that gets read to the first 90 seconds of the interview.",
+    "ctas": [
+      { "label": "Check your CV", "url": "/career-resources#checklist", "variant": "glow" },
+      { "label": "Browse jobs", "url": "/jobs", "variant": "ghost" }
+    ]
+  },
+  "featured": {
+    "thumbLabel": "Featured · Interviews",
+    "eyebrow": "Featured guide",
+    "title": "The first 90 seconds of your interview",
+    "text": "A third of hiring managers say they know within 90 seconds whether they'll hire someone. Here's how to make that window count — arrival, greeting, posture and your opening answer.",
+    "link": { "label": "Read the guide", "url": "/insights/first-90-seconds-interview" }
+  },
+  "guidesHeading": {
+    "eyebrow": "Guides",
+    "title": "The essentials,",
+    "highlight": "in five minutes each.",
+    "lead": "Quick, practical advice for every stage of a job move."
+  },
+  "guides": [
+    { "icon": "file", "title": "CV checklist", "text": "Recruiters skim before they read. Make the first scan easy.", "points": ["Lead with a role-specific summary", "Quantify achievements, not duties", "Keep it to one or two pages"], "link": { "label": "Use the interactive checklist", "url": "/career-resources#checklist" } },
+    { "icon": "users", "title": "Interview prep", "text": "Preparation shows in the first minute — and the last question you ask.", "points": ["Research the company, product and panel", "Prepare 3–4 stories using situation, action, result", "Have two thoughtful questions ready"], "link": { "label": "Read: the first 90 seconds", "url": "/insights/first-90-seconds-interview" } },
+    { "icon": "rupee", "title": "Salary negotiation", "text": "Negotiate on evidence, not nerves — and let your recruiter do the heavy lifting.", "points": ["Know your current CTC breakdown precisely", "Give a researched range, not a single number", "Weigh the whole offer: role, growth, benefits"], "sample": "full guide coming soon" },
+    { "icon": "calendar", "title": "Notice-period etiquette", "text": "How you leave is remembered as long as how you joined.", "points": ["Resign in person, then confirm in writing", "Be upfront about your notice period from day one", "Hand over cleanly and document your work"], "sample": "full guide coming soon" },
+    { "icon": "in", "title": "Using LinkedIn", "text": "Most recruiters will look you up. Make sure what they find helps you.", "points": ["Match your headline and dates to your CV", "Use a clear, professional photo", "Turn on \"Open to work\" for recruiters only"], "sample": "full guide coming soon" },
+    { "icon": "book", "title": "More from Insights", "text": "Hiring trends, market reports and career advice from the StarOrigin team.", "points": [], "link": { "label": "Visit Insights", "url": "/insights" }, "highlight": true }
+  ],
+  "factsHeading": {
+    "eyebrow": "Recruiter facts",
+    "title": "What happens",
+    "highlight": "on the other side of the desk.",
+    "lead": "Numbers worth knowing before you hit \"apply\". Source: industry surveys."
+  },
+  "facts": [
+    { "value": "5–7 sec", "label": "is how long recruiters typically spend on a first look at a resume.", "highlight": true },
+    { "value": "76%", "label": "of resumes are discarded for an unprofessional email address.", "highlight": true },
+    { "value": "93%", "label": "of recruiters check candidates' social media profiles.", "highlight": true },
+    { "value": "33%", "label": "of bosses say they decide whether to hire someone within 90 seconds.", "highlight": true },
+    { "value": "40 min", "label": "is the length of an average job interview.", "highlight": true },
+    { "value": "So…", "label": "a clean CV, a professional email and a tidy online profile do a lot of work before you say a word." }
+  ],
+  "factsNote": "Figures as cited on StarOrigin's existing site, attributed to industry surveys.",
+  "checklist": {
+    "eyebrow": "Interactive",
+    "title": "Is your CV",
+    "highlight": "recruiter-ready?",
+    "lead": "Tick off each item as you go. Eight checks, about ten minutes — and your CV survives the 7-second scan.",
+    "items": [
+      "A professional email address (firstname.lastname style)",
+      "Phone, city and LinkedIn URL up to date at the top",
+      "A 2–3 line summary tailored to the role you want",
+      "Achievements quantified with numbers, not just duties",
+      "Keywords and tools from the job description included",
+      "Consistent dates, with any gaps briefly explained",
+      "One or two pages, clean layout, saved as PDF",
+      "Proofread — no spelling or grammar slips"
+    ]
+  },
+  "blocks": [],
+  "cta": {
+    "eyebrow": "Next step",
+    "title": "Ready to put it",
+    "highlight": "into practice?",
+    "text": "Browse live roles or register your CV — a recruiter will call when the right opening comes up.",
+    "ctas": [
+      { "label": "Browse jobs", "url": "/jobs", "variant": "glow" },
+      { "label": "Submit your CV", "url": "/submit-cv", "variant": "ghost" }
+    ]
+  }
+}

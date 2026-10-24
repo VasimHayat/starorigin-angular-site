@@ -1,0 +1,199 @@
+[
+  {
+    "id": "flexcube-pm",
+    "title": "Flexcube Project Manager",
+    "client": "Banking technology",
+    "location": "Bangalore",
+    "type": "Full-time",
+    "experience": "10+ yrs",
+    "level": "Manager",
+    "function": "Banking Tech",
+    "isNew": true,
+    "postedAt": "2026-10-21",
+    "summary": "Lead end-to-end Oracle FLEXCUBE implementation programmes for a leading banking-technology client — from planning and vendor coordination to go-live.",
+    "responsibilities": [
+      "Own delivery plans, budgets and milestones for FLEXCUBE implementation and upgrade projects",
+      "Lead cross-functional teams of functional, technical and QA consultants",
+      "Manage client stakeholders, steering committees and change requests",
+      "Track risks and dependencies, and drive issue resolution to closure"
+    ],
+    "requirements": [
+      "10+ years in banking technology with 5+ years managing FLEXCUBE (UBS/Core) projects",
+      "Strong understanding of core banking modules and migration",
+      "PMP / PRINCE2 preferred",
+      "Excellent client-facing communication"
+    ]
+  },
+  {
+    "id": "ofsaa-fccm-tech",
+    "title": "OFSAA FCCM — Technical Consultant",
+    "client": "BFSI",
+    "location": "Bangalore · Pune · Chennai · Mumbai",
+    "type": "Full-time",
+    "experience": "5–8 yrs",
+    "level": "Consultant",
+    "function": "Banking Tech",
+    "isNew": true,
+    "postedAt": "2026-10-20",
+    "summary": "Implement and customise Oracle Financial Services Analytical Applications for Financial Crime and Compliance Management.",
+    "responsibilities": [
+      "Install, configure and customise OFSAA FCCM (AML, KYC, Fraud) modules",
+      "Develop data mappings, T2T and batch processes",
+      "Support SIT/UAT and production rollout",
+      "Work with functional teams to translate compliance requirements"
+    ],
+    "requirements": [
+      "5–8 years of OFSAA technical experience",
+      "Hands-on with PL/SQL, Unix shell scripting and ETL",
+      "Exposure to FCCM / AML modules",
+      "Banking domain knowledge"
+    ]
+  },
+  {
+    "id": "ofsaa-fccm-func",
+    "title": "OFSAA FCCM — Functional Consultant",
+    "client": "BFSI",
+    "location": "Bangalore · Pune · Chennai · Mumbai",
+    "type": "Full-time",
+    "experience": "5–8 yrs",
+    "level": "Consultant",
+    "function": "Banking Tech",
+    "isNew": true,
+    "postedAt": "2026-10-20",
+    "summary": "Drive the functional design of AML, KYC and fraud scenarios on Oracle FCCM for banking clients.",
+    "responsibilities": [
+      "Run requirement workshops with compliance teams",
+      "Design and tune AML scenarios and thresholds",
+      "Prepare functional specifications and test cases",
+      "Support UAT and user training"
+    ],
+    "requirements": [
+      "5–8 years in AML / financial crime with OFSAA FCCM",
+      "Knowledge of regulatory frameworks (FATF, RBI, FinCEN)",
+      "Strong documentation skills",
+      "CAMS certification is a plus"
+    ]
+  },
+  {
+    "id": "obtf-techno",
+    "title": "OBTF Techno-Functional Consultant",
+    "client": "Trade finance platforms",
+    "location": "Bangalore",
+    "type": "Full-time",
+    "experience": "4–7 yrs",
+    "level": "Consultant",
+    "function": "Banking Tech",
+    "postedAt": "2026-10-16",
+    "summary": "Bridge business and technology on Oracle Banking Trade Finance implementations.",
+    "responsibilities": [
+      "Configure OBTF products for LCs, guarantees and collections",
+      "Analyse gaps and write functional and technical specs",
+      "Support integrations and data migration",
+      "Assist in testing and go-live"
+    ],
+    "requirements": [
+      "4–7 years on Oracle Banking Trade Finance",
+      "Trade finance product knowledge",
+      "SQL and integration exposure",
+      "Strong analytical skills"
+    ]
+  },
+  {
+    "id": "obdx",
+    "title": "OBDX Consultant",
+    "client": "Digital banking",
+    "location": "Bangalore",
+    "type": "Full-time",
+    "experience": "3–6 yrs",
+    "level": "Consultant",
+    "function": "Banking Tech",
+    "postedAt": "2026-10-16",
+    "summary": "Implement Oracle Banking Digital Experience for retail and corporate digital channels.",
+    "responsibilities": [
+      "Configure OBDX modules for retail and corporate banking",
+      "Customise UI and workflows",
+      "Integrate with core banking and third-party services",
+      "Support testing and deployment"
+    ],
+    "requirements": [
+      "3–6 years with OBDX",
+      "Knowledge of JET / JavaScript, REST APIs",
+      "Digital banking domain experience",
+      "Good communication skills"
+    ]
+  },
+  {
+    "id": "oblm-func",
+    "title": "OBLM Functional Consultant",
+    "client": "Transaction banking",
+    "location": "Bangalore",
+    "type": "Full-time",
+    "experience": "4–8 yrs",
+    "level": "Consultant",
+    "function": "Banking Tech",
+    "postedAt": "2026-10-09",
+    "summary": "Lead functional delivery on Oracle Banking Liquidity Management for corporate and transaction-banking clients.",
+    "responsibilities": [
+      "Gather liquidity-management requirements and map them to OBLM",
+      "Configure cash pooling, sweeps and notional pooling structures",
+      "Prepare test scenarios and support UAT",
+      "Train business users"
+    ],
+    "requirements": [
+      "4–8 years in transaction banking with OBLM",
+      "Strong cash and liquidity management knowledge",
+      "Experience writing BRDs and FSDs",
+      "Client-facing experience"
+    ]
+  },
+  {
+    "id": "java-fullstack-dallas",
+    "title": "Java Full-Stack Developer (W2)",
+    "client": "US IT services client",
+    "location": "Dallas, TX",
+    "type": "Contract",
+    "experience": "6+ yrs",
+    "level": "Developer",
+    "function": "IT & Software",
+    "postedAt": "2026-10-19",
+    "summary": "Build cloud-native services and React front-ends for a US enterprise client. W2 / contract-to-hire.",
+    "responsibilities": [
+      "Develop Spring Boot microservices and REST APIs",
+      "Build React front-end features",
+      "Deploy on AWS with CI/CD",
+      "Collaborate in an agile team"
+    ],
+    "requirements": [
+      "6+ years Java, Spring Boot",
+      "3+ years React",
+      "AWS experience",
+      "Authorised to work in the US"
+    ],
+    "sample": "sample"
+  },
+  {
+    "id": "hr-generalist-nagpur",
+    "title": "HR Generalist",
+    "client": "Manufacturing client",
+    "location": "Nagpur",
+    "type": "Full-time",
+    "experience": "2–4 yrs",
+    "level": "Specialist",
+    "function": "HR",
+    "postedAt": "2026-10-18",
+    "summary": "Run day-to-day HR operations for a fast-growing manufacturing plant.",
+    "responsibilities": [
+      "Manage onboarding, attendance and payroll inputs",
+      "Handle employee relations and grievances",
+      "Coordinate statutory compliance",
+      "Support hiring drives"
+    ],
+    "requirements": [
+      "2–4 years in HR operations",
+      "Knowledge of labour laws and compliance",
+      "Good Marathi / Hindi / English",
+      "MBA HR preferred"
+    ],
+    "sample": "sample"
+  }
+]

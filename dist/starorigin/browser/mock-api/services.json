@@ -1,0 +1,1043 @@
+[
+  {
+    "slug": "executive-search",
+    "name": "Executive Search",
+    "summary": "Confidential, research-led search for CXO and leadership roles.",
+    "menuNote": "CXO & leadership, confidential",
+    "icon": "crown",
+    "order": 1,
+    "seo": {
+      "title": "Executive Search & CXO Hiring",
+      "description": "Confidential, research-led executive search for CXO and leadership roles across India, the UAE and the US."
+    },
+    "hero": {
+      "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Services", "url": "/services" }, { "label": "Executive Search", "url": "/services/executive-search" }],
+      "title": "Leaders who",
+      "highlight": "move the needle.",
+      "lead": "Confidential, research-led search for CXO and senior leadership roles — mapped to your strategy, not just a job description.",
+      "ctas": [
+        { "label": "Start a search", "url": "/hire", "queryParams": { "service": "executive-search" }, "variant": "glow" },
+        { "label": "How it works", "url": "/services/executive-search#process", "variant": "ghost" }
+      ],
+      "aside": {
+        "type": "funnel",
+        "eyebrow": "Search snapshot",
+        "stats": [
+          { "value": "CXO", "label": "COO · CFO · CTO · CIO" },
+          { "value": "100%", "label": "Confidential" },
+          { "value": "80%", "label": "Via headhunting" }
+        ],
+        "steps": [
+          { "label": "Mapped", "value": 120, "pct": 100 },
+          { "label": "Approached", "value": 54, "pct": 45 },
+          { "label": "Assessed", "value": 14, "pct": 12 },
+          { "label": "Shortlist", "value": 5, "pct": 4 }
+        ],
+        "note": "Typical funnel for one leadership search.",
+        "sample": "illustrative"
+      }
+    },
+    "blocks": [
+      {
+        "type": "cards",
+        "tight": true,
+        "columns": 3,
+        "items": [
+          { "icon": "target", "title": "Who it's for", "text": "Boards, founders and CHROs hiring CXO, VP and functional heads — especially for confidential replacements, new market entries and transformation mandates." },
+          { "icon": "lock", "title": "Discreet by design", "text": "Every search and its criteria stay confidential. Candidates are approached directly, never via public postings, unless you choose otherwise." },
+          { "icon": "globe", "title": "Beyond borders", "text": "Talent mapped across India, the Middle East and North America through our offices in Nagpur, Hyderabad, Dubai and Dallas." }
+        ]
+      },
+      {
+        "type": "process",
+        "id": "process",
+        "variant": "timeline",
+        "heading": { "eyebrow": "The process", "title": "Eight steps,", "highlight": "one accountable lead.", "lead": "A dedicated practice head runs your search from first conversation to joining day." },
+        "items": [
+          { "title": "Understand your requirements", "text": "Strategy, team dynamics, success measures and the leadership competencies that matter." },
+          { "title": "Finalise the search process", "text": "Agreed scorecard, timeline, target companies and communication cadence." },
+          { "title": "Conduct market research", "text": "Talent mapping across competitors and adjacent industries." },
+          { "title": "Analyse candidates", "text": "Structured interviews, motivation checks and referencing against the scorecard." },
+          { "title": "Facilitate client interviews", "text": "Scheduling, briefing packs and feedback loops for every round." },
+          { "title": "Select the best candidate", "text": "Comparative assessment to support a confident, evidence-based decision." },
+          { "title": "Support contract negotiation", "text": "Compensation benchmarking, offer structuring and counter-offer management." },
+          { "title": "Onboard & follow up", "text": "Check-ins through the first 90 days to secure a successful start." }
+        ]
+      },
+      {
+        "type": "checklist",
+        "tight": true,
+        "badge": "What you get",
+        "title": "Deliverables",
+        "sub": "Clear outputs at every stage.",
+        "items": [
+          "Role scorecard and search strategy document",
+          "Market map with target companies and talent pools",
+          "Shortlist of 3–5 assessed candidates with detailed reports",
+          "Weekly progress updates and a final search report",
+          "Compensation benchmarking and offer support"
+        ],
+        "aside": {
+          "eyebrow": "Roles we fill",
+          "title": "Managers to the C-suite",
+          "text": "We identify talent from senior manager level up to CXO across all functional areas.",
+          "tags": ["CEO / MD", "COO", "CFO", "CTO", "CIO", "CHRO", "VP Sales", "Business heads", "Plant heads", "Country managers"],
+          "link": { "label": "See leadership case studies", "url": "/case-studies" }
+        }
+      },
+      {
+        "type": "faq",
+        "id": "faq",
+        "tight": true,
+        "heading": { "eyebrow": "FAQ", "title": "Executive search, answered.", "align": "center" },
+        "items": [
+          { "question": "Are your searches confidential?", "answer": "Yes. All searches and search criteria are confidential. We approach candidates directly and share client identity only at the stage you approve." },
+          { "question": "How do you find candidates for a leadership role?", "answer": "About 20% of successful searches come through targeted postings. The other 80% are concluded through dedicated headhunting that brings hard-to-reach leaders to the table." },
+          { "question": "What levels and functions do you cover?", "answer": "From managers to CXO level (COO, CFO, CTO, CIO and more) across all functional areas." },
+          { "question": "Do you work with startups and smaller companies?", "answer": "Yes — we support new projects as well as small companies looking for expansion, and tailor the engagement model to your stage." },
+          { "question": "Do you only hire in the cities where you have offices?", "answer": "No. We serve clients nationally across India and internationally through our UAE and US entities." }
+        ]
+      }
+    ],
+    "cta": {
+      "eyebrow": "Confidential consultation",
+      "title": "Your next leader",
+      "highlight": "is already out there.",
+      "text": "Share the brief. A practice head will respond within one business day with a search plan and timeline.",
+      "ctas": [
+        { "label": "Start a search", "url": "/hire", "queryParams": { "service": "executive-search" }, "variant": "glow" },
+        { "label": "All services", "url": "/services", "variant": "ghost" }
+      ]
+    }
+  },
+  {
+    "slug": "mid-senior-hiring",
+    "name": "Mid & Senior Hiring",
+    "summary": "Managers, leads and senior specialists who deliver from week one.",
+    "menuNote": "Managers and senior specialists",
+    "icon": "users",
+    "order": 2,
+    "seo": {
+      "title": "Mid & Senior Hiring",
+      "description": "Specialist recruitment for managers, team leads and senior specialists — screened for skills, culture and intent, across India, the UAE and the US."
+    },
+    "hero": {
+      "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Services", "url": "/services" }, { "label": "Mid & Senior Hiring", "url": "/services/mid-senior-hiring" }],
+      "title": "The people who",
+      "highlight": "run the work.",
+      "lead": "Managers, team leads and senior specialists — screened for skills, culture fit and genuine intent to move, so your interview time goes to the right few.",
+      "ctas": [
+        { "label": "Hire a specialist", "url": "/hire", "queryParams": { "service": "mid-senior-hiring" }, "variant": "glow" },
+        { "label": "See the process", "url": "/services/mid-senior-hiring#process", "variant": "ghost" }
+      ],
+      "aside": {
+        "type": "funnel",
+        "eyebrow": "Your shortlist, at a glance",
+        "stats": [
+          { "value": "8,240+", "label": "Profiles in network" },
+          { "value": "3–5", "label": "Candidates per shortlist" },
+          { "value": "1", "label": "Dedicated recruiter" }
+        ],
+        "steps": [
+          { "label": "Skills", "value": 92, "pct": 92 },
+          { "label": "Domain", "value": 85, "pct": 85 },
+          { "label": "Culture", "value": 80, "pct": 80 },
+          { "label": "Intent", "value": 95, "pct": 95 }
+        ],
+        "note": "Example scorecard for one shortlisted candidate; shortlist size is a sample.",
+        "sample": "illustrative"
+      }
+    },
+    "blocks": [
+      {
+        "type": "cards",
+        "tight": true,
+        "columns": 4,
+        "items": [
+          { "icon": "zap", "title": "Scale-ups", "text": "Building the first layer of managers between founders and teams." },
+          { "icon": "code", "title": "Tech & product teams", "text": "Senior engineers, architects, consultants and delivery managers." },
+          { "icon": "factory", "title": "Operations heavy", "text": "Plant, supply chain, quality and regional operations leaders." },
+          { "icon": "users", "title": "HR & TA teams", "text": "Overflow support when your own recruiters are at capacity." }
+        ]
+      },
+      {
+        "type": "process",
+        "id": "process",
+        "variant": "steps",
+        "heading": { "eyebrow": "The process", "title": "Brief to offer,", "highlight": "without the noise.", "lead": "A focused four-stage process with clear check-ins at every handover.", "align": "center" },
+        "items": [
+          { "title": "Calibrate", "text": "A 30-minute intake to agree must-haves, nice-to-haves and the interview plan.", "meta": "// Day 0" },
+          { "title": "Source", "text": "Our 8,240+ network, targeted outreach and referrals — not just job-board volume.", "meta": "// Day 1–5", "sample": "sample" },
+          { "title": "Screen", "text": "Structured calls on skills, motivation, notice period and compensation expectations.", "meta": "// Day 3–7", "sample": "sample" },
+          { "title": "Close", "text": "Interview coordination, offer support and pre-joining follow-up to reduce drop-offs.", "meta": "// Week 2+" }
+        ]
+      },
+      {
+        "type": "checklist",
+        "tight": true,
+        "badge": "What you get",
+        "title": "Deliverables",
+        "sub": "Every profile arrives with context, not just a CV.",
+        "items": [
+          "Calibrated role brief and screening questions",
+          "Shortlist with recruiter notes on each candidate",
+          "Compensation, notice period and availability confirmed upfront",
+          "Interview scheduling and feedback loops",
+          "Offer support and follow-up until joining"
+        ],
+        "aside": {
+          "eyebrow": "Roles we fill",
+          "title": "From team lead to senior manager",
+          "text": "Across functions and industries, with deep coverage in banking technology and enterprise IT.",
+          "tags": ["Project managers", "Delivery leads", "Senior consultants", "Solution architects", "Finance managers", "HR business partners", "Sales managers", "Plant managers", "Quality heads"],
+          "link": { "label": "See roles we're hiring for", "url": "/jobs" }
+        }
+      },
+      {
+        "type": "faq",
+        "id": "faq",
+        "tight": true,
+        "heading": { "eyebrow": "FAQ", "title": "Mid & senior hiring, answered.", "align": "center" },
+        "items": [
+          { "question": "How is this different from executive search?", "answer": "Executive search is a retained, research-led process for CXO and leadership roles. Mid & senior hiring covers managers and senior specialists, using our network and targeted sourcing for faster turnaround." },
+          { "question": "How many candidates will I see?", "answer": "We aim for a short, high-quality shortlist rather than a stack of CVs. The exact number is agreed during calibration." },
+          { "question": "Can you hire several roles at once?", "answer": "Yes. For a handful of roles we run them in parallel; for continuous hiring across many roles, <a href=\"/services/rpo\">RPO</a> is usually a better fit." },
+          { "question": "Do you check notice periods and expectations?", "answer": "Yes — compensation expectations, notice period and availability are confirmed before a profile reaches you." },
+          { "question": "Can you verify candidates before they join?", "answer": "Yes. Add <a href=\"/services/background-verification\">background verification</a> to any hire for consent-based employment, education and identity checks." }
+        ]
+      },
+      {
+        "type": "links",
+        "tight": true,
+        "heading": { "eyebrow": "Related services", "title": "Often paired with." },
+        "items": [
+          { "icon": "crown", "title": "Executive Search", "text": "For the leader your new managers will report to.", "link": { "label": "Explore", "url": "/services/executive-search" } },
+          { "icon": "cog", "title": "RPO", "text": "When the hiring never stops — an embedded TA team.", "link": { "label": "Explore", "url": "/services/rpo" } },
+          { "icon": "shield", "title": "Background Verification", "text": "Confidence in every senior hire before day one.", "link": { "label": "Explore", "url": "/services/background-verification" } }
+        ]
+      }
+    ],
+    "cta": {
+      "eyebrow": "Start with a brief",
+      "title": "Skip the CV pile.",
+      "highlight": "Meet the right few.",
+      "text": "Tell us the role and the team. A recruiter will call within one business day to calibrate.",
+      "ctas": [
+        { "label": "Hire a specialist", "url": "/hire", "queryParams": { "service": "mid-senior-hiring" }, "variant": "glow" },
+        { "label": "All services", "url": "/services", "variant": "ghost" }
+      ]
+    }
+  },
+  {
+    "slug": "bulk-hiring",
+    "name": "Bulk Hiring",
+    "summary": "Volume hiring drives for new sites, projects and seasonal peaks.",
+    "menuNote": "Volume hiring for new sites",
+    "icon": "layers",
+    "order": 3,
+    "seo": {
+      "title": "Bulk & Volume Hiring",
+      "description": "Volume hiring drives for new sites, plant expansions, project ramp-ups and seasonal peaks — sourced, assessed and onboarded on schedule."
+    },
+    "hero": {
+      "align": "center",
+      "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Services", "url": "/services" }, { "label": "Bulk Hiring", "url": "/services/bulk-hiring" }],
+      "title": "Fill the floor,",
+      "highlight": "not just the funnel.",
+      "lead": "Structured hiring drives for new sites, plant expansions and project ramp-ups — sourced, assessed and onboarded against a date you can plan around.",
+      "ctas": [
+        { "label": "Plan a hiring drive", "url": "/hire", "queryParams": { "service": "bulk-hiring" }, "variant": "glow" },
+        { "label": "See a sample drive", "url": "/services/bulk-hiring#drive", "variant": "ghost" }
+      ]
+    },
+    "blocks": [
+      {
+        "type": "stats",
+        "tight": true,
+        "items": [
+          { "value": "8,240+", "label": "Candidate profiles ready to tap", "highlight": true },
+          { "value": "4", "label": "Offices to run drives across regions" },
+          { "value": "150", "unit": "/wk", "label": "Screening capacity per drive", "sample": "sample" },
+          { "value": "2–6", "unit": "wks", "label": "Typical drive length", "sample": "sample" }
+        ]
+      },
+      {
+        "type": "cards",
+        "tight": true,
+        "columns": 3,
+        "heading": { "eyebrow": "Who it's for", "title": "When one hire", "highlight": "becomes fifty." },
+        "items": [
+          { "icon": "factory", "title": "New sites & plants", "text": "Operators, technicians, supervisors and support staff for a launch date that can't move." },
+          { "icon": "code", "title": "Project ramp-ups", "text": "Consultants and developers for a new client programme — for example, a core banking rollout." },
+          { "icon": "cart", "title": "Seasonal peaks", "text": "Sales, service and logistics teams scaled for festive, harvest or year-end demand." }
+        ]
+      },
+      {
+        "type": "process",
+        "id": "drive",
+        "variant": "timeline",
+        "heading": { "eyebrow": "Anatomy of a drive", "title": "A hiring drive,", "highlight": "week by week.", "lead": "A sample four-week plan for a single site. Real drives are sized to your volume and locations. Timeline is illustrative.", "sample": "sample" },
+        "items": [
+          { "key": "Week 0", "title": "Plan the drive", "text": "Role profiles, headcount by shift and location, assessment criteria and a joining calendar." },
+          { "key": "Week 1", "title": "Source at scale", "text": "Our database, job portals, local campaigns, campus and referral channels — all running in parallel." },
+          { "key": "Week 2", "title": "Assess in batches", "text": "Phone screens, skill tests and walk-in or virtual assessment days with your panel." },
+          { "key": "Week 3", "title": "Offer & document", "text": "Bulk offer roll-out, document collection and optional background checks." },
+          { "key": "Week 4", "title": "Onboard in waves", "text": "Joining-day coordination and early follow-ups to keep drop-offs low." }
+        ]
+      },
+      {
+        "type": "funnel",
+        "tight": true,
+        "heading": { "eyebrow": "Live drive dashboard", "title": "You see the numbers,", "highlight": "daily.", "lead": "Every drive comes with a shared tracker so you know exactly where each position stands." },
+        "title": "Drive funnel",
+        "steps": [
+          { "label": "Applied", "value": 620, "pct": 100 },
+          { "label": "Screened", "value": 360, "pct": 58 },
+          { "label": "Assessed", "value": 185, "pct": 30 },
+          { "label": "Offered", "value": 92, "pct": 15 },
+          { "label": "Joined", "value": 80, "pct": 13 }
+        ],
+        "note": "Example funnel for an 80-seat drive.",
+        "sample": "illustrative"
+      },
+      {
+        "type": "compare",
+        "tight": true,
+        "them": {
+          "title": "Without a structured drive",
+          "sub": "What we're designed to prevent.",
+          "items": [
+            "Hundreds of unscreened CVs in a shared inbox",
+            "Hiring managers pulled into every first-round call",
+            "No visibility of where the numbers stand",
+            "Offers accepted, then no-shows on joining day"
+          ]
+        },
+        "us": {
+          "badge": "What you get",
+          "title": "Deliverables",
+          "sub": "Volume without losing quality control.",
+          "items": [
+            "Drive plan with headcount, timelines and joining waves",
+            "Multi-channel sourcing campaign, including local outreach",
+            "Standardised screening and assessment scorecards",
+            "Daily funnel tracker and weekly review calls",
+            "Offer roll-out, documentation and joining coordination"
+          ]
+        }
+      },
+      {
+        "type": "faq",
+        "id": "faq",
+        "tight": true,
+        "heading": { "eyebrow": "FAQ", "title": "Bulk hiring, answered.", "align": "center" },
+        "items": [
+          { "question": "What volumes can you handle?", "answer": "From a dozen positions to several hundred. We size the recruiter team and channels to your headcount and deadline at kick-off." },
+          { "question": "Can you run walk-in or campus drives?", "answer": "Yes. We organise walk-in, virtual and campus assessment days, including venue coordination and candidate communication." },
+          { "question": "Do you hire across multiple cities?", "answer": "Yes. Drives can run across locations in India, with support from our offices in Nagpur and Hyderabad, and internationally through Dubai and Dallas." },
+          { "question": "How do you reduce joining-day drop-offs?", "answer": "Through clear offer communication, pre-joining check-ins and staggered joining waves — and by tracking every candidate through to day one." },
+          { "question": "Can the hires be on contract instead of permanent?", "answer": "Yes. Through <a href=\"/services/flexible-staffing\">flexible staffing</a>, we can employ the team on contract and handle payroll and compliance for you." }
+        ]
+      },
+      {
+        "type": "links",
+        "tight": true,
+        "heading": { "eyebrow": "Related services", "title": "Often paired with." },
+        "items": [
+          { "icon": "flex", "title": "Flexible Staffing", "text": "Keep volume teams on contract and scale with demand.", "link": { "label": "Explore", "url": "/services/flexible-staffing" } },
+          { "icon": "shield", "title": "Background Verification", "text": "Batch verification for large joining cohorts.", "link": { "label": "Explore", "url": "/services/background-verification" } },
+          { "icon": "cog", "title": "RPO", "text": "For continuous high-volume hiring, all year round.", "link": { "label": "Explore", "url": "/services/rpo" } }
+        ]
+      }
+    ],
+    "cta": {
+      "eyebrow": "Launch date set?",
+      "title": "Let's staff it",
+      "highlight": "on schedule.",
+      "text": "Share your headcount, locations and go-live date. We'll come back with a drive plan within one business day.",
+      "ctas": [
+        { "label": "Plan a hiring drive", "url": "/hire", "queryParams": { "service": "bulk-hiring" }, "variant": "glow" },
+        { "label": "All services", "url": "/services", "variant": "ghost" }
+      ]
+    }
+  },
+  {
+    "slug": "flexible-staffing",
+    "name": "Flexible Staffing",
+    "summary": "Talent-as-a-Service — we handle contracts, payroll and compliance.",
+    "menuNote": "Talent-as-a-Service contracts",
+    "icon": "flex",
+    "order": 4,
+    "seo": {
+      "title": "Flexible Staffing & Talent-as-a-Service",
+      "description": "Talent-as-a-Service: skilled contract professionals on demand, with contracts, payroll and statutory compliance handled by StarOrigin."
+    },
+    "hero": {
+      "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Services", "url": "/services" }, { "label": "Flexible Staffing", "url": "/services/flexible-staffing" }],
+      "title": "Talent on tap.",
+      "highlight": "Paperwork on us.",
+      "lead": "Talent-as-a-Service gives you skilled professionals for as long as you need them. We employ them, run payroll and stay on top of compliance — you direct the work.",
+      "ctas": [
+        { "label": "Request contract talent", "url": "/hire", "queryParams": { "service": "flexible-staffing" }, "variant": "glow" },
+        { "label": "How it works", "url": "/services/flexible-staffing#how", "variant": "ghost" }
+      ],
+      "aside": {
+        "type": "funnel",
+        "eyebrow": "Ramp up · ramp down",
+        "stats": [
+          { "value": "6→20", "label": "Contract headcount" },
+          { "value": "1", "label": "Monthly invoice" },
+          { "value": "0", "label": "Permanent headcount added" }
+        ],
+        "steps": [
+          { "label": "Jan", "value": 6, "pct": 30 },
+          { "label": "Mar", "value": 12, "pct": 60 },
+          { "label": "Jun", "value": 20, "pct": 100 },
+          { "label": "Sep", "value": 14, "pct": 70 },
+          { "label": "Dec", "value": 8, "pct": 40 }
+        ],
+        "note": "Capacity that follows the work — example contract headcount across a project year.",
+        "sample": "illustrative"
+      }
+    },
+    "blocks": [
+      {
+        "type": "cards",
+        "tight": true,
+        "columns": 3,
+        "items": [
+          { "icon": "calendar", "title": "Project-based work", "text": "Implementations, migrations and launches with a defined end date." },
+          { "icon": "users", "title": "Backfills & leave cover", "text": "Keep delivery moving through maternity leave, sabbaticals and exits." },
+          { "icon": "chart", "title": "Headcount-capped teams", "text": "Add capacity when permanent hiring is frozen or still being approved." }
+        ]
+      },
+      {
+        "type": "cards",
+        "id": "how",
+        "columns": 3,
+        "heading": { "eyebrow": "How it works", "title": "You direct the work.", "highlight": "We carry the employer load.", "lead": "Contract professionals sit on StarOrigin's payroll and work as part of your team." },
+        "items": [
+          { "icon": "file", "eyebrow": "Contracts", "title": "One agreement, clear terms", "text": "A single master services agreement with you, plus individual employment contracts we issue to each professional — with notice, extension and conversion terms agreed upfront." },
+          { "icon": "rupee", "eyebrow": "Payroll", "title": "One monthly invoice", "text": "We pay salaries, reimbursements and benefits on time each month. You receive one consolidated invoice based on approved timesheets or attendance." },
+          { "icon": "shield", "eyebrow": "Compliance", "title": "Statutory, handled", "text": "We manage applicable statutory obligations — such as PF, ESI, professional tax, TDS and labour-law filings in India — and keep records ready for audit." }
+        ]
+      },
+      {
+        "type": "process",
+        "tight": true,
+        "variant": "steps",
+        "items": [
+          { "title": "Scope", "text": "Skills, headcount, duration, location and budget." },
+          { "title": "Match", "text": "Pre-screened profiles from our network for your interview." },
+          { "title": "Deploy", "text": "We onboard, issue contracts and set up payroll." },
+          { "title": "Manage", "text": "Monthly reviews, extensions, replacements or conversion to permanent." }
+        ]
+      },
+      {
+        "type": "cards",
+        "id": "benefits",
+        "tight": true,
+        "columns": 4,
+        "heading": { "eyebrow": "Benefits", "title": "Ten reasons teams", "highlight": "choose TaaS.", "align": "center" },
+        "items": [
+          { "icon": "globe", "title": "Extensive Talent Network", "text": "8,240+ profiles to draw on." },
+          { "icon": "zap", "title": "Quick Response Time", "text": "Profiles fast, from a ready pool." },
+          { "icon": "rupee", "title": "Competitive Cost", "text": "No recruitment overheads or idle bench." },
+          { "icon": "bolt", "title": "Instant Productivity", "text": "Skilled people who start contributing early." },
+          { "icon": "book", "title": "Upskilling & Cross Skilling", "text": "Talent kept current as your needs change." },
+          { "icon": "tool", "title": "Customised Talent Solutions", "text": "Shaped to your roles, shifts and budget." },
+          { "icon": "target", "title": "Specialised Experts", "text": "Niche skills for short, critical work." },
+          { "icon": "heart", "title": "Support & Monitoring", "text": "Regular check-ins with you and the team." },
+          { "icon": "flex", "title": "Flexibility to Ramp up/down", "text": "Scale headcount as work changes." },
+          { "icon": "users", "title": "Soft Skills Trained", "text": "Professionals ready for client-facing work." }
+        ]
+      },
+      {
+        "type": "faq",
+        "id": "faq",
+        "tight": true,
+        "heading": { "eyebrow": "FAQ", "title": "Flexible staffing, answered.", "align": "center" },
+        "items": [
+          { "question": "Who is the legal employer?", "answer": "StarOrigin is the employer of record for contract professionals. They work under your day-to-day direction, while we handle contracts, payroll and statutory compliance." },
+          { "question": "What is the minimum contract length?", "answer": "Durations are agreed per engagement and can be extended month by month. Tell us your project timeline and we'll suggest the right structure." },
+          { "question": "Can I convert a contractor to a permanent employee?", "answer": "Yes. Conversion terms are set in the agreement upfront, so there are no surprises when you want to keep someone." },
+          { "question": "What happens if a contractor isn't the right fit?", "answer": "Raise it with your account manager. We'll discuss the concern and, where needed, arrange a replacement from our network." },
+          { "question": "Do you provide contract staff in the US?", "answer": "Yes — through our Dallas office we offer W2, C2C and contract-to-hire models. See <a href=\"/services/us-staffing\">US staffing</a>." }
+        ]
+      },
+      {
+        "type": "links",
+        "tight": true,
+        "heading": { "eyebrow": "Related services", "title": "Often paired with." },
+        "items": [
+          { "icon": "layers", "title": "Bulk Hiring", "text": "Stand up a large contract team on a fixed date.", "link": { "label": "Explore", "url": "/services/bulk-hiring" } },
+          { "icon": "flag", "title": "US Staffing", "text": "Contract and contract-to-hire talent in the US.", "link": { "label": "Explore", "url": "/services/us-staffing" } },
+          { "icon": "brief", "title": "Interim Management", "text": "Contract leadership for critical gaps.", "link": { "label": "Explore", "url": "/services/interim-management" } }
+        ]
+      }
+    ],
+    "cta": {
+      "eyebrow": "Talent-as-a-Service",
+      "title": "Add capacity,",
+      "highlight": "not overhead.",
+      "text": "Tell us the skills, headcount and duration. We'll share matched profiles and a clear monthly rate.",
+      "ctas": [
+        { "label": "Request contract talent", "url": "/hire", "queryParams": { "service": "flexible-staffing" }, "variant": "glow" },
+        { "label": "All services", "url": "/services", "variant": "ghost" }
+      ]
+    }
+  },
+  {
+    "slug": "us-staffing",
+    "name": "US Staffing",
+    "summary": "W2, C2C, contract-to-hire and direct hire, led from Dallas.",
+    "menuNote": "W2, C2C, contract-to-hire",
+    "icon": "flag",
+    "order": 5,
+    "seo": {
+      "title": "US IT Staffing — W2, C2C & Contract-to-Hire",
+      "description": "US IT staffing from our Dallas office: W2, C2C, contract-to-hire and direct hire for developers, data, cloud and enterprise application talent."
+    },
+    "hero": {
+      "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Services", "url": "/services" }, { "label": "US Staffing", "url": "/services/us-staffing" }],
+      "title": "US tech talent,",
+      "highlight": "on your terms.",
+      "lead": "W2, C2C, contract-to-hire or direct hire — IT professionals for US enterprises, delivered by StarOrigin Inc from Dallas, Texas.",
+      "ctas": [
+        { "label": "Request US talent", "url": "/hire", "queryParams": { "service": "us-staffing" }, "variant": "glow" },
+        { "label": "Compare models", "url": "/services/us-staffing#models", "variant": "ghost" }
+      ],
+      "aside": {
+        "type": "card",
+        "card": {
+          "icon": "pin",
+          "eyebrow": "US · Dallas, TX",
+          "title": "StarOrigin Inc",
+          "text": "11816 Inwood Rd #1593, Dallas, TX 75244, United States · hello@starorigin.in",
+          "tags": ["Central Time", "Nationwide coverage", "Remote & onsite"],
+          "link": { "label": "+1 (467) 420 8880", "url": "tel:+14674208880" }
+        }
+      }
+    },
+    "blocks": [
+      {
+        "type": "cards",
+        "tight": true,
+        "columns": 3,
+        "items": [
+          { "icon": "brief", "title": "Enterprise IT teams", "text": "Extra hands for application, data and infrastructure programmes." },
+          { "icon": "share", "title": "IT services & SIs", "text": "Billable consultants for client projects, ready to start against a SOW." },
+          { "icon": "zap", "title": "Growing product companies", "text": "Engineers on contract now, with the option to convert later." }
+        ]
+      },
+      {
+        "type": "cards",
+        "id": "models",
+        "columns": 4,
+        "heading": { "eyebrow": "Engagement models", "title": "Four ways to", "highlight": "bring talent on.", "lead": "Pick the model that matches your budget, risk and how long you need the skill." },
+        "items": [
+          { "eyebrow": "W2", "title": "W2 contract", "text": "The consultant is on StarOrigin Inc's payroll. We handle taxes, benefits eligibility and employment compliance.", "tags": ["Lowest admin for you"] },
+          { "eyebrow": "C2C", "title": "Corp-to-corp", "text": "The consultant works through their own registered company, billed via StarOrigin as a single vendor.", "tags": ["Independent consultants"] },
+          { "eyebrow": "C2H", "title": "Contract-to-hire", "text": "Start on contract, evaluate on real work, then convert to your full-time payroll.", "tags": ["Try before you hire"] },
+          { "eyebrow": "DH", "title": "Direct hire", "text": "We source and assess; the candidate joins your payroll from day one.", "tags": ["One-time placement fee"] }
+        ]
+      },
+      {
+        "type": "table",
+        "tight": true,
+        "columns": ["Model", "Employer of record", "Best for", "Billing"],
+        "rows": [
+          ["W2", "StarOrigin Inc", "Projects of 3–12+ months", "Hourly bill rate"],
+          ["C2C", "Consultant's company", "Specialist, independent consultants", "Hourly bill rate"],
+          ["Contract-to-hire", "StarOrigin Inc, then you", "Roles you want to evaluate first", "Hourly, then conversion fee"],
+          ["Direct hire", "You", "Long-term core team members", "Placement fee"]
+        ],
+        "note": "General guidance only — terms are set in each client agreement.",
+        "sample": "confirm"
+      },
+      {
+        "type": "process",
+        "id": "process",
+        "variant": "timeline",
+        "heading": { "eyebrow": "The process", "title": "Req to start date,", "highlight": "simply." },
+        "items": [
+          { "title": "Share the requirement", "text": "Skills, location or remote, duration, rate range and preferred model." },
+          { "title": "Source & screen", "text": "Technical screening, work authorisation and availability confirmed before submission." },
+          { "title": "Interview & select", "text": "We coordinate your rounds and manage rate and start-date conversations." },
+          { "title": "Onboard & support", "text": "Paperwork, background checks and regular check-ins for the life of the contract." }
+        ]
+      },
+      {
+        "type": "checklist",
+        "tight": true,
+        "badge": "What you get",
+        "title": "Deliverables",
+        "sub": "Submissions you can act on quickly.",
+        "items": [
+          "Technically screened candidate submissions",
+          "Work authorisation and availability confirmed",
+          "Rate and start date agreed before you interview",
+          "Onboarding paperwork and background checks",
+          "Timesheets and consolidated invoicing",
+          "A Dallas-based account contact in your time zone"
+        ],
+        "aside": {
+          "eyebrow": "IT focus",
+          "title": "Skills we place",
+          "text": "Developers, data, cloud and enterprise application specialists — including deep experience in banking technology.",
+          "tags": ["Java / Spring", "React", ".NET", "Python", "AWS", "Azure", "DevOps", "Data engineering", "QA automation", "Oracle FLEXCUBE", "Salesforce", "Project managers"],
+          "link": { "label": "Browse open US roles", "url": "/jobs" }
+        }
+      },
+      {
+        "type": "faq",
+        "id": "faq",
+        "tight": true,
+        "heading": { "eyebrow": "FAQ", "title": "US staffing, answered.", "align": "center" },
+        "items": [
+          { "question": "What's the difference between W2 and C2C?", "answer": "On W2, the consultant is employed by StarOrigin Inc and we handle payroll taxes. On C2C, the consultant bills through their own company and StarOrigin acts as the single vendor to you." },
+          { "question": "Do you verify work authorisation?", "answer": "Yes. Work authorisation is confirmed before a candidate is submitted, and employment eligibility is verified at onboarding for W2 consultants." },
+          { "question": "Can consultants work remotely?", "answer": "Yes. We place remote, hybrid and onsite consultants across the US — not only in Texas." },
+          { "question": "How does contract-to-hire conversion work?", "answer": "After the agreed contract period, you can offer the consultant a full-time role. Conversion terms are set in the agreement upfront." },
+          { "question": "Can I reach the Dallas team directly?", "answer": "Yes — call <a href=\"tel:+14674208880\">+1 (467) 420 8880</a> or email <a href=\"mailto:hello@starorigin.in\">hello@starorigin.in</a>." }
+        ]
+      },
+      {
+        "type": "links",
+        "tight": true,
+        "heading": { "eyebrow": "Related services", "title": "Often paired with." },
+        "items": [
+          { "icon": "flex", "title": "Flexible Staffing", "text": "Contract talent in India and the UAE.", "link": { "label": "Explore", "url": "/services/flexible-staffing" } },
+          { "icon": "cog", "title": "RPO", "text": "Ongoing US hiring run by an embedded team.", "link": { "label": "Explore", "url": "/services/rpo" } },
+          { "icon": "shield", "title": "Background Verification", "text": "Consent-based checks before every start.", "link": { "label": "Explore", "url": "/services/background-verification" } }
+        ]
+      }
+    ],
+    "cta": {
+      "eyebrow": "StarOrigin Inc · Dallas",
+      "title": "Your next consultant",
+      "highlight": "starts here.",
+      "text": "Send the requirement and preferred model. Our Dallas team will reply within one business day.",
+      "ctas": [
+        { "label": "Request US talent", "url": "/hire", "queryParams": { "service": "us-staffing" }, "variant": "glow" },
+        { "label": "+1 (467) 420 8880", "url": "tel:+14674208880", "variant": "ghost", "icon": "phone" }
+      ]
+    }
+  },
+  {
+    "slug": "rpo",
+    "name": "Recruitment Process Outsourcing",
+    "summary": "We become your talent-acquisition team — sourcing to onboarding, under your brand.",
+    "menuNote": "Your embedded TA team",
+    "icon": "cog",
+    "order": 6,
+    "seo": {
+      "title": "Recruitment Process Outsourcing (RPO)",
+      "description": "End-to-end, project or recruiter-on-demand RPO — an embedded talent acquisition team with agreed SLAs and transparent reporting."
+    },
+    "hero": {
+      "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Services", "url": "/services" }, { "label": "RPO", "url": "/services/rpo" }],
+      "title": "Your talent team,",
+      "highlight": "without the build.",
+      "lead": "Recruitment Process Outsourcing puts an embedded StarOrigin team behind your hiring — sourcing to onboarding, under your brand, measured against SLAs you agree.",
+      "ctas": [
+        { "label": "Scope an RPO", "url": "/hire", "queryParams": { "service": "rpo" }, "variant": "glow" },
+        { "label": "Choose a model", "url": "/services/rpo#models", "variant": "ghost" }
+      ],
+      "aside": {
+        "type": "funnel",
+        "eyebrow": "Monthly funnel report",
+        "steps": [
+          { "label": "Sourced", "value": 480, "pct": 100 },
+          { "label": "Screened", "value": 250, "pct": 52 },
+          { "label": "Submitted", "value": 115, "pct": 24 },
+          { "label": "Interviewed", "value": 72, "pct": 15 },
+          { "label": "Offered", "value": 28, "pct": 6 },
+          { "label": "Joined", "value": 24, "pct": 5 }
+        ],
+        "note": "Every stage, visible — example month for a multi-role RPO.",
+        "sample": "illustrative"
+      }
+    },
+    "blocks": [
+      {
+        "type": "cards",
+        "tight": true,
+        "columns": 3,
+        "items": [
+          { "icon": "chart", "title": "Steady, high hiring volume", "text": "Dozens of roles a quarter across functions and locations." },
+          { "icon": "users", "title": "Lean or no TA team", "text": "Hiring managers recruiting on top of their day jobs." },
+          { "icon": "target", "title": "Inconsistent results", "text": "Too many agencies, uneven quality and no single view of the pipeline." }
+        ]
+      },
+      {
+        "type": "tabs",
+        "id": "models",
+        "heading": { "eyebrow": "Engagement models", "title": "Three ways", "highlight": "to embed us.", "lead": "Start narrow and expand, or hand over the whole function from day one." },
+        "tabs": [
+          {
+            "label": "End-to-end RPO",
+            "blocks": [
+              {
+                "type": "checklist",
+                "title": "Best when",
+                "items": ["Hiring is continuous and business-critical", "You want one owner and one set of metrics", "You plan to consolidate multiple agencies"],
+                "aside": { "icon": "cog", "title": "We run the whole hiring function", "text": "Workforce planning, employer-brand sourcing, screening, interview coordination, offers and onboarding — for all or most of your roles.", "tags": ["Ongoing", "All functions", "Your brand"] }
+              }
+            ]
+          },
+          {
+            "label": "Project RPO",
+            "blocks": [
+              {
+                "type": "checklist",
+                "title": "Best when",
+                "items": ["You're launching a site, team or business unit", "Your TA team can't absorb the spike", "You want results before committing long-term"],
+                "aside": { "icon": "calendar", "title": "A defined hiring goal, a defined end", "text": "A dedicated team for a set number of hires within a fixed window — a new office, product line or client programme.", "tags": ["Fixed scope", "Fixed timeline"] }
+              }
+            ]
+          },
+          {
+            "label": "Recruiter on demand",
+            "blocks": [
+              {
+                "type": "checklist",
+                "title": "Best when",
+                "items": ["You have a TA lead but not enough hands", "You need niche sourcing skills for a period", "You want flexibility to scale recruiters up or down"],
+                "aside": { "icon": "users", "title": "Experienced recruiters, plugged into your team", "text": "Our recruiters work inside your process and tools, under your TA lead, for as many months as you need.", "tags": ["Monthly", "Your process", "Scale per recruiter"] }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "process",
+        "id": "process",
+        "tight": true,
+        "variant": "steps",
+        "heading": { "eyebrow": "Implementation", "title": "Live in weeks,", "highlight": "improving every month.", "align": "center" },
+        "items": [
+          { "title": "Discover", "text": "Hiring plan, current process, tools, pain points and baseline metrics.", "meta": "// Week 1", "sample": "sample" },
+          { "title": "Design", "text": "Process map, SLAs, scorecards, approval flows and reporting cadence.", "meta": "// Week 2", "sample": "sample" },
+          { "title": "Deploy", "text": "Dedicated team onboarded to your brand, ATS and hiring managers.", "meta": "// Week 3–4", "sample": "sample" },
+          { "title": "Optimise", "text": "Monthly reviews of funnel data to fix bottlenecks and lift quality.", "meta": "// Ongoing" }
+        ]
+      },
+      {
+        "type": "stats",
+        "id": "sla",
+        "tight": true,
+        "heading": { "eyebrow": "SLAs & reporting", "title": "Measured on", "highlight": "what matters.", "lead": "Example SLA targets — final targets are agreed per engagement and reviewed monthly.", "sample": "sample targets" },
+        "items": [
+          { "value": "48", "unit": "h", "label": "First profiles after a role is opened", "highlight": true, "sample": "sample" },
+          { "value": "24", "unit": "h", "label": "Interview scheduling turnaround", "sample": "sample" },
+          { "value": "1:3", "label": "Target submission-to-interview ratio", "sample": "sample" },
+          { "value": "Weekly", "label": "Funnel report, plus a monthly review" }
+        ]
+      },
+      {
+        "type": "cards",
+        "tight": true,
+        "columns": 3,
+        "items": [
+          { "icon": "chart", "title": "Funnel metrics", "text": "Volumes and conversion at each stage, by role, location and hiring manager." },
+          { "icon": "clock", "title": "Speed metrics", "text": "Time-to-shortlist, time-to-offer and time-to-join, tracked against SLA." },
+          { "icon": "star", "title": "Quality metrics", "text": "Offer acceptance, joining rate, early attrition and hiring-manager feedback." }
+        ]
+      },
+      {
+        "type": "faq",
+        "id": "faq",
+        "tight": true,
+        "heading": { "eyebrow": "FAQ", "title": "RPO, answered.", "align": "center" },
+        "items": [
+          { "question": "How is RPO different from using an agency?", "answer": "An agency fills individual roles and is paid per placement. RPO takes ownership of the process itself — a dedicated team, shared metrics and continuous improvement. Read more in <a href=\"/insights/rpo-vs-agency-hiring\">RPO vs agency hiring</a>." },
+          { "question": "Will candidates know they're dealing with StarOrigin?", "answer": "That's your choice. Most clients have our team recruit under the client's employer brand." },
+          { "question": "Do you work in our ATS?", "answer": "Yes, we can work inside your existing applicant tracking system, or provide tracking and reporting if you don't have one." },
+          { "question": "How is RPO priced?", "answer": "Typically a monthly management fee for the embedded team, with or without a per-hire component. Project RPO can be priced per project. We'll recommend a structure after discovery." },
+          { "question": "Can we start small?", "answer": "Yes. Many clients start with recruiter on demand or a project RPO for one function, then expand." }
+        ]
+      },
+      {
+        "type": "links",
+        "tight": true,
+        "heading": { "eyebrow": "Related services", "title": "Often paired with." },
+        "items": [
+          { "icon": "layers", "title": "Bulk Hiring", "text": "A one-off volume drive without a long-term engagement.", "link": { "label": "Explore", "url": "/services/bulk-hiring" } },
+          { "icon": "crown", "title": "Executive Search", "text": "Confidential leadership hires alongside your RPO.", "link": { "label": "Explore", "url": "/services/executive-search" } },
+          { "icon": "shield", "title": "Background Verification", "text": "Verification built into every offer stage.", "link": { "label": "Explore", "url": "/services/background-verification" } }
+        ]
+      }
+    ],
+    "cta": {
+      "eyebrow": "Free discovery session",
+      "title": "Hiring that runs",
+      "highlight": "like a system.",
+      "text": "Share your hiring plan for the next two quarters. We'll map the right RPO model and SLAs within one business day.",
+      "ctas": [
+        { "label": "Scope an RPO", "url": "/hire", "queryParams": { "service": "rpo" }, "variant": "glow" },
+        { "label": "All services", "url": "/services", "variant": "ghost" }
+      ]
+    }
+  },
+  {
+    "slug": "interim-management",
+    "name": "Interim Management",
+    "summary": "Experienced leaders who step into critical gaps, fast.",
+    "menuNote": "Leaders for critical gaps",
+    "icon": "brief",
+    "order": 7,
+    "seo": {
+      "title": "Interim Management",
+      "description": "Experienced interim leaders for sudden exits, turnarounds, transformations and new-market launches — in post fast, accountable for outcomes."
+    },
+    "hero": {
+      "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Services", "url": "/services" }, { "label": "Interim Management", "url": "/services/interim-management" }],
+      "title": "A proven leader,",
+      "highlight": "in post fast.",
+      "lead": "When a critical seat is empty or a change programme can't wait, we place experienced interim executives who take charge from the first week and hand over cleanly.",
+      "ctas": [
+        { "label": "Brief an interim need", "url": "/hire", "queryParams": { "service": "interim-management" }, "variant": "glow" },
+        { "label": "How a mandate runs", "url": "/services/interim-management#mandate", "variant": "ghost" }
+      ],
+      "aside": {
+        "type": "stats",
+        "eyebrow": "Mandate snapshot — clear scope, clear exit",
+        "items": [
+          { "value": "3–12", "label": "Months, typical", "sample": "sample" },
+          { "value": "1", "label": "Agreed mandate" },
+          { "value": "Day 1", "label": "Hand-over plan starts" }
+        ],
+        "note": "Typical mandates: Interim CFO, COO, CHRO, plant head, programme director, country manager. Duration is a sample.",
+        "sample": "sample"
+      }
+    },
+    "blocks": [
+      {
+        "type": "cards",
+        "tight": true,
+        "columns": 4,
+        "heading": { "eyebrow": "Who it's for", "title": "Moments that", "highlight": "can't wait." },
+        "items": [
+          { "icon": "clock", "title": "Sudden exits", "text": "Keep the function running while you search for a permanent leader." },
+          { "icon": "tool", "title": "Turnarounds", "text": "Stabilise a struggling unit, plant or region with hands-on leadership." },
+          { "icon": "layers", "title": "Transformations", "text": "Lead an ERP rollout, restructuring, merger integration or carve-out." },
+          { "icon": "globe", "title": "New markets", "text": "Set up operations in India, the UAE or the US before hiring permanently." }
+        ]
+      },
+      {
+        "type": "process",
+        "id": "mandate",
+        "variant": "timeline",
+        "heading": { "eyebrow": "How a mandate runs", "title": "From brief to", "highlight": "clean hand-over.", "lead": "Interim leaders are measured on outcomes agreed upfront — not on time served." },
+        "items": [
+          { "key": "Week 0", "title": "Define the mandate", "text": "What must be true at the end of the assignment — and what authority the role carries." },
+          { "key": "Week 1–2", "title": "Shortlist & select", "text": "Available leaders from our network who have solved the same problem before.", "sample": "sample timing" },
+          { "key": "Day 1–30", "title": "Diagnose & stabilise", "text": "Listen, assess the team and numbers, and present a 90-day plan." },
+          { "key": "Day 30–90", "title": "Deliver", "text": "Execute priorities, with fortnightly reviews against the mandate." },
+          { "key": "Exit", "title": "Hand over", "text": "Transition to the permanent hire — whom we can also find through executive search." }
+        ]
+      },
+      {
+        "type": "checklist",
+        "tight": true,
+        "title": "Before they start, you'll have",
+        "items": [
+          "A written mandate with objectives and success measures",
+          "A shortlist of 2–3 available, referenced interim leaders",
+          "Agreed duration, day rate and extension terms",
+          "A reporting line and review cadence"
+        ],
+        "aside": {
+          "icon": "crown",
+          "eyebrow": "Roles we place",
+          "title": "Interim leaders, ready to move",
+          "text": "Senior executives who have run the same function before, available at short notice.",
+          "tags": ["Interim CFO", "Interim COO", "Interim CHRO", "Plant head", "Programme director", "Country manager"],
+          "link": { "label": "Find the permanent leader too", "url": "/services/executive-search" }
+        }
+      },
+      {
+        "type": "compare",
+        "tight": true,
+        "them": {
+          "title": "Leaving the seat empty",
+          "sub": "The hidden cost of waiting.",
+          "items": ["Decisions stall while the search runs", "Peers stretched across two jobs", "Team uncertainty and attrition risk", "Rushed permanent hire to fill the gap"]
+        },
+        "us": {
+          "badge": "Interim leader",
+          "title": "Built for the gap",
+          "sub": "Senior experience, applied immediately.",
+          "items": ["Starts quickly, often within weeks", "Objective outsider with no internal politics", "Paid for a defined period and outcome", "Leaves the function stronger for the next leader"]
+        }
+      },
+      {
+        "type": "faq",
+        "id": "faq",
+        "tight": true,
+        "heading": { "eyebrow": "FAQ", "title": "Interim management, answered.", "align": "center" },
+        "items": [
+          { "question": "How quickly can an interim leader start?", "answer": "Interim professionals are typically available at short notice. We share realistic availability with every shortlisted profile." },
+          { "question": "How long do assignments last?", "answer": "Most run for a few months up to a year, and can be extended if the mandate changes." },
+          { "question": "How are interim leaders engaged?", "answer": "Usually on a fixed-term contract with a day or monthly rate. We can also engage them through our <a href=\"/services/flexible-staffing\">flexible staffing</a> model so we handle payroll and compliance." },
+          { "question": "Can the interim leader become permanent?", "answer": "Sometimes, if both sides agree. Terms for a permanent move are set out in the agreement upfront." },
+          { "question": "Is the engagement confidential?", "answer": "Yes. As with all our searches, the mandate and its criteria stay confidential." }
+        ]
+      },
+      {
+        "type": "links",
+        "tight": true,
+        "heading": { "eyebrow": "Related services", "title": "Often paired with." },
+        "items": [
+          { "icon": "crown", "title": "Executive Search", "text": "Find the permanent leader while the interim holds the fort.", "link": { "label": "Explore", "url": "/services/executive-search" } },
+          { "icon": "flex", "title": "Flexible Staffing", "text": "Contract specialists to support the interim's plan.", "link": { "label": "Explore", "url": "/services/flexible-staffing" } }
+        ]
+      }
+    ],
+    "cta": {
+      "eyebrow": "Confidential consultation",
+      "title": "Don't leave the seat",
+      "highlight": "empty.",
+      "text": "Tell us the gap and the outcome you need. We'll come back within one business day with availability and next steps.",
+      "ctas": [
+        { "label": "Brief an interim need", "url": "/hire", "queryParams": { "service": "interim-management" }, "variant": "glow" },
+        { "label": "All services", "url": "/services", "variant": "ghost" }
+      ]
+    }
+  },
+  {
+    "slug": "background-verification",
+    "name": "Background Verification",
+    "summary": "Consent-based employment, education and identity checks.",
+    "menuNote": "Employment & identity checks",
+    "icon": "shield",
+    "order": 8,
+    "seo": {
+      "title": "Background Verification Services",
+      "description": "Consent-based background verification: employment, education, identity, address, criminal record and reference checks with clear turnaround and reporting."
+    },
+    "hero": {
+      "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "Services", "url": "/services" }, { "label": "Background Verification", "url": "/services/background-verification" }],
+      "title": "Hire with",
+      "highlight": "verified confidence.",
+      "lead": "Consent-based checks on employment, education, identity, address, criminal records and references — with clear reports before your new hire's first day.",
+      "ctas": [
+        { "label": "Request verification", "url": "/hire", "queryParams": { "service": "background-verification" }, "variant": "glow" },
+        { "label": "See the checks", "url": "/services/background-verification#checks", "variant": "ghost" }
+      ],
+      "aside": {
+        "type": "funnel",
+        "eyebrow": "Verification report · Senior Consultant",
+        "stats": [
+          { "value": "4/5", "label": "Checks verified" },
+          { "value": "1", "label": "Awaiting referee" },
+          { "value": "0", "label": "Discrepancies" }
+        ],
+        "steps": [
+          { "label": "Identity", "value": 100, "pct": 100 },
+          { "label": "Education", "value": 100, "pct": 100 },
+          { "label": "Employment", "value": 100, "pct": 100 },
+          { "label": "Address", "value": 100, "pct": 100 },
+          { "label": "References", "value": 50, "pct": 50 }
+        ],
+        "note": "Example status view (% complete per check), no real candidate data.",
+        "sample": "illustrative"
+      }
+    },
+    "blocks": [
+      {
+        "type": "cards",
+        "tight": true,
+        "columns": 3,
+        "items": [
+          { "icon": "bank", "title": "Regulated sectors", "text": "Banking, financial services and roles with access to sensitive data or funds." },
+          { "icon": "crown", "title": "Senior & leadership hires", "text": "Deeper checks where a wrong hire is most costly." },
+          { "icon": "layers", "title": "High-volume onboarding", "text": "Batch verification for large joining cohorts, tracked in one place." }
+        ]
+      },
+      {
+        "type": "cards",
+        "id": "checks",
+        "columns": 3,
+        "heading": { "eyebrow": "Checks offered", "title": "Six checks,", "highlight": "one clear report.", "lead": "Choose individual checks or a package per role level. Turnaround times are typical and depend on third-party responses.", "sample": "sample turnaround — confirm" },
+        "items": [
+          { "icon": "brief", "title": "Employment", "text": "Dates, designation and exit status confirmed with previous employers' HR.", "tags": ["5–7 working days", "Per employer"], "sample": "sample" },
+          { "icon": "book", "title": "Education", "text": "Degrees and certificates verified with the issuing university, board or institution.", "tags": ["5–10 working days", "Per qualification"], "sample": "sample" },
+          { "icon": "file", "title": "Identity", "text": "Government-issued ID documents validated for authenticity and consistency.", "tags": ["1–2 working days"], "sample": "sample" },
+          { "icon": "pin", "title": "Address", "text": "Current and permanent addresses confirmed through physical or digital verification.", "tags": ["3–7 working days", "Physical or digital"], "sample": "sample" },
+          { "icon": "shield", "title": "Criminal record", "text": "Court-record and police verification checks, as permitted by local law.", "tags": ["3–10 working days", "Jurisdiction-specific"], "sample": "sample" },
+          { "icon": "users", "title": "Reference", "text": "Structured conversations with former managers on performance and conduct.", "tags": ["3–5 working days", "2 referees typical"], "sample": "sample" }
+        ]
+      },
+      {
+        "type": "process",
+        "id": "process",
+        "tight": true,
+        "variant": "steps",
+        "heading": { "eyebrow": "The process", "title": "Consent first.", "highlight": "Then verify.", "lead": "No check starts until the candidate has been informed and has given written consent.", "align": "center" },
+        "items": [
+          { "title": "Initiate", "text": "You choose the checks for the role and share the candidate's details." },
+          { "title": "Consent", "text": "The candidate receives a clear notice of what will be checked and signs a consent form." },
+          { "title": "Verify", "text": "We contact employers, institutions and authorities, with status updates as checks complete." },
+          { "title": "Report", "text": "A consolidated report with clear status per check and notes on any discrepancies." }
+        ]
+      },
+      {
+        "type": "checklist",
+        "id": "compliance",
+        "tight": true,
+        "badge": "Compliance",
+        "title": "Handled responsibly",
+        "sub": "Candidate data is personal data — we treat it that way.",
+        "items": [
+          "Written, informed candidate consent before any check",
+          "Only the checks relevant to the role are run",
+          "Data used solely for verification and kept only as long as needed",
+          "Access limited to the people working on the case",
+          "Checks follow local law in each country, including India's data protection rules and, in the US, applicable consumer-reporting requirements"
+        ],
+        "aside": {
+          "icon": "lock",
+          "title": "For candidates",
+          "text": "If you're being verified through StarOrigin, you'll always know what is being checked and why. You can ask about your data at any time.",
+          "tags": ["Transparent", "Consent-based", "Secure"],
+          "link": { "label": "Read the candidate data notice", "url": "/legal/candidate-data" }
+        }
+      },
+      {
+        "type": "faq",
+        "id": "faq",
+        "tight": true,
+        "heading": { "eyebrow": "FAQ", "title": "Background verification, answered.", "align": "center" },
+        "items": [
+          { "question": "Do you need the candidate's consent?", "answer": "Yes, always. Every check begins with a clear notice to the candidate and their written consent. We do not run checks without it." },
+          { "question": "Can I order verification for candidates you didn't place?", "answer": "Yes. Background verification is available as a standalone service for any of your hires." },
+          { "question": "What causes delays?", "answer": "Most delays come from slow responses by previous employers or institutions. We follow up regularly and flag any check that is running late." },
+          { "question": "What happens if a discrepancy is found?", "answer": "We report the facts we found, with supporting notes. Decisions on next steps rest with you, and we recommend giving the candidate a chance to explain." },
+          { "question": "Do you verify candidates outside India?", "answer": "Yes, through our presence in the UAE and US, subject to local laws on which checks are permitted." }
+        ]
+      },
+      {
+        "type": "links",
+        "tight": true,
+        "heading": { "eyebrow": "Related services", "title": "Often paired with." },
+        "items": [
+          { "icon": "layers", "title": "Bulk Hiring", "text": "Verification built into every joining wave.", "link": { "label": "Explore", "url": "/services/bulk-hiring" } },
+          { "icon": "crown", "title": "Executive Search", "text": "Leadership hires with in-depth referencing.", "link": { "label": "Explore", "url": "/services/executive-search" } },
+          { "icon": "users", "title": "Mid & Senior Hiring", "text": "Specialists checked before they start.", "link": { "label": "Explore", "url": "/services/mid-senior-hiring" } }
+        ]
+      }
+    ],
+    "cta": {
+      "eyebrow": "Verify before day one",
+      "title": "Trust every hire,",
+      "highlight": "by design.",
+      "text": "Tell us the roles and the checks you need. We'll share a verification package and timeline within one business day.",
+      "ctas": [
+        { "label": "Request verification", "url": "/hire", "queryParams": { "service": "background-verification" }, "variant": "glow" },
+        { "label": "All services", "url": "/services", "variant": "ghost" }
+      ]
+    }
+  }
+]

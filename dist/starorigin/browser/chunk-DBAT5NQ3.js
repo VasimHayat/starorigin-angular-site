@@ -1,0 +1,1 @@
+import{Ib as e,i as s,k as o,o as a,s as n}from"./chunk-645TR44L.js";var u={status:"loading"};function l(r){return r.pipe(o(t=>({status:"success",data:t})),n(u),a(t=>s({status:"error",notFound:t instanceof e&&t.status===404,error:t})))}export{u as a,l as b};

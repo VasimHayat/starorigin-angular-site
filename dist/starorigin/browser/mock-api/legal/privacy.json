@@ -1,0 +1,77 @@
+{
+  "slug": "privacy",
+  "title": "Privacy policy",
+  "headline": {
+    "title": "Privacy",
+    "highlight": "policy"
+  },
+  "seo": {
+    "title": "Privacy Policy",
+    "description": "How StarOrigin collects, uses, shares and protects personal data across its India, UAE and US entities, and how to exercise your rights."
+  },
+  "updatedAt": "2026-10-23",
+  "draftNotice": "<strong>Draft template</strong> — to be reviewed and approved by StarOrigin's legal counsel before publishing.",
+  "intro": "<p>This policy explains how StarOrigin (\"StarOrigin\", \"we\", \"us\") handles personal data when you visit our website, apply for a role, submit your CV, engage us as a client, or otherwise contact us. StarOrigin operates through StarOrigin Pvt. Ltd. (India, with offices in Nagpur and Hyderabad), StarOrigin LLC FZ (Dubai, UAE) and StarOrigin Inc (Dallas, USA). The entity you deal with is responsible for your personal data, and the entities share data with each other as described below.</p>\n<p>If you are a job seeker, please also read our <a href=\"/legal/candidate-data\">Candidate data notice</a>, which explains recruitment-specific processing in more detail.</p>",
+  "sections": [
+    {
+      "id": "collect",
+      "heading": "1. Data we collect",
+      "html": "<h3>Data you give us</h3>\n<ul><li><strong>Contact details:</strong> name, email, phone number, city and country.</li><li><strong>Career information:</strong> CV, work history, education, skills, current and expected compensation, notice period, work authorisation and preferences.</li><li><strong>Client information:</strong> business contact details, hiring requirements and correspondence.</li><li><strong>Communications:</strong> messages sent via forms, email, phone or WhatsApp.</li></ul><h3>Data we collect automatically</h3>\n<ul><li>Device and browser information, IP address, pages visited and referring site.</li><li>Cookie and similar identifiers — see our <a href=\"/legal/cookies\">Cookie policy</a>.</li></ul><h3>Data from third parties</h3>\n<ul><li>Publicly available professional profiles (for example, professional networking sites and job boards where you have posted your CV).</li><li>Referees and background-verification providers, only with your consent.</li></ul>",
+      "tocLabel": "Data we collect"
+    },
+    {
+      "id": "purposes",
+      "heading": "2. Why we use your data",
+      "html": "<ul><li>To match candidates with suitable opportunities and manage applications.</li><li>To deliver recruitment, staffing and verification services to clients.</li><li>To respond to enquiries and provide support.</li><li>To send newsletters and updates you have subscribed to.</li><li>To operate, secure and improve our website.</li><li>To meet legal, tax, regulatory and employment obligations.</li></ul>",
+      "tocLabel": "Why we use your data"
+    },
+    {
+      "id": "legal-basis",
+      "heading": "3. Legal basis and consent",
+      "html": "<p>In India, we process personal data in line with the <strong>Digital Personal Data Protection Act, 2023</strong> (DPDP Act) and the rules made under it. We rely primarily on your <strong>consent</strong>, given through a clear affirmative action such as submitting a form or ticking a box, and on <strong>legitimate uses</strong> permitted by law — for example, where you voluntarily provide data for a specified purpose, or where processing is needed to comply with a legal obligation.</p>\n<p>Where other laws apply (for example, in the UAE or the US), we rely on the lawful grounds those laws provide, which may include consent, performance of a contract, compliance with legal obligations and our legitimate business interests.</p>\n<p>You may <strong>withdraw consent</strong> at any time by writing to us. Withdrawal does not affect processing that took place before it, and it may mean we can no longer provide certain services — for example, putting you forward for roles.</p>",
+      "tocLabel": "Legal basis and consent"
+    },
+    {
+      "id": "sharing",
+      "heading": "4. Who we share data with",
+      "html": "<ul><li><strong>Prospective employers (clients)</strong> — candidate profiles are shared only with your consent for a specific role.</li><li><strong>StarOrigin group entities</strong> in India, the UAE and the US, to deliver services across our offices.</li><li><strong>Service providers</strong> acting on our instructions — hosting, email, applicant tracking, analytics and background-verification partners — bound by contractual confidentiality and security obligations.</li><li><strong>Authorities</strong> where required by law, court order or to protect rights and safety.</li></ul>\n<p>We do not sell personal data.</p>",
+      "tocLabel": "Who we share data with"
+    },
+    {
+      "id": "transfers",
+      "heading": "5. International transfers",
+      "html": "<p>Because we operate in India, the UAE and the US, personal data may be transferred between our entities and to service providers in those and other countries. We transfer data only where permitted by applicable law — including any country restrictions notified under the DPDP Act — and protect it with appropriate safeguards such as intra-group agreements and contractual clauses with providers.</p>\n<p>For UAE operations, we take into account the UAE's federal personal data protection framework and any free-zone rules that apply to our Dubai entity. For US operations, we follow applicable federal and state requirements, including state privacy laws where they apply to us.</p>",
+      "tocLabel": "International transfers"
+    },
+    {
+      "id": "retention",
+      "heading": "6. How long we keep data",
+      "html": "<p>We keep personal data only as long as needed for the purposes above or as required by law. Candidate records are generally kept for 24 months <span class=\"sample\">sample</span> after your last interaction, client records for the duration of the relationship plus statutory periods, and website analytics in aggregated form. When data is no longer needed we delete or anonymise it.</p>",
+      "tocLabel": "How long we keep data"
+    },
+    {
+      "id": "security",
+      "heading": "7. Security",
+      "html": "<p>We use reasonable technical and organisational measures to protect personal data, including access controls, encryption in transit, staff confidentiality obligations and vendor due diligence. No system is perfectly secure; if a personal data breach occurs, we will notify affected individuals and authorities as required by law.</p>",
+      "tocLabel": "Security"
+    },
+    {
+      "id": "rights",
+      "heading": "8. Your rights",
+      "html": "<p>Depending on where you live, you may have the right to:</p>\n<ul><li>access a summary of the personal data we hold about you and how it is processed;</li><li>correct, complete or update inaccurate data;</li><li>request erasure of data no longer needed;</li><li>withdraw consent;</li><li>nominate another person to exercise your rights in the event of death or incapacity (under the DPDP Act);</li><li>raise a grievance with us, and escalate to the relevant data protection authority if unresolved.</li></ul>\n<p>We will verify your identity before acting on a request, and respond within the time required by applicable law.</p>",
+      "tocLabel": "Your rights"
+    },
+    {
+      "id": "contact",
+      "heading": "9. Grievance officer and contact",
+      "html": "<p>For questions, requests or complaints about this policy, contact our Grievance Officer:</p>\n<div class=\"callout\">Grievance Officer — StarOrigin Pvt. Ltd.<br>104, Shree Ambey, Wardhman Nagar, Nagpur 440008, Maharashtra, India<br>Email: <a href=\"mailto:hello@starorigin.in\">hello@starorigin.in</a> (subject line \"Privacy\")</div>\n<p>If you are not satisfied with our response, you may approach the Data Protection Board of India or the relevant authority in your country.</p>",
+      "tocLabel": "Grievance officer"
+    },
+    {
+      "id": "changes",
+      "heading": "10. Changes to this policy",
+      "html": "<p>We may update this policy from time to time. The \"Last updated\" date above shows when it was last changed; material changes will be highlighted on this page.</p>\n<p>Related: <a href=\"/legal/terms\">Terms of use</a> · <a href=\"/legal/cookies\">Cookie policy</a> · <a href=\"/legal/candidate-data\">Candidate data notice</a></p>",
+      "tocLabel": "Changes"
+    }
+  ]
+}

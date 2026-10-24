@@ -1,0 +1,91 @@
+{
+  "slug": "core-banking-hiring-2027",
+  "title": "Hiring for core-banking transformations: skills in demand in 2027",
+  "category": "Hiring Trends",
+  "excerpt": "The techno-functional profiles banks will compete for, and how to plan hiring around a programme timeline.",
+  "publishedAt": "2026-10-14",
+  "readMinutes": 7,
+  "author": "StarOrigin Editorial",
+  "thumb": {
+    "c1": "rgb(45 212 191/.5)",
+    "c2": "rgb(139 92 246/.4)"
+  },
+  "featured": true,
+  "seo": {
+    "title": "Hiring for core-banking transformations: skills in demand in 2027",
+    "description": "FLEXCUBE, OFSAA FCCM, OBTF, OBDX and OBLM: the core-banking skills banks will compete for in 2027, why techno-functional talent is scarce, and how to plan hiring."
+  },
+  "headline": {
+    "title": "Hiring for core-banking transformations:",
+    "highlight": "skills in demand in 2027"
+  },
+  "breadcrumb": "Core-banking hiring 2027",
+  "authorRole": "Banking technology desk",
+  "authorLogo": "https://starorigin.in/wp-content/uploads/2022/03/logo-small.webp",
+  "lead": "Banks are modernising cores, compliance and channels at the same time. The bottleneck is rarely budget or software — it's the people who understand both the bank and the platform.",
+  "intro": "<p>Core-banking replacement used to be a once-a-decade event. Today many banks run several programmes in parallel: a core upgrade, a new anti-money-laundering stack, a digital front end and a liquidity or trade-finance platform. Each one draws on the same small pool of specialists, and that pool does not grow as fast as the project pipeline.</p>\n<p>This piece looks at the Oracle banking stack our banking technology desk recruits for most often, the profiles that are hardest to find, and how hiring managers can plan ahead instead of competing for the same shortlist at the last minute.</p>",
+  "sections": [
+    {
+      "id": "why-now",
+      "heading": "Why demand keeps climbing",
+      "html": "<p>Three forces are pushing banks towards larger, more frequent transformation programmes:</p>\n<ul><li><strong>Regulatory pressure.</strong> Supervisors across India, the Gulf and the US continue to raise expectations on financial-crime monitoring, data lineage and reporting. That drives investment in compliance platforms and in the data plumbing beneath them.</li><li><strong>Legacy risk.</strong> Many cores were heavily customised over the years. Upgrading them to supported versions — or moving to newer, componentised architectures — is now a risk-management decision, not just an IT one.</li><li><strong>Customer expectations.</strong> Retail and corporate clients expect real-time payments, digital onboarding and self-service. Front-end platforms only deliver that when they integrate cleanly with the core.</li></ul>\n<p>The result: programmes overlap, system integrators and banks recruit from the same talent pool, and experienced consultants receive several approaches at once.</p>"
+    },
+    {
+      "id": "roles",
+      "heading": "The roles banks will compete for",
+      "html": "<p>Below are the platform skills that appear most often in the briefs we receive. Experience bands are indicative and vary by bank, integrator and city.</p>\n<table><thead><tr><th>Platform</th><th>What the role does</th><th>Profiles in demand</th></tr></thead><tbody><tr><td><strong>Oracle FLEXCUBE</strong></td><td>Universal banking core — accounts, deposits, loans, payments and the general ledger</td><td>Project and programme managers, module leads, migration specialists</td></tr><tr><td><strong>OFSAA FCCM</strong></td><td>Financial Crime and Compliance Management — AML, KYC and fraud scenarios on the OFSAA data foundation</td><td>Technical consultants (PL/SQL, ETL, batch), functional AML consultants</td></tr><tr><td><strong>OBTF</strong></td><td>Oracle Banking Trade Finance — letters of credit, guarantees, collections</td><td>Techno-functional consultants with trade operations background</td></tr><tr><td><strong>OBDX</strong></td><td>Oracle Banking Digital Experience — retail and corporate digital channels</td><td>Consultants with JavaScript/JET, REST API and integration experience</td></tr><tr><td><strong>OBLM</strong></td><td>Oracle Banking Liquidity Management — cash pooling, sweeps and liquidity structures for corporate clients</td><td>Functional consultants who understand treasury and transaction banking</td></tr></tbody></table>\n<p>Across all five, two seniority levels are consistently tight: <strong>module leads</strong> who can own a workstream end to end, and <strong>delivery managers</strong> who have taken at least one implementation through go-live.</p>"
+    },
+    {
+      "id": "techno-functional",
+      "heading": "Why techno-functional profiles are the bottleneck",
+      "html": "<p>Pure developers can be trained on a new platform. Pure business analysts can learn a new screen. What takes years to build is the person who sits in the middle: someone who can sit with a trade-operations team in the morning, understand why a guarantee amendment matters, and write the specification — or the SQL — that makes the system behave correctly in the afternoon.</p>\n<blockquote>The scarce skill is not \"knows FLEXCUBE\". It is \"knows how this bank works, and can make FLEXCUBE do it\".</blockquote>\n<p>When we assess techno-functional candidates, we look for:</p>\n<ul><li>Hands-on configuration of the product, not only exposure to it in a support role.</li><li>At least one complete lifecycle: requirement workshops, gap analysis, build, SIT/UAT and go-live.</li><li>Comfort with data — mapping, migration scripts, reconciliation — because migration is where most programmes slip.</li><li>Clear communication with business users who do not speak in modules and parameters.</li></ul>",
+      "tocLabel": "Techno-functional bottleneck"
+    },
+    {
+      "id": "planning",
+      "heading": "How banks should plan hiring",
+      "html": "<p>The most common mistake we see is treating hiring as a task that starts after the vendor contract is signed. By then, the integrator is recruiting for the same roles, and the bank's own team — the people who will own the platform after go-live — gets built last.</p>\n<ol><li><strong>Map roles to programme phases.</strong> Discovery needs business analysts and solution architects; build needs module leads and developers; migration and testing need data specialists and testers; hypercare needs support leads. Hire in that order.</li><li><strong>Decide what you own versus what the integrator owns.</strong> Product owners, platform architects and the post-go-live support team are usually worth hiring permanently. Peak build capacity often suits contract or flexible staffing.</li><li><strong>Start long-lead roles early.</strong> Senior FLEXCUBE and FCCM profiles can take noticeably longer to close than generic IT roles, and notice periods in India commonly run up to three months. Open those requisitions first.</li><li><strong>Write briefs around outcomes.</strong> \"Lead the LC and guarantees workstream through UAT\" attracts better candidates than a list of twenty module names.</li><li><strong>Plan for knowledge transfer.</strong> Pair contractors with permanent hires so the expertise stays when the programme ends.</li></ol>\n<div class=\"callout\"><strong>Rule of thumb:</strong> if a role is on the critical path for go-live and needs more than two years of platform experience, start the search before the programme kick-off — not after it.</div>"
+    },
+    {
+      "id": "candidates",
+      "heading": "What this means for candidates",
+      "html": "<p>If you work on any of these platforms, the market favours you — but the best roles go to people who can show depth. Keep a short, concrete record of the modules you configured, the migrations you supported and the go-lives you saw through. Certifications help, but hiring managers consistently weigh delivered projects more heavily.</p>\n<p>Techno-functional consultants who add an adjacent skill — data migration, API integration or a regulatory specialism such as AML — tend to have the widest choice of roles. You can see current openings on our <a href=\"/jobs\">jobs board</a>.</p>"
+    },
+    {
+      "id": "takeaways",
+      "heading": "Key takeaways",
+      "html": "<ul><li>Demand for Oracle banking skills is driven by overlapping regulatory, legacy and digital programmes.</li><li>Module leads, delivery managers and techno-functional consultants are the tightest segments.</li><li>Hire in programme-phase order, start long-lead roles early and keep platform ownership in-house.</li><li>Blend permanent and flexible hiring so knowledge stays after go-live.</li></ul>"
+    }
+  ],
+  "related": [
+    "rpo-vs-agency-hiring",
+    "first-90-seconds-interview"
+  ],
+  "aside": {
+    "eyebrow": "Hiring for a programme?",
+    "text": "Our banking technology desk recruits FLEXCUBE, OFSAA and OBDX specialists.",
+    "link": {
+      "label": "Talk to a specialist",
+      "url": "/hire"
+    }
+  },
+  "cta": {
+    "eyebrow": "Banking technology hiring",
+    "title": "Staff your transformation",
+    "highlight": "before the clock starts.",
+    "text": "Share your programme timeline and we'll map the roles, the market and a realistic hiring plan.",
+    "ctas": [
+      {
+        "label": "Hire banking tech talent",
+        "url": "/hire",
+        "variant": "glow",
+        "icon": "arrow"
+      },
+      {
+        "label": "See open banking roles",
+        "url": "/jobs",
+        "variant": "ghost"
+      }
+    ]
+  }
+}

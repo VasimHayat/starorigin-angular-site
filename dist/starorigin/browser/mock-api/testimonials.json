@@ -1,0 +1,5 @@
+[
+  { "id": "t-banking", "kpi": "12 hires", "kpiNote": "NICHE ORACLE ROLES · 5 WEEKS", "quote": "They understood our banking-platform roles better than any agency we'd used. Shortlists in under a week.", "author": "Head of Talent", "organisation": "Banking technology", "initials": "HT", "sample": "sample" },
+  { "id": "t-manufacturing", "kpi": "40 hires", "kpiNote": "NEW SITE RAMP-UP · 6 WEEKS", "quote": "They staffed our new site at a pace we didn't think possible, without compromising on quality.", "author": "Operations Director", "organisation": "Manufacturing", "initials": "OD", "sample": "sample" },
+  { "id": "t-services", "kpi": "CFO placed", "kpiNote": "RETAINED · CONFIDENTIAL", "quote": "A genuinely confidential leadership search, handled with real care for both sides.", "author": "Managing Director", "organisation": "Services company", "initials": "MD", "sample": "sample" }
+]

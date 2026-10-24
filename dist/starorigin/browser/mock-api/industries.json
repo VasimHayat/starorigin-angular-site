@@ -1,0 +1,10 @@
+[
+  { "id": "it-software", "name": "IT & Software", "icon": "code", "text": "Product engineering, services and enterprise IT teams — in India and for US clients via our Dallas office.", "roles": ["Full-stack", "Cloud / DevOps", "Data engineering", "QA", "Delivery heads"] },
+  { "id": "bfsi", "name": "BFSI & Banking Tech", "icon": "bank", "text": "Our deepest niche: Oracle banking platforms — FLEXCUBE, OFSAA FCCM, OBTF, OBDX and OBLM (Oracle Banking Liquidity Management).", "roles": ["FLEXCUBE PM", "OFSAA consultants", "AML / KYC", "Risk"], "highlight": true },
+  { "id": "manufacturing", "name": "Manufacturing", "icon": "factory", "text": "Plant leadership and shop-floor teams, including volume hiring for new sites and lines.", "roles": ["Plant heads", "Production", "Quality", "Maintenance", "Plant HR"] },
+  { "id": "healthcare-pharma", "name": "Healthcare & Pharma", "icon": "health", "text": "Hospital operations, pharma sales and regulated functions where compliance matters.", "roles": ["Medical reps", "Regulatory", "QA / QC", "Hospital ops"] },
+  { "id": "retail-fmcg", "name": "Retail & FMCG", "icon": "cart", "text": "Sales, distribution and store teams — from area managers to category leadership.", "roles": ["Area sales", "Category", "Store ops", "Trade marketing"] },
+  { "id": "engineering", "name": "Engineering", "icon": "tool", "text": "Design, projects and site engineering for infrastructure, EPC and industrial clients.", "roles": ["Project managers", "Design", "Site engineers", "HSE"] },
+  { "id": "telecom", "name": "Telecom", "icon": "radio", "text": "Network, rollout and enterprise sales roles for operators and their technology partners.", "roles": ["RF / network", "NOC", "Rollout", "Enterprise sales"] },
+  { "id": "logistics", "name": "Logistics", "icon": "truck", "text": "Warehousing, fleet and supply-chain roles — often at volume, on tight start dates.", "roles": ["Warehouse leads", "Supply chain", "Fleet", "Procurement"] }
+]

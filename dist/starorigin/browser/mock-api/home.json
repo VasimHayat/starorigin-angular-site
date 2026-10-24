@@ -1,0 +1,43 @@
+{
+  "heroChips": {
+    "hire": ["CXO search", "Bulk hiring", "US IT staffing", "RPO"],
+    "job": ["Banking tech", "Bangalore", "Consultant", "Dallas"]
+  },
+  "clientLogos": [
+    { "name": "Client One" }, { "name": "Client Two" }, { "name": "Client Three" }, { "name": "Client Four" },
+    { "name": "Client Five" }, { "name": "Client Six" }, { "name": "Client Seven" }, { "name": "Client Eight" }
+  ],
+  "clientLogosSample": "Logos — placeholder",
+  "stats": [
+    { "value": "8,240+", "label": "Candidate profiles in our talent network", "highlight": true },
+    { "value": "4", "label": "Delivery offices across 3 countries" },
+    { "value": "8", "label": "Specialised hiring & staffing services" },
+    { "value": "72", "unit": "h", "label": "Target time to first shortlist", "sample": "confirm" }
+  ],
+  "featuredServices": {
+    "executiveSearch": {
+      "icon": "crown",
+      "title": "Executive Search",
+      "text": "Confidential, research-led search for CXO and leadership roles — mapped to your strategy, not just a job description.",
+      "tags": ["Market mapping", "Confidential", "Offer negotiation"],
+      "link": { "label": "Explore", "url": "/services/executive-search" },
+      "viz": [
+        { "value": "CXO", "label": "COO · CFO · CTO · CIO" },
+        { "value": "100%", "label": "Confidential searches" },
+        { "value": "80%", "label": "Filled via headhunting" }
+      ]
+    },
+    "rpo": {
+      "icon": "cog",
+      "title": "Recruitment Process Outsourcing",
+      "text": "We become your TA team — sourcing to onboarding, under your brand.",
+      "link": { "label": "Explore", "url": "/services/rpo" },
+      "funnel": [
+        { "label": "Sourced", "value": 240, "pct": 100 },
+        { "label": "Screened", "value": 132, "pct": 55 },
+        { "label": "Interviewed", "value": 52, "pct": 22 },
+        { "label": "Hired", "value": 18, "pct": 8 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "slug": "about",
+  "seo": {
+    "title": "About StarOrigin | Recruitment built on people",
+    "description": "StarOrigin is a recruitment and staffing partner with offices in Nagpur, Hyderabad, Dubai and Dallas. Practice heads, ethical hiring and technology that supports judgement."
+  },
+  "hero": {
+    "breadcrumbs": [{ "label": "Home", "url": "/" }, { "label": "About", "url": "/about" }],
+    "title": "Outsource your HR to",
+    "highlight": "humans, not software.",
+    "lead": "StarOrigin is a recruitment and staffing partner built on people: practice heads who know your market, ethics you can rely on and technology that supports judgement instead of replacing it.",
+    "ctas": [
+      { "label": "Hire with us", "url": "/hire", "variant": "glow" },
+      { "label": "Meet the team", "url": "/team", "variant": "ghost" }
+    ]
+  },
+  "blocks": [
+    {
+      "type": "cards",
+      "id": "story",
+      "tight": true,
+      "columns": 2,
+      "items": [
+        {
+          "eyebrow": "Our story",
+          "title": "From one office in Nagpur to three countries.",
+          "text": "Headquartered in Nagpur, StarOrigin is built on a simple idea: hiring goes better when a dedicated, experienced person owns it from brief to joining day. That idea shapes how every search is run. Today we operate from Nagpur and Hyderabad in India, Dubai in the UAE and Dallas in the US, placing everyone from first-time specialists to CXOs for clients across industries."
+        },
+        {
+          "eyebrow": "Our mission",
+          "title": "To make your success our job, with dedicated practice heads, an ethical outlook and a value-added approach to every hire.",
+          "text": "We combine expertise and technology to help clients and candidates unlock their true potential."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "values",
+      "columns": 3,
+      "heading": {
+        "eyebrow": "Our values",
+        "title": "What we",
+        "highlight": "stand for.",
+        "lead": "Six principles that guide how we work with clients, candidates and each other."
+      },
+      "items": [
+        { "icon": "target", "title": "Results first", "text": "Professionalism measured by outcomes: the right person, in the seat, staying." },
+        { "icon": "mail", "title": "Straight talk", "text": "Direct, honest communication about the market, timelines and candidates, even when it isn't what you hoped to hear." },
+        { "icon": "zap", "title": "Fleet-footed follow-through", "text": "We move quickly, close loops and keep every stakeholder updated." },
+        { "icon": "heart", "title": "Trust and loyalty", "text": "Long-term relationships matter more than any single placement." },
+        { "icon": "star", "title": "Quality throughout", "text": "In the clients we take on, the consultants we hire, the solutions we design and the process we follow." },
+        { "icon": "sparkle", "title": "Innovation with a personal touch", "text": "New tools where they help, and a real person on the other end of every call." }
+      ]
+    },
+    {
+      "type": "process",
+      "id": "milestones",
+      "tight": true,
+      "variant": "timeline",
+      "heading": {
+        "eyebrow": "Milestones",
+        "title": "How we",
+        "highlight": "got here.",
+        "lead": "Key moments in StarOrigin's growth. Dates shown are placeholders until confirmed."
+      },
+      "items": [
+        { "key": "2022", "title": "Founded in Nagpur", "text": "StarOrigin Pvt Ltd opens its first office and launches starorigin.in.", "sample": "sample" },
+        { "key": "2023", "title": "Hyderabad office opens", "text": "A second Indian base at Workafella Western Aqua to serve South India's tech and BFSI clients.", "sample": "sample" },
+        { "key": "2023", "title": "StarOrigin LLC FZ, Dubai", "text": "A UAE entity in Jumeirah Bay Tower, JLT, for clients across the Middle East.", "sample": "sample" },
+        { "key": "2024", "title": "StarOrigin Inc, Dallas", "text": "US operations launch with W2, C2C and contract-to-hire staffing.", "sample": "sample" },
+        { "key": "Today", "title": "4 offices, 8 services", "text": "A talent network of more than 8,240 candidate profiles across India, the UAE and the US." }
+      ]
+    },
+    {
+      "type": "stats",
+      "id": "numbers",
+      "tight": true,
+      "items": [
+        { "value": "8,240+", "label": "Candidate profiles in our talent network", "highlight": true },
+        { "value": "4", "label": "Offices: Nagpur, Hyderabad, Dubai, Dallas" },
+        { "value": "3", "label": "Countries: India, UAE, USA" },
+        { "value": "8", "label": "Specialised hiring & staffing services" }
+      ]
+    },
+    {
+      "type": "compare",
+      "id": "different",
+      "heading": {
+        "eyebrow": "How we're different",
+        "title": "Humans,",
+        "highlight": "not software.",
+        "lead": "Technology helps us search faster. People decide who's right."
+      },
+      "them": {
+        "title": "Software-only hiring",
+        "sub": "Automated, impersonal, volume-driven.",
+        "items": [
+          "Rotating recruiters or a ticket queue",
+          "Limited to whoever applied to a posting",
+          "CVs filtered by keywords and scores",
+          "Public listings for sensitive roles",
+          "Little context beyond the data"
+        ]
+      },
+      "us": {
+        "badge": "StarOrigin",
+        "title": "A practice head who owns your hire",
+        "sub": "Dedicated, accountable, human.",
+        "items": [
+          "One experienced lead from brief to joining day",
+          "About 80% of placements come from direct headhunting",
+          "Candidates assessed in conversation, not just keyword-matched",
+          "Confidential searches handled with discretion",
+          "Honest market feedback on salary, timing and fit"
+        ]
+      }
+    }
+  ],
+  "leadership": {
+    "eyebrow": "Leadership",
+    "title": "Led by",
+    "text": "StarOrigin's founder and CEO leads a team of HR managers, talent acquisition specialists and account managers across our offices.",
+    "ctas": [{ "label": "Meet the whole team", "url": "/team", "variant": "ghost", "icon": "arrow" }]
+  },
+  "cta": {
+    "eyebrow": "Work with us",
+    "title": "Let's find your",
+    "highlight": "next great hire.",
+    "text": "Tell us what you need. A practice head will get back to you within one business day.",
+    "ctas": [
+      { "label": "Hire talent", "url": "/hire", "variant": "glow" },
+      { "label": "Contact us", "url": "/contact", "variant": "ghost" }
+    ]
+  }
+}

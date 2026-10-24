@@ -1,0 +1,54 @@
+{
+  "slug": "hire",
+  "seo": {
+    "title": "Hire talent — share a hiring brief",
+    "description": "Tell us who you need in three short steps. A StarOrigin practice head replies within one business day — every brief stays confidential."
+  },
+  "hero": {
+    "breadcrumbs": [
+      { "label": "Home", "url": "/" },
+      { "label": "Services", "url": "/services" },
+      { "label": "Hire talent", "url": "/hire" }
+    ],
+    "title": "Tell us who you need.",
+    "highlight": "We'll plan the search.",
+    "lead": "Three short steps, about two minutes. A practice head replies within one business day — every brief stays confidential."
+  },
+  "blocks": [
+    {
+      "type": "process",
+      "id": "next",
+      "variant": "timeline",
+      "heading": { "eyebrow": "What happens next", "title": "What happens next" },
+      "items": [
+        { "key": "WITHIN 1 BUSINESS DAY", "title": "We reply", "text": "A real person confirms your brief and suggests call slots." },
+        { "key": "STEP 02", "title": "Call with a practice head", "text": "30 minutes on the role, team, must-haves and market reality." },
+        { "key": "STEP 03", "title": "Search plan", "text": "Approach, target talent pools, timeline and commercials in writing." },
+        { "key": "STEP 04", "title": "Shortlist", "text": "Interviewed, motivated candidates — not a pile of CVs." }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "trust",
+      "columns": 4,
+      "heading": { "eyebrow": "Why teams brief us", "title": "Why teams brief us" },
+      "items": [
+        { "icon": "lock", "title": "Every search and its criteria stay confidential" },
+        { "icon": "users", "title": "8,240+ candidate profiles in our network" },
+        { "icon": "globe", "title": "4 offices across India, the UAE and the US" },
+        { "icon": "crown", "title": "Managers to CXO, across all functions" }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "reassurance",
+      "columns": 4,
+      "items": [
+        { "icon": "lock", "title": "Confidential by default", "text": "Client identity is shared with candidates only when you approve." },
+        { "icon": "clock", "title": "One business day", "text": "Every brief gets a reply from a practice head, not an autoresponder." },
+        { "icon": "shield", "title": "No obligation", "text": "Sharing a brief doesn't commit you to anything — ask for a market view first." },
+        { "icon": "bank", "title": "Banking-tech niche", "text": "Active Oracle FLEXCUBE, OFSAA and OBDX hiring.", "link": { "label": "Industries", "url": "/industries" } }
+      ]
+    }
+  ]
+}

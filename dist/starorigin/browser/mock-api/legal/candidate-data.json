@@ -1,0 +1,59 @@
+{
+  "slug": "candidate-data",
+  "title": "Candidate data notice",
+  "headline": {
+    "title": "Candidate data",
+    "highlight": "notice"
+  },
+  "seo": {
+    "title": "Candidate Data Notice",
+    "description": "What StarOrigin collects from your CV and applications, why, who we share it with, how long we keep it, and how to access, correct or delete it."
+  },
+  "updatedAt": "2026-10-23",
+  "draftNotice": "<strong>Draft template</strong> — to be reviewed and approved by StarOrigin's legal counsel before publishing.",
+  "intro": "<p>This notice is for anyone who applies for a role through StarOrigin, submits a CV, or is approached by one of our recruiters. It explains, in plain language, what we do with your information. It supplements our <a href=\"/legal/privacy\">Privacy policy</a>.</p>\n<div class=\"callout\"><strong>The short version:</strong> we use your data to find you suitable roles. We share your profile with an employer only after you've agreed to be put forward for that specific role. You can ask us to see, correct or delete your data at any time.</div>",
+  "sections": [
+    {
+      "id": "collect",
+      "heading": "1. What we collect",
+      "html": "<ul><li><strong>From your CV and application:</strong> name, contact details, location, work history, education, skills, certifications, languages and anything else you choose to include.</li><li><strong>From conversations with us:</strong> current and expected compensation, notice period, preferred locations, work authorisation or visa status, and interview feedback.</li><li><strong>From public sources:</strong> professional profiles you have made public, for example on professional networks or job boards.</li><li><strong>From referees and verification partners:</strong> only with your consent (see section 5).</li></ul>\n<p>Please don't include sensitive details we don't need — such as religion, health information, government ID numbers or bank details — in your CV. We will ask for specific documents only when an employer requires them, for example at offer stage.</p>",
+      "tocLabel": "What we collect"
+    },
+    {
+      "id": "why",
+      "heading": "2. Why we use it",
+      "html": "<ul><li>To assess your profile against current and future roles.</li><li>To contact you about opportunities that match your experience and preferences.</li><li>To manage interviews, feedback, offers and onboarding.</li><li>To meet legal obligations, such as employment and tax records for contract or staffing assignments.</li></ul>\n<p>We rely mainly on your consent, which you give when you submit your CV or application. You can withdraw it at any time.</p>",
+      "tocLabel": "Why we use it"
+    },
+    {
+      "id": "sharing",
+      "heading": "3. Who we share it with",
+      "html": "<ul><li><strong>Prospective employers — only with your consent.</strong> Before we send your profile to a client, we'll tell you the role and, where the search is not confidential, the company, and ask for your go-ahead.</li><li><strong>StarOrigin offices</strong> in India, the UAE and the US, where a role is based in or recruited from that location.</li><li><strong>Service providers</strong> that host our systems or carry out checks on our behalf, under confidentiality agreements.</li><li><strong>Authorities</strong> when required by law.</li></ul>\n<blockquote>Your CV goes to an employer only when you say yes to that role.</blockquote>",
+      "tocLabel": "Who we share it with"
+    },
+    {
+      "id": "retention",
+      "heading": "4. How long we keep it",
+      "html": "<p>We keep your candidate record for <strong>24 months</strong> <span class=\"sample\">sample</span> after your last interaction with us, so we can let you know about future roles. After that we delete or anonymise it, unless you have been placed through us and we need records for legal or contractual reasons. You can ask us to delete your data sooner.</p>",
+      "tocLabel": "How long we keep it"
+    },
+    {
+      "id": "verification",
+      "heading": "5. Background verification",
+      "html": "<p>Some employers require pre-employment checks — for example, employment history, education, identity, address or references. These checks are carried out <strong>only with your explicit, separate consent</strong>, given before any check begins. We will tell you which checks are involved, who will carry them out and who will see the results. You can decline, though the employer may then be unable to proceed with your application. See our <a href=\"/services/background-verification\">background verification service</a> for how checks work.</p>",
+      "tocLabel": "Background verification"
+    },
+    {
+      "id": "rights",
+      "heading": "6. Access, correction and deletion",
+      "html": "<p>You can ask us to:</p>\n<ul><li>tell you what data we hold about you and who we've shared it with;</li><li>correct or update your details (a new CV is the easiest way);</li><li>delete your data, or stop contacting you about roles;</li><li>withdraw consent for a specific role or for all processing.</li></ul>\n<p>Email <a href=\"mailto:hello@starorigin.in\">hello@starorigin.in</a> with the subject line \"Candidate data request\" and the email address or phone number you applied with. We'll verify it's you and respond within the time required by applicable law. If you're unhappy with our response, you can escalate to our Grievance Officer as described in the <a href=\"/legal/privacy#contact\">Privacy policy</a>.</p>",
+      "tocLabel": "Access, correction, deletion"
+    },
+    {
+      "id": "fraud",
+      "heading": "7. Recruitment fraud",
+      "html": "<p>StarOrigin never asks candidates for money at any stage. If someone contacts you claiming to represent us and asks for a fee, deposit or bank details, please don't respond and report it to <a href=\"mailto:hello@starorigin.in\">hello@starorigin.in</a>.</p>\n<p>Related: <a href=\"/legal/privacy\">Privacy policy</a> · <a href=\"/legal/terms\">Terms of use</a> · <a href=\"/legal/cookies\">Cookie policy</a> · <a href=\"/submit-cv\">Submit your CV</a></p>",
+      "tocLabel": "Recruitment fraud"
+    }
+  ]
+}

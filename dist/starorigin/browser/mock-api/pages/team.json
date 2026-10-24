@@ -1,0 +1,48 @@
+{
+  "slug": "team",
+  "seo": {
+    "title": "Our team | StarOrigin",
+    "description": "Meet the StarOrigin team: recruiters, HR specialists and account managers across Nagpur, Hyderabad, Dubai and Dallas, led by Founder & CEO Ritu Maloo."
+  },
+  "hero": {
+    "breadcrumbs": [
+      { "label": "Home", "url": "/" },
+      { "label": "About", "url": "/about" },
+      { "label": "Team", "url": "/team" }
+    ],
+    "title": "The people",
+    "highlight": "behind every hire.",
+    "lead": "Recruiters, HR specialists and account managers who know their markets and stay with you from the first brief to the joining day."
+  },
+  "blocks": [],
+  "leadership": {
+    "eyebrow": "Leadership",
+    "text": "As Founder & CEO, Ritu leads StarOrigin's mission: dedicated practice heads, an ethical outlook and a value-added approach for every client.",
+    "ctas": [
+      { "label": "Get in touch", "url": "/contact", "variant": "glow" },
+      { "label": "StarOrigin on LinkedIn", "url": "https://www.linkedin.com/company/starorigin-business-solutions/", "external": true, "variant": "ghost" }
+    ]
+  },
+  "teamHeading": {
+    "eyebrow": "The team",
+    "title": "Meet",
+    "highlight": "StarOrigin.",
+    "lead": "Talent acquisition, HR and account management working as one team across our offices."
+  },
+  "joinUs": {
+    "icon": "zap",
+    "title": "Join us",
+    "text": "We're always looking for recruiters and HR professionals who put people first.",
+    "link": { "label": "Careers at StarOrigin", "url": "/careers" }
+  },
+  "cta": {
+    "eyebrow": "Talk to the team",
+    "title": "Real people,",
+    "highlight": "ready to help.",
+    "text": "Hiring or job hunting, you'll speak with someone who knows your market.",
+    "ctas": [
+      { "label": "Hire talent", "url": "/hire", "variant": "glow" },
+      { "label": "Find jobs", "url": "/jobs", "variant": "ghost" }
+    ]
+  }
+}

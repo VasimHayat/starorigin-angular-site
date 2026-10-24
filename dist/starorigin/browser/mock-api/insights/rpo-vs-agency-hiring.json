@@ -1,0 +1,96 @@
+{
+  "slug": "rpo-vs-agency-hiring",
+  "title": "RPO vs. agency hiring: which model fits a scaling team?",
+  "category": "Employers",
+  "excerpt": "A side-by-side on cost, control, scale and speed — plus a decision checklist and when a hybrid makes sense.",
+  "publishedAt": "2026-09-18",
+  "readMinutes": 7,
+  "author": "StarOrigin Editorial",
+  "thumb": {
+    "c1": "rgb(139 92 246/.45)",
+    "c2": "rgb(45 212 191/.4)"
+  },
+  "seo": {
+    "title": "RPO vs. agency hiring: which model fits a scaling team?",
+    "description": "Recruitment process outsourcing or contingency agencies? Compare cost, control, scale, speed and employer brand, use our decision checklist, and see when a hybrid works."
+  },
+  "headline": {
+    "title": "RPO vs. agency hiring:",
+    "highlight": "which model fits a scaling team?"
+  },
+  "breadcrumb": "RPO vs. agency hiring",
+  "authorRole": "Employer desk",
+  "authorLogo": "https://starorigin.in/wp-content/uploads/2022/03/logo-small.webp",
+  "lead": "When hiring goes from a handful of roles to dozens, the way you recruit has to change. Here's how the two main outsourced models compare — and how to choose without regret.",
+  "intro": "<p>Most growing companies start with agencies. A role opens, a few recruiters are briefed, CVs arrive, someone gets hired, an invoice follows. It works — until the hiring plan doubles, three agencies are submitting the same candidate, hiring managers complain about quality, and nobody can say how long a hire actually takes.</p>\n<p>That's usually the point when someone suggests recruitment process outsourcing (RPO). Both models have a place. The right answer depends on volume, predictability and how much of the hiring process you want to own.</p>",
+  "sections": [
+    {
+      "id": "definitions",
+      "heading": "Two models, defined",
+      "html": "<p><strong>Agency hiring</strong> (often contingency or retained search) means you brief an external recruiter on individual roles. They source and present candidates; you run the process and pay a fee per successful hire, typically a percentage of first-year salary.</p>\n<p><strong>Recruitment process outsourcing</strong> means an external partner takes over all or part of your recruitment function. Their recruiters work as an extension of your team — often under your employer brand, inside your applicant tracking system — and are paid through a management fee, a per-hire fee or a blend of the two. Engagements can cover the full lifecycle or a defined slice, such as sourcing and screening for one business unit.</p>"
+    },
+    {
+      "id": "comparison",
+      "heading": "Side-by-side comparison",
+      "html": "<table><thead><tr><th>Factor</th><th>Agency</th><th>RPO</th></tr></thead><tbody><tr><td><strong>Cost model</strong></td><td>Fee per placement; nothing to pay if no hire. Unit cost is highest of any model.</td><td>Monthly management fee and/or per-hire fee. Lower unit cost at volume, but a committed spend.</td></tr><tr><td><strong>Control</strong></td><td>Limited — you see candidates, not the process behind them.</td><td>High — shared process, SLAs, reporting and your own ATS data.</td></tr><tr><td><strong>Scale</strong></td><td>Good for a few roles at a time; coordination breaks down with many agencies.</td><td>Built for volume; recruiter capacity flexes with the hiring plan.</td></tr><tr><td><strong>Speed</strong></td><td>Fast for niche one-off roles where the agency already has a network.</td><td>Faster across a portfolio of roles once ramped up; first weeks spent on set-up.</td></tr><tr><td><strong>Employer brand</strong></td><td>Candidates meet the agency first; your brand message varies by recruiter.</td><td>Recruiters represent you directly, with consistent messaging and candidate experience.</td></tr><tr><td><strong>Best for</strong></td><td>Occasional, specialist or confidential roles; unpredictable demand.</td><td>Sustained hiring of 30+ roles a year <span class=\"sample\">sample</span>, new sites, repeatable role families.</td></tr></tbody></table>"
+    },
+    {
+      "id": "agency-fit",
+      "heading": "When agencies are the better fit",
+      "html": "<ul><li><strong>Low or unpredictable volume.</strong> If you hire a few people a year, a fixed RPO fee is hard to justify.</li><li><strong>Niche or senior roles.</strong> A specialist recruiter with an existing network — or a retained <a href=\"/services/executive-search\">executive search</a> — will often find a rare profile faster than a generalist process.</li><li><strong>Confidential replacements.</strong> Where the role can't be advertised under your name, an external brand is an advantage.</li><li><strong>Testing a new market.</strong> Before you know what a new country or function needs, paying per hire keeps commitment low.</li></ul>",
+      "tocLabel": "When agencies fit better"
+    },
+    {
+      "id": "rpo-fit",
+      "heading": "When RPO is the better fit",
+      "html": "<ul><li><strong>Sustained, predictable demand.</strong> A hiring plan for the next 12 months with recurring role families — engineers, sales, operations — is where RPO economics work.</li><li><strong>Agency sprawl.</strong> If several agencies compete for the same roles, an RPO consolidates suppliers and removes duplicate submissions.</li><li><strong>New sites and ramp-ups.</strong> Opening a delivery centre or plant needs volume, scheduling discipline and reporting — RPO territory, often alongside <a href=\"/services/bulk-hiring\">bulk hiring</a>.</li><li><strong>Data and process maturity.</strong> RPO brings time-to-hire, source-of-hire and funnel conversion data you can actually manage against.</li></ul>\n<blockquote>Agencies sell you hires. An RPO sells you a hiring capability. Decide which one you actually need.</blockquote>",
+      "tocLabel": "When RPO fits better"
+    },
+    {
+      "id": "checklist",
+      "heading": "A decision checklist",
+      "html": "<p>Answer these honestly. If most of your answers fall in the right-hand column, RPO deserves a serious look.</p>\n<ol><li><strong>Volume:</strong> Do you expect to hire more than a few dozen people in the next year, or just a handful?</li><li><strong>Predictability:</strong> Is the hiring plan approved and stable, or does it change quarter to quarter?</li><li><strong>Repeatability:</strong> Are many roles variations of the same few profiles?</li><li><strong>Supplier count:</strong> Are you managing more than three agencies today?</li><li><strong>Brand:</strong> Does a consistent candidate experience matter for your market reputation?</li><li><strong>Data:</strong> Can you currently report time-to-hire and cost-per-hire by role family?</li><li><strong>Internal capacity:</strong> Is your in-house TA team stretched, or about to be?</li></ol>\n<div class=\"callout\"><strong>Before you sign an RPO:</strong> agree the scope (which roles, which stages), the service levels (time to shortlist, interview-to-offer ratio), the reporting cadence and an exit plan for data and candidate pipelines. Those four items prevent most RPO disappointments.</div>"
+    },
+    {
+      "id": "hybrid",
+      "heading": "The hybrid model",
+      "html": "<p>For many scaling teams the honest answer is \"both\". A common pattern is:</p>\n<ul><li><strong>RPO for the core volume</strong> — the repeatable roles that make up most of the plan, run under your brand with shared SLAs.</li><li><strong>Specialist agencies or search for the edges</strong> — rare skills, leadership hires and confidential replacements, managed through the RPO partner so there's still one view of the pipeline.</li><li><strong>Flexible staffing for peaks</strong> — contract or <a href=\"/services/flexible-staffing\">flexible staffing</a> to cover project spikes without permanent headcount.</li></ul>\n<p>The hybrid keeps unit costs down where volume is high, while preserving specialist reach where it matters. The key is a single owner of the hiring data, so you can see what each channel actually delivers.</p>"
+    },
+    {
+      "id": "next-steps",
+      "heading": "Next steps",
+      "html": "<p>Start with your hiring plan, not the vendor. List the roles you expect to fill over the next 12 months, group them into role families, and mark which are repeatable and which are specialist. That map usually makes the right model obvious — and gives any partner a much better brief.</p>"
+    }
+  ],
+  "related": [
+    "core-banking-hiring-2027",
+    "first-90-seconds-interview"
+  ],
+  "aside": {
+    "eyebrow": "Scaling your team?",
+    "text": "See how our RPO works as an embedded extension of your TA team.",
+    "link": {
+      "label": "Explore RPO",
+      "url": "/services/rpo"
+    }
+  },
+  "cta": {
+    "eyebrow": "Find your model",
+    "title": "Agency, RPO or both?",
+    "highlight": "Let's map it.",
+    "text": "Share your 12-month hiring plan and we'll recommend the mix that fits your volume, budget and brand.",
+    "ctas": [
+      {
+        "label": "Explore RPO",
+        "url": "/services/rpo",
+        "variant": "glow",
+        "icon": "arrow"
+      },
+      {
+        "label": "Start hiring",
+        "url": "/hire",
+        "variant": "ghost"
+      }
+    ]
+  }
+}

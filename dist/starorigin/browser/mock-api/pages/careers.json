@@ -1,0 +1,116 @@
+{
+  "slug": "careers",
+  "seo": {
+    "title": "Careers at StarOrigin | Join our recruitment team",
+    "description": "Work at StarOrigin: recruiter and HR roles in Nagpur and Hyderabad with incentives, learning and global exposure across India, the UAE and the US."
+  },
+  "hero": {
+    "breadcrumbs": [
+      { "label": "Home", "url": "/" },
+      { "label": "About", "url": "/about" },
+      { "label": "Careers", "url": "/careers" }
+    ],
+    "title": "Do work that",
+    "highlight": "changes careers.",
+    "lead": "Join the StarOrigin team. Help companies find great people and help people find work they're proud of, across India, the UAE and the US.",
+    "ctas": [
+      { "label": "See open roles", "url": "/careers#roles", "variant": "glow" },
+      { "label": "Apply now", "url": "/careers#apply", "variant": "ghost" }
+    ]
+  },
+  "heroNote": { "text": "Looking for a job with one of our clients?", "link": { "label": "Browse client jobs", "url": "/jobs" } },
+  "blocks": [
+    {
+      "type": "cards",
+      "id": "perks",
+      "tight": true,
+      "columns": 3,
+      "heading": {
+        "eyebrow": "Why work here",
+        "title": "Grow with",
+        "highlight": "a people-first team.",
+        "lead": "The benefits below are illustrative until confirmed by HR."
+      },
+      "items": [
+        { "icon": "chart", "title": "Performance incentives", "text": "Monthly incentives linked to placements and client satisfaction.", "sample": "sample" },
+        { "icon": "book", "title": "Learning budget", "text": "Training in sourcing, assessment and HR certifications.", "sample": "sample" },
+        { "icon": "globe", "title": "Global exposure", "text": "Work on mandates for clients in India, the Middle East and the US.", "sample": "sample" },
+        { "icon": "heart", "title": "Health cover", "text": "Medical insurance for you and your family.", "sample": "sample" },
+        { "icon": "users", "title": "Mentorship", "text": "Learn directly from practice heads and senior HR managers.", "sample": "sample" },
+        { "icon": "target", "title": "Clear growth path", "text": "Defined steps from recruiter to team lead and practice head.", "sample": "sample" }
+      ]
+    }
+  ],
+  "culture": {
+    "heading": {
+      "eyebrow": "Culture",
+      "title": "How we",
+      "highlight": "work together.",
+      "lead": "The same values we bring to clients shape our own team."
+    },
+    "link": { "label": "Read our story", "url": "/about" },
+    "items": [
+      { "title": "Results first.", "text": "We judge success by people placed and clients served." },
+      { "title": "Straight talk.", "text": "Direct, honest feedback, inside the team and out." },
+      { "title": "Fleet-footed.", "text": "We move quickly and close every loop." },
+      { "title": "Trust and loyalty.", "text": "Relationships that last beyond a single placement." },
+      { "title": "Quality in everything.", "text": "Clients, consultants, solutions and process." },
+      { "title": "A personal touch.", "text": "Technology supports us; people make the calls." }
+    ]
+  },
+  "roles": {
+    "heading": {
+      "eyebrow": "Open roles",
+      "title": "Join",
+      "highlight": "the team.",
+      "lead": "Internal openings at StarOrigin. Roles shown are examples until live positions are published."
+    },
+    "items": [
+      { "id": "senior-it-recruiter-nagpur", "title": "Senior IT Recruiter", "team": "Talent Acquisition", "location": "Nagpur", "type": "Full-time", "experience": "3–5 yrs", "logo": "IT", "sample": "sample" },
+      { "id": "hr-executive-hyderabad", "title": "HR Executive", "team": "HR Operations", "location": "Hyderabad", "type": "Full-time", "experience": "1–3 yrs", "logo": "HR", "sample": "sample" },
+      { "id": "us-it-recruiter-nagpur", "title": "US IT Recruiter (Night shift)", "team": "US Staffing", "location": "Nagpur", "type": "Full-time", "experience": "2–4 yrs", "logo": "US", "sample": "sample" }
+    ],
+    "footText": "Don't see your role? Apply anyway and tell us what you'd bring.",
+    "generalLabel": "General application"
+  },
+  "blocksAfter": [
+    {
+      "type": "process",
+      "id": "process",
+      "variant": "steps",
+      "heading": {
+        "eyebrow": "Hiring process",
+        "title": "What to",
+        "highlight": "expect.",
+        "lead": "A simple, respectful process. Timelines are indicative."
+      },
+      "items": [
+        { "title": "Apply", "text": "Send the form below with your details and LinkedIn profile.", "meta": "5 minutes" },
+        { "title": "Intro call", "text": "A short conversation with our HR team about your experience and goals.", "meta": "Within a week", "sample": "sample" },
+        { "title": "Interviews", "text": "Meet the hiring manager and a practice head; some roles include a short task.", "meta": "1–2 rounds", "sample": "sample" },
+        { "title": "Offer", "text": "A clear offer and a planned first week with your new team.", "meta": "Onboarding" }
+      ]
+    }
+  ],
+  "apply": {
+    "heading": {
+      "eyebrow": "Apply",
+      "title": "Apply to",
+      "highlight": "StarOrigin.",
+      "lead": "We read every application and reply to all shortlisted candidates.",
+      "align": "center"
+    },
+    "successTitle": "Application received",
+    "successText": "Thank you for applying. Our HR team will review your details and get in touch if there's a match."
+  },
+  "cta": {
+    "eyebrow": "Not a recruiter?",
+    "title": "Find your next role",
+    "highlight": "with our clients.",
+    "text": "Browse live openings or submit your CV to be matched with new roles.",
+    "ctas": [
+      { "label": "Browse jobs", "url": "/jobs", "variant": "glow" },
+      { "label": "Submit your CV", "url": "/submit-cv", "variant": "ghost" }
+    ]
+  }
+}

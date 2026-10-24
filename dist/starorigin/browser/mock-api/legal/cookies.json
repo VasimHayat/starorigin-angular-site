@@ -1,0 +1,53 @@
+{
+  "slug": "cookies",
+  "title": "Cookie policy",
+  "headline": {
+    "title": "Cookie",
+    "highlight": "policy"
+  },
+  "seo": {
+    "title": "Cookie Policy",
+    "description": "Which cookies the StarOrigin website uses, why, and how to change your cookie preferences."
+  },
+  "updatedAt": "2026-10-23",
+  "draftNotice": "<strong>Draft template</strong> — to be reviewed and approved by StarOrigin's legal counsel before publishing.",
+  "intro": "<p>This policy explains how StarOrigin uses cookies and similar technologies on its website. It should be read alongside our <a href=\"/legal/privacy\">Privacy policy</a>.</p>",
+  "sections": [
+    {
+      "id": "what",
+      "heading": "1. What cookies are",
+      "html": "<p>Cookies are small text files placed on your device when you visit a website. They let the site remember your actions and preferences and help us understand how the site is used. Similar technologies — such as local storage and pixels — work in comparable ways, and we refer to all of them as \"cookies\" here.</p>",
+      "tocLabel": "What cookies are"
+    },
+    {
+      "id": "categories",
+      "heading": "2. Cookies we use",
+      "html": "<table><thead><tr><th>Category</th><th>Purpose</th><th>Consent</th><th>Typical duration</th></tr></thead><tbody><tr><td><strong>Strictly necessary</strong></td><td>Core functions: security, load balancing, form submission and remembering your cookie choices.</td><td>Not required — always on</td><td>Session to 12 months</td></tr><tr><td><strong>Functional</strong></td><td>Remember preferences such as saved job searches or filters to improve your experience.</td><td>Optional</td><td>Up to 12 months</td></tr><tr><td><strong>Analytics</strong></td><td>Measure visits, popular pages and traffic sources in aggregate so we can improve the site.</td><td><strong>Only with your consent</strong></td><td>Up to 24 months</td></tr></tbody></table>\n<p>We do not use advertising or cross-site tracking cookies. A detailed list of individual cookie names and providers will be published here once the production site is configured. <span class=\"sample\">sample</span></p>",
+      "tocLabel": "Cookies we use"
+    },
+    {
+      "id": "consent",
+      "heading": "3. Consent",
+      "html": "<p>When you first visit, we ask for your choice on optional cookies. Analytics and functional cookies are set only if you accept them. Declining does not affect your ability to browse jobs, submit a CV or contact us.</p>",
+      "tocLabel": "Consent"
+    },
+    {
+      "id": "preferences",
+      "heading": "4. How to change your preferences",
+      "html": "<ul><li><strong>On our site:</strong> use the \"Cookie settings\" link in the footer <span class=\"sample\">sample</span> to review or change your choice at any time.</li><li><strong>In your browser:</strong> most browsers let you block or delete cookies through their privacy settings. Blocking strictly necessary cookies may stop parts of the site from working.</li><li><strong>Analytics opt-out:</strong> some analytics providers offer their own opt-out tools, which you can use in addition to our settings.</li></ul>\n<div class=\"callout\">Changing your preferences takes effect from that point forward. Cookies already set may remain on your device until they expire or you delete them in your browser.</div>",
+      "tocLabel": "Change your preferences"
+    },
+    {
+      "id": "third-party",
+      "heading": "5. Third-party content",
+      "html": "<p>Pages that embed third-party content — such as fonts, maps or social sharing links — may allow those providers to set their own cookies or receive technical data like your IP address. Their use is governed by their own policies.</p>",
+      "tocLabel": "Third-party content"
+    },
+    {
+      "id": "contact",
+      "heading": "6. Contact",
+      "html": "<p>Questions about cookies? Write to <a href=\"mailto:hello@starorigin.in\">hello@starorigin.in</a>.</p>\n<p>Related: <a href=\"/legal/privacy\">Privacy policy</a> · <a href=\"/legal/terms\">Terms of use</a> · <a href=\"/legal/candidate-data\">Candidate data notice</a></p>",
+      "tocLabel": "Contact"
+    }
+  ]
+}
